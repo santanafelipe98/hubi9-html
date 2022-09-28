@@ -1,0 +1,3569 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #600ab3;
+  --secondary-color: #f3cd08;
+  --danger-color: #ff3548;
+  --success-color: #01c851;
+  --warning-color: #ffbb34;
+  --info-color: #33b5e7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.asPage {
+    padding-top: 60px;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.sectionDescription {
+    font-size: 18px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 150%;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.ListItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.ListItem .icon {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.listText {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.listText.dark {
+    color: #f8f9fa;
+}
+
+.freeprivacypolicy-com---nb-simple {
+  max-width: 100% !important;
+}
+
+.freeprivacypolicy-com---palette-dark .cc-nb-okagree,
+.freeprivacypolicy-com---palette-dark .cc-nb-reject,
+.freeprivacypolicy-com---palette-dark .cc-cp-foot-save {
+  background: var(--secondary-color) !important;
+}
+
+.Header {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.Header .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Header .right .navbarNav {
+    margin-right: 20px;
+}
+
+.navbarFixed {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.Header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header .brand img {
+    width: 110px;
+}
+
+
+.HamburguerButton {
+    border: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.Header .navbarNav .navbarNavLink {
+    margin: 2px 6px;
+    width: auto;
+    min-width: auto;
+}
+
+.LoginButton {
+    color: #fff !important;
+}
+
+.LoginButton .icon {
+    margin-right: 10px;
+}
+
+.Button {
+    min-width: 160px;
+    min-height: 38px;
+    padding: 6px 16px;
+    font-size: 14px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 50px;
+    transition: background .3s ease-in, border-color .3s ease-in;
+    outline: none;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+}
+
+a.Button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonDefault {
+    border: 2px solid #f8f9fa;
+    color: #fff;
+}
+
+.buttonDefault:hover {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: #e9ecef;
+}
+
+.buttonPrimary {
+    border: 2px solid var(--primary-color);
+    color: #e9ecef;
+}
+
+.buttonPrimary:hover, .buttonPrimary.active {
+    background: var(--primary-color);
+    color: #e9ecef;
+}
+
+.buttonSecondary {
+    border: 2px solid var(--secondary-color);
+    color: #e9ecef;
+}
+
+.buttonSecondary:hover, .buttonSecondary.active {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.buttonDanger {
+    border: 2px solid var(--danger-color);
+    color: #e9ecef;
+}
+
+.buttonDanger:hover, .buttonDanger.active {
+    background: var(--danger-color);
+    color: #e9ecef;
+}
+
+.buttonSuccess {
+    border: 2px solid var(--danger-color);
+    color: #e9ecef;
+}
+
+.buttonSuccess:hover, .buttonSuccess.active {
+    background: var(--success-color);
+    color: #e9ecef;
+}
+
+.buttonWarning {
+    border: 2px solid var(--danger-color);
+    color: #e9ecef;
+}
+
+.buttonWarning:hover, .buttonWarning.active {
+    background: var(--warning-color);
+    color: #e9ecef;
+}
+
+.buttonInfo {
+    border: 2px solid var(--info-color);
+    color: #e9ecef;
+}
+
+.buttonInfo:hover, .buttonInfo.active {
+    background: var(--info-color);
+    color: #e9ecef;
+}
+
+.is-invalid {
+    border: 2px solid var(--danger-color) !important;
+}
+
+.is-valid {
+    border: 2px solid var(--success-color) !important;
+}
+
+.invalid-feedback {
+    color: var(--danger-color);
+    font-size: .8rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.valid-feedback {
+    color: var(--success-color);
+    font-size: .8rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+
+.backgroundVideo video {
+    background: url("../images/institucional.jpg");
+}
+
+.Jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 500px;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(180deg,rgba(44,44,49,0),#212529 95%),linear-gradient(180deg,rgba(48,48,64,.3),rgba(48,48,64,.3)),linear-gradient(0deg,rgba(52,58,64,.4),rgba(0,151,216,.4));
+}
+
+
+.Jumbotron .heading {
+    font-size: 48px;
+    margin-bottom: 24px;
+    color: #e9ecef;
+}
+
+
+.Jumbotron .description {
+    width: 550px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: rgba(233,236,239,.8);
+    line-height: 150%;
+}
+
+.Jumbotron .jumbotronButton:not(:last-child) {
+    margin-right: 16px;
+}
+
+.Jumbotron .backgroundVideo {
+    min-height: 600px;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background: transparent;
+    overflow: hidden;
+}
+
+
+.Jumbotron .backgroundVideo video {
+    opacity: .5;
+}
+
+.HowItWorks {
+    background: #fff;
+}
+
+.stepImage {
+    position: relative;
+}
+
+.stepImage img {
+    width: 100%;
+}
+
+.alert {
+    padding: 10px;
+    padding-right: 30px;
+    border-radius: 5px;
+    font-size: .9rem;
+    text-align: justify;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    animation: fade-in .3s linear;
+}
+
+.alert .alert-close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 10px;
+    top: calc(50% - 10px);
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.fade-in {
+    animation: fade-in .3s linear;
+}
+
+.fade-out {
+    animation: fade-out .3s linear;
+}
+
+#analise_de_auto .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/consulta_veicular_fh.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.alert-danger {
+    background: var(--danger-color);
+}
+
+.alert-success {
+    background: var(--success-color);
+}
+
+.alert-warning {
+    background: var(--warning-color);
+}
+
+.alert-info {
+    background: var(--info-color);
+}
+
+.WhatsAppButton {
+    position: fixed;
+    width: 58px;
+    height: 58px;
+    border-radius: 29px;
+    right: 25px;
+    bottom: 120px;
+    background: var(--primary-color);
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .3);
+    z-index: 1000;
+    background-color: rgb(37, 211, 102);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+/*adicionado 5 colunas*/
+
+img.d-block.w-100 {width: 100%;}
+.justifica{text-align: justify;}
+.meio{display: flex; align-items: center; padding: 0 15px}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+footer {
+    min-height: 100px;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer address {
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+    margin-top: 20px;
+}
+
+footer .SocialMedia {
+    justify-content: center;
+    margin-left: calc(50% - 200px);
+}
+
+footer .footerBrand {
+    width: 160px;
+}
+
+.SocialMedia .SocialButton:not(:last-child) {
+    margin-right: 10px;
+}
+
+.FreeQueryForm .row {
+    align-items: center;
+}
+
+.FreeQueryForm .formTitle {
+    padding: 5px;
+    border-bottom: 3px solid var(--secondary-color);
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.FreeQueryForm .Button {
+    width: 100%;
+}
+
+/* Formulário */
+
+.Input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.Input label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #f8f9fa;
+    margin-bottom: 5px;
+}
+
+.Input input {
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color .3s ease;
+    height: 42px;
+    font-size: 14px;
+    color: #f8f9fa;
+    background: rgba(255, 255, 255, .1);
+    padding: 5px 10px;
+    outline: none;
+}
+
+.Input input::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.Input input:hover, .Input input:focus {
+    border-color: var(--primary-color);
+}
+
+/* Formulário */
+
+.SocialButton {
+    display: inline-flex;
+    background: rgba(255, 255, 255, .4);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    transition: background .3s ease-in;
+}
+
+.SocialButton:hover {
+    background: #f3cd08;
+}
+
+/* Consulta gratuita */
+
+#FreeQuery {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/consulta_gratuita.webp");
+    background-position: '0 0,50% 50%';
+    background-size: 'auto,cover';
+    background-repeat: 'repeat,no-repeat';
+    background-attachment: 'scroll,fixed';
+}
+
+.FreeQueryForm .row {
+    align-items: center;
+}
+
+.FreeQueryForm .formTitle {
+    padding: 5px;
+    border-bottom: 3px solid var(--secondary-color);
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.FreeQueryForm .Button {
+    width: 100%;
+}
+
+
+/* Consulta gratuita */
+
+/* Nossos serviços */
+
+#nossos_servicos {
+    background-color: '#212529';
+    background-image: linear-gradient(180deg,#212529,rgba(33,37,41,.8) 33%),linear-gradient(180deg,transparent 33%,#212529 66%),url("../images/servicos.jpg");
+    background-position: 0 0,0 0,50% 50%;
+    background-attachment: scroll,scroll,fixed;
+}
+
+.Card {
+    overflow: hidden;
+    border: 4px solid #212529;
+    background: #2c2c31;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    border-radius: 24px;
+    min-height: 468px;
+    transition: background-color .8s ease,border-color .8s ease,transform .8s cubic-bezier(.25,.46,.45,.94),-webkit-transform .8s cubic-bezier(.25,.46,.45,.94);
+}
+
+.Card:hover {
+    border-color: var(--primary-color);
+    background-color: #38383e;
+    transform: translateY(-10px);
+}
+
+.Card .cardThumb {
+    height: 140px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card .cardThumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .6;
+}
+
+.Card .cardContent {
+    padding: 8px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.Card .cardContent .icon {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.Card .cardContent h3 {
+    margin-bottom: 16px;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.Card .cardContent p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.Card .cardContent .buttonMoreInfo {
+    align-self: center;
+    justify-self: end;
+    margin-bottom: 16px;
+}
+
+.OurServices {
+    background: #212529;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nossos serviços */
+
+/* Responsabilidade social */
+
+.SocialResponsibility{
+    position: relative;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(29, 29, 36, 0.5), rgb(29, 29, 36)), url("../images/responsabilidade_social.jpeg");
+    background-position: 50% 10%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.SocialResponsibility .Content {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: -174px;
+    z-index: 50;
+    min-height: 280px;
+    border: 4px var(--primary-color) solid;
+}
+
+.SocialResponsibility .Content .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.SocialResponsibility .Content .call-to-action .image {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.SocialResponsibility .Button {
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.SocialResponsibility .Button:hover {
+    color: #fff;
+}
+
+.socialResponsibilityHeading {
+    margin-bottom: 20px;
+}
+
+.socialResponsibilityText {
+    font-size: 32px;
+    color: #303040;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    line-height: 120%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.SocialResponsibility .buttonWrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.socialResponsibilityThumb img {
+    width: 100%;
+    transition: transform .5s ease-in-out;
+}
+
+.socialResponsibilityThumb:hover img {
+    transform: scale(1.1);
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 17px -6px rgba(159,173,179,.3);
+    background-color: #f8f9fa;
+}
+
+.contentTitle {
+    color: var(--primary-color);
+    line-height: 120%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Responsabilidade social */
+
+/* Nossos valiosos clientes */
+
+.OurCustomers {
+    padding-top: 200px;
+    padding-bottom: 50px;
+    min-height: 200px;
+    position: relative;
+}
+
+.OurCustomers .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: rgba(34,34,34,.4);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.OurCustomers .container {
+    overflow: hidden;
+}
+
+.OurCustomers .CustomerSlider {
+    margin-top: 30px;
+}
+
+.OurCustomers .slick-slider {
+    max-height: 100px;
+}
+
+.OurCustomers .indicator.active {
+    background: #222;
+}
+
+.OurCustomers .indicator:not(:last-child) {
+    margin-right: 12px;
+}
+
+.OurCustomers img.image {
+    width: 64px;
+    margin-right: 10px;
+}
+
+.CustomerSlider .ourCustomersTitle {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 0.938rem;
+    font-size: 2.2043rem;
+    line-height: 1.25;
+    font-weight: 600;
+}
+.CustomerSlider .Divider {
+    margin-bottom: 50px;
+}
+
+.CustomerSlider .ourCustomersDescription {
+    font-size: .9rem;
+    margin-bottom: 50px;
+    color: #696969;
+    text-align: center;
+}
+
+.CustomerSlider .slick-slide {
+    margin: 0 10px;
+}
+
+/* Nossos valiosos clientes */
+
+/* Sobre nós */
+
+#sobre_nos .video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#sobre_nos .video video {
+    width: 100%;
+}
+
+#sobre_nos .SimpleSection {
+    padding-bottom: 0;
+}
+
+.Map .wrapper iframe {
+    width: 100%;
+    min-height: 350px;
+}
+
+#aboutUsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url('../images/sobre_nos.png');
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+/* Sobre nós */
+
+.serviceDetailsHeader {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.serviceDetailsHeading {
+    width: 750px;
+    font-size: 40px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: #f8f9fa;
+    text-align: center;
+}
+
+.serviceDetailsDesc {
+    background: var(--primary-color);
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceDetailsDesc p {
+    width: 750px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgba(248,249,250,.8);
+    font-weight: 400;
+    text-align: center;
+    line-height: 150%;
+}
+
+.ServiceDetails .tags {
+    display: flex;
+    justify-content: center;
+    width: 750px;
+    margin-bottom: 56px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.ServiceDetails .tags .Tag {
+    margin-right: 12px;
+    margin-bottom: 6px;
+}
+
+.ServiceDetails .btnAction {
+    font-size: 17px;
+    padding: 6px 20px;
+}
+
+/* Sobre nós */
+
+/* Nossos servicos */
+
+#nossos_servicos {
+    padding-top: 70px;
+}
+
+/* Nossos servicos */
+
+/* Planos e preços */
+
+#precos .sectionTitle {
+    margin-top: 110px;
+}
+
+#planos_e_precos .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/planos.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.PriceCard {
+    background: #2c2c31;;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    transform: translateY(0);
+    transition: border-color .3s ease, transform .3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .05);
+}
+
+.PriceCard:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
+}
+
+.PriceCard .Button {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.PriceCard .value {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.PriceCard .cardTitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 5px 10px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.PriceCard .cardDescription {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.service {
+    display: flex;
+    flex-direction: column;
+}
+
+.service .itemTitle {
+    font-weight: 600;
+    border-bottom: 4px solid var(--secondary-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.serviceItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px 0;
+    padding-left: 20px;
+}
+
+.serviceItem .description {
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    flex: 1;
+}
+
+.serviceItem .price {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+/* Planos e preços */
+
+/* Contratar */
+
+#contratar {
+    padding-bottom: 50px;
+}
+
+#contratar .getTitle {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    margin-bottom: 50px;
+}
+
+#contratar .getHeader {
+    padding-top: 70px;
+    background: rgb(33, 37, 41);
+}
+
+#contratar .container-fluid {
+    padding-top: 50px;
+}
+
+#contratar .getHeader .brand {
+    position: relative;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+#contratar .getHeader .brand img {
+    width: 150px;
+    
+}
+
+#contratar .getSubtitle {
+    margin-top: 50px;
+    font-style: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 20px;
+}
+
+#contratar .sideContent {
+    position: relative;
+}
+
+#contratar .pageDescription {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+}
+#contratar .sideContent .image {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* Contratar */
+
+/* Contato */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUsHeader {
+    background: var(--primary-color);
+    background-image: linear-gradient(rgba(29, 29, 36, 0.5), rgb(29, 29, 36)), url("../images/contato.png");
+    background-position: 50% 10%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    padding: 150px 50px 100px 50px;
+    min-height: 450px;
+}
+
+.contactWays {
+    padding: 75px;
+}
+
+.contactUsHeader .Button {
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+}
+
+.contactUsThumb {
+    overflow: hidden;
+    margin: 37px 0 0 0;
+    border-radius: 20px 60px 20px 20px;
+}
+
+.contactUsHeading {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.contactUsText {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+}
+
+.contactUsThumb img {
+    width: 100%;
+    transition: transform .5s ease-in-out;
+}
+
+.contactUsThumb:hover img {
+    transform: scale(1.1);
+}
+
+#contato .buttonWrapper {
+    display: flex;
+}
+
+#contato .call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactCard {
+    border: 4px solid var(--primary-color);
+    border-radius: 10px 40px 10px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease;
+}
+
+.ContactCard .icon {
+    font-size: 3rem;
+}
+
+.ContactCard:hover {
+    transform: translateY(-10px);
+}
+
+.contactCardTitle {
+    margin-top: .5rem;
+    margin: 1rem 0;
+}
+
+.contactCardTitle, .contactCardText {
+    text-align: center;
+}
+
+.contactCardText {
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.contactCardTitle a {
+    color: #333;
+    transition: color .3s ease-in;
+}
+
+.contactCardTitle a:hover {
+    color: var(--primary-color);
+}
+
+/* Contato */
+
+/* Trabalhe conosco */
+
+#trabalhe_conosco .ServiceDetails {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url('../images/trabalhe_conosco.jpg');
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.BusinessModelCard {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease, transform .3s ease;
+    border-radius: 20px;
+    min-height: 640px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #212529;
+    background: var(--primary-color);
+    transition: border-color .3s ease, transform .3s ease;
+}
+
+
+.BusinessModelCard .cardThumbnail {
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.BusinessModelCard .cardThumbnail img {
+    width: 100%;
+}
+
+.BusinessModelCard .cardContent {
+    padding: 20px;
+}
+
+
+.BusinessModelCard:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+}
+
+.BusinessModelCard .cardTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.BusinessModelCard ul.cardItems {
+    list-style-type: disc;
+}
+
+.BusinessModelCard ul.cardItems li.cardItem {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.TextIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 4px solid #212529;
+    transition:  border-color .3s ease, transform .3s ease;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 200px;
+    position: relative;
+}
+
+.TextIcon:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
+}
+
+.TextIcon .icon {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.TextIcon.light .title {
+    color: var(--primary-color);
+}
+
+.TextIcon.dark .title {
+   color: #fff;
+}
+
+.TextIcon .title {
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+#beneficios_trabalhe_conosco {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/beneficios_trabalhe_conosco.webp");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.Indicators2 .map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Indicators2 .map img {
+    width: 100%;
+}
+
+.Indicators2 .indicatorsTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.Indicators2 .indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.Indicators2 .indicator .title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #333;
+    text-align: center;
+}
+
+.Indicators2 .indicator .title .highlight {
+    color: var(--primary-color);
+}
+
+.Indicators2 .indicator .subtitle {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.Indicators2 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.JoinUsForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.JoinUsForm .formTitle {
+    color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+.JoinUsForm .formWrapper {
+    border: 3px solid #343a40;
+    border-radius: 10px;
+    transition: border-color .6s ease;
+    padding: 20px;
+}
+
+.JoinUsForm .formWrapper .advice {
+    font-weight: 500;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.JoinUsForm .formWrapper:hover {
+    border-color: var(--primary-color);
+}
+
+#junte_se_a_nos {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/junte_se_a_nos.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.joinUs .row {
+    justify-content: center;
+}
+
+/* Trabalhe conosco */
+
+
+/* Análise de crédito */
+
+#analise_de_credito .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/analise_de_credito.png");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.ourQueries .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.ourQueries .QueryButton:not(:last-child) {
+    margin-right: 20px;
+}
+
+#banner_consultas .ServiceInfo .row {
+    justify-content: center;
+}
+
+#banner_consultas1 {
+    background-image: linear-gradient(rgb(33, 37, 41), transparent 10%), linear-gradient(transparent 50%, rgb(33, 37, 41)), linear-gradient(rgba(7, 8, 9, 0.35), rgba(7, 8, 9, 0.35)), linear-gradient(rgba(48, 48, 64, 0.75), rgba(48, 48, 64, 0.75)), url("../images/consultas1.jpg");
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+#banner_consultas1 .QueryCard {
+    margin-bottom: 20px;
+}
+
+#banner_consultas1 .QueryCard .queryCardTitle {
+    font-size: 20px;
+}
+
+.QueryButton {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #fff;
+    border: 4px var(--secondary-color) solid;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease, transform .3s ease;
+
+}
+
+.QueryButton:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.QueryButton img {
+    width: 100%;
+}
+
+.QueryButton span.text {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #303040;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    color: var(--primary-color);
+}
+
+#vantagens_analise_de_credito {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+#vantagens_analise_de_credito .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vantagens_analise_de_credito .Divider {
+    margin-bottom: 50px;
+}
+
+.benefitsTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.BenefitItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.BenefitItem .icon {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.benefitText {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+#banner {
+    background-image: linear-gradient(180deg,rgb(25, 39, 46, .8) 59%,var(--primary-color)), url("../images/vantagens_analise_de_credito.jpg");
+    background-size: cover;
+}
+
+.BannerHubi9 {
+    padding: 50px 0;
+}
+
+.BannerHubi9 .bannerRect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    border-radius: 24px;
+}
+
+.BannerHubi9 .logo {
+    width: 150px;
+    margin-top: 150px;
+    margin-bottom: 25px;
+}
+
+.BannerHubi9 .text {
+    width: 80%;
+    margin-bottom: 32px;
+    color: #e9ecef;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+    text-align: center;
+}
+
+#banner_consultas {
+    background-image: linear-gradient(rgb(33, 37, 41), transparent 10%), linear-gradient(transparent 50%, rgb(33, 37, 41)), linear-gradient(rgba(7, 8, 9, 0.35), rgba(7, 8, 9, 0.35)), linear-gradient(rgba(48, 48, 64, 0.75), rgba(48, 48, 64, 0.75)), url("../images/consultas.png");
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+.ServiceInfo {
+    padding: 64px 0;
+    min-height: 90vh;
+    border: 3px solid #343a40;
+    border-radius: 24px;
+    margin: 50px 24px;
+    transition: border-color .6s ease;
+}
+
+.ServiceInfo .serviceInfoHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.serviceInfoHeader .Divider {
+    width: 200px !important;
+    margin-bottom: 50px;
+    height: 2px;
+}
+
+.ServiceInfo:hover {
+    border-color: var(--primary-color);
+}
+
+.ServiceInfo .heading {
+    padding: 6px 18px;
+    border-bottom: 2px solid var(--primary-color);
+    color: #f8f9fa;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.ServiceInfo .Button {
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+.ServiceInfo .serviceInfoTitle {
+    margin-bottom: 12px;
+    font-size: 38px;
+    width: 66%;
+    color: #f8f9fa;
+}
+
+.ServiceInfo .serviceInfoSubtitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.ServiceInfo .serviceInfoDescription {
+    width: 80%;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #f8f9fa;
+}
+
+.ServiceInfo .serviceInfoTags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    justify-content: center;
+}
+
+.ServiceInfo .serviceInfoButton {
+    width: 220px;
+    margin-top: 48px;
+    font-size: 16px;
+}
+
+.QueryCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px transparent solid;
+    border-radius: 24px;
+    background: var(--primary-color);
+    padding: 20px;
+    min-height: 390px;
+    transition: transform .3s ease, border-color .3s ease;
+    position: relative;
+}
+
+.QueryCard:hover {
+    transform: translateY(-20px);
+    border-color: var(--secondary-color);
+}
+
+.queryCardIcon img {
+    width: 64px;
+}
+
+.queryCardTitle {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.QueryCard .planningPrice {
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.QueryCard .planningPrice .value {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+    color: var(--secondary-color);
+}
+
+.QueryCard .Button {
+    position: absolute;
+    bottom: 40px;
+    margin: 0;
+}
+
+.QueryListModal {
+    background: var(--secondary-color);
+    backdrop-filter: blur(2px);
+    padding: 32px 16px;
+    border: 3px solid #343a40;
+    border-radius: 24px;
+    transition: border-color .3s ease;
+    width: 1000px;
+    max-width: inherit;
+}
+
+.QueryListModal:hover {
+    border-color: var(--primary-color);
+}
+
+.modalHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalHeader .icon {
+    width: 50px;
+}
+
+.modalTitle {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--secondary-color);
+    padding: 5px 0;
+}
+
+.modalText {
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.modalContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.queryItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 2px transparent solid;
+    transition: transform .3s ease, border-color .3s ease;
+    text-align: center;
+}
+
+.queryItem:hover {
+    transform: translateX(-10px);
+    border-color: var(--secondary-color);
+}
+
+.queryItem:not(:last-child) {
+    margin-right: 30px;
+}
+
+.QueryListModal {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/consultas.png");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+/* Análise de crédito */
+
+/* Recuperação de recebíveis */
+
+#recuperacao_de_recebiveis .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/recuperacao_de_recebiveis.png");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.HowToDenyACostumer .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 400px;
+    position: relative;
+}
+
+.HowToDenyACostumer .image img {
+    width: 100%;
+}
+
+.StepItem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.StepItem .stepWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.StepItem.lt .stepWrapper {
+    flex-direction: row;
+}
+
+.StepItem.rt .stepWrapper {
+    flex-direction: row-reverse;
+}
+
+.StepItem.lt .icon {
+    margin-right: 1.5rem;
+}
+.StepItem.rt .icon {
+    margin-left: 1.5rem;
+}
+
+.StepItem .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    box-shadow: 0 0 2.1875rem 0 rgba(119, 119, 120, 0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-shrink: 0;
+    transition: transform .3s ease-in-out;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.StepItem .icon:hover {
+    transform: scale(1.2);
+}
+
+.StepItem .textContent h5 {
+    font-size: 1.1725rem;
+    line-height: 1.25;
+    color: var(--primary-color);
+    margin-bottom: 0.938rem;
+}
+
+.StepItem .textContent p {
+    color: #696969;
+}
+
+.StepItem img {
+    width: 200px;
+}
+
+.StepItem .path {
+    overflow: hidden;
+}
+
+.StepItem.lt .path {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.StepItem.rt .path {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.StepItem.rt .path img {
+    margin-right: 40px;
+}
+
+.StepItem.lt .path img {
+    margin-left: 50px;
+}
+
+#beneficios_negativacao {
+    background-image: url("../images/vantagens_recuperacao_de_recebiveis.png");
+    background-repeat: no-repeat;
+    background-position: -5% 10%;
+    background-size: 800px;
+    min-height: 700px;
+}
+
+.benefitsOfDenialTitle {
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+
+.BenefitCard {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.BenefitCard .icon {
+    margin-right: 20px;
+    font-size: 2.1rem;
+    color: var(--primary-color);
+}
+
+.BenefitCard .textContent .title {
+    margin-bottom: 0.5rem !important;
+    font-size: 1.1725rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.BenefitCard .textContent .text {
+    color: #696969;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    text-align: justify;
+    line-height: 150%;
+}
+
+#o_que_pode_ser_negativado {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/fundo_o_que_pode_ser_negativado.png");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    padding: 50px 0;
+}
+
+.SectionList {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.SectionList .sectionTitle {
+    margin-bottom: 20px;
+    font-size: 2.1rem !important;
+    text-align: center;
+}
+
+.SectionList.light .sectionTitle {
+    color: var(--primary-color);
+}
+
+.SectionList.dark .sectionTitle, .SectionList.dark .sectionDescription {
+    color: #f8f9fa;
+}
+
+.SectionList .sectionDescription {
+    margin-bottom: 50px
+}
+
+.SectionList .image {
+    position: relative;
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SectionList .image img {
+    width: 100%;
+}
+
+/* Recuperação de recebíveis */
+
+/* Protesto de Títulos */
+
+#protesto_de_titulos .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/protesto_de_titulos.png");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.CustomStepCard {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.CustomStepCard .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    box-shadow: 0 0 2.1875rem 0 rgba(119, 119, 120, 0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-shrink: 0;
+    transition: transform .3s ease-in-out;
+    margin-bottom: 1.5rem;
+    font-size: 1.9rem;
+    color: var(--primary-color);
+}
+
+.CustomStepCard .icon:hover {
+    transform: scale(1.2);
+}
+
+.CustomStepCard h5 {
+    font-size: 1.1725rem;
+    line-height: 1.25;
+    color: var(--primary-color);
+    margin-bottom: 0.938rem;
+    text-align: center;
+}
+
+.CustomStepCard p {
+    color: #696969;
+    text-align: center;
+}
+
+.HowToProtestACostumer {
+    padding: 50px 0;
+}
+
+.HowToProtestACostumer .steps {
+    height: 100%;
+}
+
+.HowToProtestACostumer .slick-slider {
+    margin-top: 100px;
+}
+
+.HowToProtestACostumer .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.HowToProtestACostumer .image img {
+    width: 100%;
+}
+
+.slick-slider {
+    z-index: 1;
+}
+
+.slick-next {
+    right: -20px;
+}
+.slick-prev {
+    left: -40px;
+}
+
+.slick-next::before, .slick-prev::before {
+    color: #333;
+    font-size: 40px;
+}
+
+.Benefits .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Benefits .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Benefits .image img {
+    width: 100%;
+}
+
+.BenefitCard {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.BenefitCard .icon {
+    margin-right: 20px;
+}
+
+.BenefitCard .textContent .title {
+    margin-bottom: 0.5rem !important;
+    font-size: 1.1725rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.BenefitCard .textContent .text {
+    color: #696969;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    text-align: justify;
+    line-height: 150%;
+}
+
+#o_que_pode_ser_protestado {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/fundo_protesto_de_cliente.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+/* Protesto de Títulos */
+
+/* Soluções em Pagamento */
+
+#solucoes_em_pagamento .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/gestao_financeira.png");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#banner_consulta_pj {
+    background-image: url("../images/conta_digital_pj.png");
+    background-size: cover;
+    background-position: center top;
+    background-blend-mode: normal;
+}
+
+#solucoes_em_pagamento .solutionWrapper {
+    max-height: 0px;
+    transition: max-height 1s ease-in-out;
+    overflow: hidden;
+}
+
+#solucoes_em_pagamento .solutionWrapper.active {
+    max-height: 5000px;
+}
+
+#solucoes_em_pagamento .bannerImage {
+    min-height: 100vh;
+    position: relative;
+}
+
+#solucoes_em_pagamento .bannerImage .container {
+    height: 100vh;
+}
+#solucoes_em_pagamento .bannerImage .row {
+    height: 100%;
+}
+
+
+.bannerImage .bannerBenefits {
+    list-style-type: none;
+}
+
+.bannerImage .bannerTitle {
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, .2);
+}
+
+.bannerImage .bannerBenefit {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, .2);
+    margin-bottom: 10px;
+}
+
+.bannerImage .bannerBenefit .icon {
+    margin-right: 20px;
+    font-size: 2.2rem;
+}
+
+#nossas_solucoes {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/nossas_solucoes.png");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.SolutionCard {
+    border: 4px solid #212529;
+    background: #2c2c31;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 24px;
+    transition: background-color .8s ease,border-color .8s ease,transform .8s cubic-bezier(.25,.46,.45,.94),-webkit-transform .8s cubic-bezier(.25,.46,.45,.94);
+    cursor: pointer;
+    min-height: 300px;
+}
+
+.SolutionCard:hover {
+    border-color: var(--primary-color);
+    background-color: #38383e;
+    transform: translateY(-10px);
+}
+
+.SolutionCard .icon {
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+.SolutionCard .title {
+    color: var(--primary-color);
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+#vantagens_solucoes_em_pagamento .image {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+#vantagens_solucoes_em_pagamento .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#vantagens_solucoes_em_pagamento .heading h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#vantagens_solucoes_em_pagamento .image img {
+    width: 100%;
+}
+
+.solutionTitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.titleNumber {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.titleText {
+    font-size: 30px;
+    color: #484848;
+    font-weight: 700;
+}
+
+.slideButton {
+    font-size: 16px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.slideButton.active .buttonNumber {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.slideButton .buttonNumber, .slideButton .buttonText {
+    color: #b4b4b4;
+}
+
+.slideButton:hover .buttonNumber, .slideButton:hover .buttonText {
+    color: #484848;
+    font-weight: 700;
+}
+
+.slideButton.active .buttonText {
+    color: #484848;
+    font-weight: 700;
+}
+
+.dots {
+    display: flex;
+}
+
+.slideMenu {
+    height: 100%;
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slideDot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(96, 10, 179, .3);
+    transition: background .3s ease;
+}
+
+.solutionSlide {
+    position: relative;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+}
+
+.solutionSlide img {
+    width: 100%;
+}
+
+.slideDot.active {
+    background: rgb(96, 10, 179);
+}
+
+.slideDot:not(:last-child) {
+    margin-right: 20px;
+}
+
+.SolutionSection1 .item {
+    margin-bottom: 50px;
+}
+
+.SolutionSection1 .item .itemImage {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.SolutionSection1 .item .itemImage img {
+    position: relative;
+    height: 500px;
+    transition: transform .3s ease;
+}
+.SolutionSection1 .item .itemImage:hover img {
+    transform: scale(1.1);
+}
+
+
+.SolutionSection1 .item.lt .text {
+    padding-left: 100px;
+}
+
+.SolutionSection1 .item.rt .text  {
+    padding-right: 100px;
+}
+
+.SolutionSection1 .item .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.SolutionSection1 .item .itemTitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    padding: 5px 0;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.SolutionSection1 .item .itemDescription {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #232323;
+    text-align: justify;
+}
+
+/* Soluções em Pagamento */
+
+.FrequentlyAskedQueries .sectionDescription {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.FrequentlyAskedQueries ul {
+    list-style-type: disc;
+    padding: revert;
+}
+
+.questionIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Question {
+    display: flex;
+    flex-direction: column;
+}
+
+.Question .icon {
+    font-size: 1.5rem;
+}
+
+.questionHeader {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.33;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.questionTitle {
+    flex: 1;
+    color: #232323;
+}
+
+.buttonCollapse {
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.answerWrapper {
+    color: #232323;
+    overflow: hidden;
+    text-align: justify;
+    height: auto;
+    max-height: 500px;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: max-height .5s ease-in-out;
+}
+
+.answerWrapper span {
+    display: inline-block;
+    padding: 10px;
+}
+
+.answerWrapper.hidden {
+    max-height: 0;
+}
+
+.questionIcon img {
+    width: 100%;
+}
+
+#indicadores {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/indicadores.png");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.Indicators {
+    padding: 50px 0;
+    min-height: auto;
+}
+
+.Indicators .row {
+    justify-content: center;
+}
+
+.Indicators .indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.indicator .title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+}
+
+.indicator .subtitle {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.Section {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Section .sectionTitle {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: -1px;
+}
+
+.Section .Divider {
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+
+
+.Section.visible .sectionTitle {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Section .sectionTitle.dark {
+    color: #f8f9fa;
+}
+.Section .sectionTitle.light {
+    color: var(--primary-color);
+}
+
+.Divider {
+    width: 33%;
+    height: 8px;
+    background-color: var(--secondary-color);
+    margin-bottom: 16px;
+}
+
+/* Pix */
+
+#pix .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/pix_secao.jpeg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.sectionImage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionImage img {
+    width: 250px;
+}
+
+#pix .Card {
+    min-height: 325px;
+}
+
+#pix .pixHeading {
+    color: var(--primary-color);
+    margin: 50px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.CustomTabs .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.CustomTabs .tabs:hover {
+    background-color: var(--primary-color);
+}
+
+.CustomTabs .tabs {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+    height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+}
+
+.Tab {
+    display: inline-flex;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    text-align: center;
+    transition: background .3s ease;
+}
+
+.Tab i {
+    font-size: 1.5rem;
+}
+
+.Tab.active {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.Tab:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.Tab .title {
+    margin-left: 10px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color .3s ease;
+    font-weight: 600;
+}
+
+.Tab.active .title {
+    color: #fff;
+}
+
+.Tab:hover .title, .Tab:hover .icon {
+    color: #fff;
+}
+
+.TabContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TabContent .title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.33;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.TabContent .text {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#vantagens_pix {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/pix.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.PixCard {
+    background: #2c2c31;;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    transform: translateY(0);
+    transition: border-color .3s ease, transform .3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .05);
+}
+
+.PixCard:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
+}
+
+.PixCard .ButtonLink {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.PixCard .value {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.PixCard .cardTitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 5px 10px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.PixCard .cardDescription {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.PixCard .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.PixCard .item .itemTitle {
+    font-weight: 600;
+    border-bottom: 4px solid var(--secondary-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.pixCardItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px 0;
+    padding-left: 20px;
+}
+
+.pixCardItem .description {
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    flex: 1;
+}
+
+.pixCardItem .price {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+/* Pix */
+
+/* Boleto */
+
+#boleto .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/boleto_secao.webp");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#vantagens_boleto {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/boleto.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+/* Boleto */
+
+/* Cobrança por Cartão */
+
+
+.CardSalesSimulator .row {
+    border: 3px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 30px;
+    background: #333;
+}
+
+.CardSalesSimulator .display {
+    border: 3px solid var(--secondary-color);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.CardSalesSimulator .display .displayContent {
+    padding: 20px;
+}
+
+.CardSalesSimulator .display .tabs {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.CardSalesSimulator .display .tabs .btnTab small {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.CardSalesSimulator .display .tabs .btnTab {
+    flex: 1;
+    border: none;
+    background: transparent;
+    height: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.CardSalesSimulator .display .tabs .btnTab.active {
+    background: var(--secondary-color);
+}
+
+.SalesCalculator .formTitle {
+    padding: 5px;
+    border-bottom: 3px solid var(--secondary-color);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.SalesCalculator .hint {
+    margin-top: 20px;
+    font-size: .9rem;
+    color: #fff;
+}
+
+.ValueCard {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.ValueCard .title {
+    margin-bottom: 10px;
+}
+
+.ValueCard .description {
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+.ValueCard .text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.ValueCard .description {
+    font-size: .9rem;
+}
+
+.ValueCard .value {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+.ValueCard .infos {
+    margin-top: 20px;
+}
+
+.ValueCard .infos .info {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.CustomSelect {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CustomSelect label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #f8f9fa;
+    margin-bottom: 5px;
+}
+
+.CustomSelect select {
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color .3s ease;
+    height: 42px;
+    font-size: 14px;
+    color: #f8f9fa;
+    background: rgba(0,0,0,.2);
+    padding: 5px 10px;
+    outline: none;
+}
+
+.CustomSelect select option {
+    background: #fff;
+    color: #333;
+}
+
+#cobranca_por_cartao .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/cobranca_cartao_secao.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.CardFlags {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.CardFlags .title {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+
+.CardFlags .brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.CardFlags .cardPaymentBrandLogo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.CardFlags .cardPaymentBrandLogo:not(:last-child) {
+    margin-right: 20px;
+}
+
+#vantagens_cartao {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/cobranca_cartao.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+/* Cobrança por Cartão */
+
+/* Link de Pagamento */
+
+#link_pagamento .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/link_pagamento.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.StepBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.StepBox .indicatorWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.StepBox .stepIndicator {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color: #fff;
+    background: var(--primary-color);
+    display: inline-flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.StepBox .stepContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, .03);
+    padding: 40px 60px;
+}
+
+.StepBox .stepTitle {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.StepBox .stepText {
+    line-height: 1.6;
+    text-align: center;
+}
+
+#vantagens_link {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/link_pagamento.png");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+/* Link de Pagamento */
+
+/* Section Scroller */
+
+.SectionScroller {
+    position: fixed;
+    top: calc(50% - 125px);
+    right: 20px;
+    z-index: 100;
+    display: flex;
+}
+
+.SectionScroller .scrollbar {
+    width: 6px;
+    height: 250px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+}
+
+.SectionScroller .scrollbar .progress {
+    width: 6px;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    transition: height .3s ease;
+}
+
+.SectionScroller .sectionNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+    transition: transform .3s ease;
+}
+
+.SectionScroller:hover .sectionNav .sectionNavLink {
+    max-width: 200px;
+}
+
+
+.SectionScroller .sectionNav .sectionNavLink {
+    max-width: 25px;
+    overflow: hidden;
+    height: 25px;
+    border-radius: 12.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-right: 5px;
+    font-size: .7rem;
+    font-weight: 600;
+    color: #fff;
+    background: rgba(0, 0, 0, .8);
+    transition: max-width .3s ease-in-out, background .3s ease, transform .3s ease;
+}
+
+.SectionScroller .sectionNav .sectionNavLink .icon {
+    display: inline-flex;
+    height: 100%;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+.SectionScroller .sectionNav .sectionNavLink:hover {
+    transform: translateX(-5px);
+    background: var(--primary-color);
+}
+
+.SectionScroller .sectionNav .sectionNavLink.active {
+    background: var(--primary-color);
+}
+
+/* Section Scroller */
+
+@media screen and (max-width:1199.8px) {
+    .titleText {
+        display: none;
+    }
+
+    #contratar .PriceCard {
+        margin-bottom: 20px;
+    }
+
+    .LoginButton {
+        margin-right: 20px;
+    }
+
+    .PixCard {
+        margin-bottom: 40px;
+        min-height: auto;
+    }
+    
+    .Card {
+        min-height: 520px;
+    }
+
+
+    .Header .navbarNav {
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+        left: 0;
+        right: 0;
+        z-index: 99;
+        height: 100vh;
+        background: rgba(51, 51, 51, 0.95);
+        visibility: hidden;
+        transition: transform .3s ease-in-out;
+    }
+
+    .HamburguerButton {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Header .right .navbarNav {
+        margin-right: 0;
+    }
+
+    .Header .navbarNav.active {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        background: #333;
+        top: 70px;
+        transform: translateY(0);
+    }
+
+    .QueryCard {
+        margin-bottom: 20px;
+        padding: 10px;
+        min-height: 250px;
+    }
+
+
+    .queryCardTitle {
+        margin-top: 20px;
+        margin-bottom: 64px;
+    }
+
+    #vantagens_solucoes_em_pagamento .heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .SolutionSection2 {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1181.8px) {
+    .Card .cardThumb img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .QueryListModal {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 991.8px) {
+    #contratar #planRow {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .serviceDetailsHeading {
+        width: 80%;
+        font-size: 32px;
+    }
+
+    .serviceDetailsDesc p {
+        width: 80%;
+        margin-bottom: 16px;
+        line-height: 150%;
+    }
+
+    .ServiceDetails .tags {
+        width: 80%;
+    }
+
+    .ServiceDetails .btnAction {
+        font-size: 15px;
+    }
+
+    .CardSalesSimulator .display {
+        margin-top: 20px;
+    }
+
+    .Tab i {
+        font-size: 1rem;
+    }
+
+    .Tab .title {
+        font-size: .8rem;
+    }
+    
+    .SolutionCard {
+        margin-bottom: 20px;
+    }
+
+    .SolutionSection1 .item.lt .text, .SolutionSection1 .item.rt .text {
+        padding: 0;
+    }
+
+    .SolutionSection1 .item.rt {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .SolutionSection1 .item .itemImage {
+        margin-bottom: 50px;
+    }
+
+    #vantagens_solucoes_em_pagamento .heading h1 {
+        font-size: 2rem;
+    }
+
+    .Jumbotron .heading {
+        width: 450px;
+        font-size: 44px;
+    }
+
+    .Jumbotron .description {
+        width: 500px;
+        font-size: 17px;
+    }
+
+    .Jumbotron .Button {
+        padding-right: 12px;
+        padding-left: 12px;
+        font-size: 14px;
+        min-height: 42px;
+    }
+
+    .Section .sectionTitle {
+        margin-bottom: 32px;
+        font-size: 40px;
+        letter-spacing: 0;
+    }
+
+    .OurServices .Card {
+        margin-bottom: 30px;
+    }
+
+    .Card .cardThumb img {
+        height: auto;
+    }
+
+    .SocialResponsibility {
+        flex-direction: column;
+    }
+
+    .SocialResponsibility .Content {
+        width: 600px;
+        left: calc(50% - 300px);
+    }
+
+    .socialResponsibilityText {
+        font-size: 24px;
+    }
+
+    .SocialResponsibility .socialResponsibilityThumb {
+        max-height: 350px;
+    }
+
+    .socialResponsibilityHeading {
+        text-align: center;
+    }
+
+    .SocialResponsibility .buttonWrapper {
+        justify-content: center;
+    }
+
+    .PriceCard {
+        margin-bottom: 40px;
+        min-height: auto;
+    }
+
+    .contactUsThumb {
+        margin-bottom: 50px;
+    }
+
+    .contactUsHeading, .contactUsText {
+        text-align: center;
+    }
+
+    #contato .buttonWrapper {
+        justify-content: center;
+    }
+
+    .ContactCard {
+        margin-bottom: 20px;
+    }
+
+    .BusinessModelCard {
+        margin-bottom: 20px;
+    }
+
+    .QueryListModal {
+        width: 600px;
+    }
+
+    footer {
+        padding-bottom: 100px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .SocialMedia {
+        margin-left: 0;
+    }
+
+    footer .footerBrand {
+        width: 100px;
+        margin-bottom: 50px;
+    }
+}
+/* Media Queries */
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (max-width: 999px) {
+.col-xs-15 {
+        width: 100%;
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 767.8px) {
+    
+    .Jumbotron .heading {
+        width: 380px;
+        margin-bottom: 16px;
+        font-size: 36px;
+        letter-spacing: 0;
+    }
+
+    .Jumbotron .description {
+        width: 420px;
+        font-size: 16px;
+    }
+
+    .Jumbotron .Button {
+        width: 140px;
+    }
+
+    .Section .sectionTitle {
+        margin-top: 40px;
+        margin-bottom: 24px;
+        font-size: 32px;
+    }
+
+    .SocialResponsibility .Content {
+        width: 420px;
+        left: calc(50% - 210px);
+    }
+
+    .SocialResponsibility .Content .call-to-action .image {
+        width: 100px;
+    }
+
+    .socialResponsibilityText {
+        font-size: 20px;
+    }
+
+    .serviceDetailsHeading {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+    
+    .ServiceDetails .tags {
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+
+    .serviceDetailsDesc p {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .ServiceDetails .btnAction {
+        padding-top: 8px;
+        font-size: 14px;
+    }
+
+    .contactUsHeader {
+        padding-top: 50px;
+    }
+
+    .contactUsHeading {
+        font-size: 22px;
+    }
+
+    .contactUsText {
+        font-size: 15px;
+    }
+
+    .JoinUsForm .formWrapper .Button {
+        width: 100%;
+    }
+
+    .ServiceInfo {
+        width: 100%;
+    }
+
+    .ServiceInfo .serviceInfoTitle {
+        width: 80%;
+        margin-bottom: 8px;
+        font-size: 28px;
+    }
+
+    .ServiceInfo .serviceInfoDescription {
+        width: 450px;
+        font-size: 15px;
+    }
+
+    .ServiceInfo .serviceInfoTags {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .BenefitCard .textContent .title {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .BenefitCard .textContent .title {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    #vantagens_cartao .Card {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 575.8px) {
+    .StepItem .textContent h5 {
+        font-size: 1rem;
+    }
+
+    .StepItem .icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .QueryButton span.text {
+        font-size: 18px;
+    }
+
+    .QueryListModal {
+        width: 400px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 559.8px) {
+    .Tab .title {
+        font-size: .6rem;
+    }
+
+    .CustomerSlider .ourCustomersTitle {
+        font-size: 1.5rem;
+    }
+
+    .ServiceInfo .serviceInfoDescription {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .ServiceInfo .Button{
+        align-self: inherit;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .SolutionSection1 .item {
+        padding: 0 20px;
+    }
+
+    .SolutionSection1 .item .itemImage img {
+        height: 300px;
+    }
+
+    .SolutionSection1 .item .text .itemTitle {
+        font-size: 1.3rem;
+    }
+
+    .SolutionSection1 .item .text .itemDescription {
+        font-size: 1rem;
+    }
+
+    #banner_consulta_pj .bannerTitle {
+        font-size: 1.5rem;
+    }
+
+    .bannerBenefit .text {
+        font-size: 1rem;
+    }
+
+    .CardFlags .brands {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 439.8px) {
+    .SocialResponsibility .Content {
+        width: 350px;
+        left: calc(50% - 175px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .QueryListModal {
+        width: 350px;
+    }
+
+}

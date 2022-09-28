@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="../assets/css/slick.css">
+        <link rel="stylesheet" href="../assets/css/slick-theme.css">
+        <link rel="stylesheet" href="../assets/css/jquery.modal.min.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <title>Protesto de Títulos - hubi9 Inteligência Empresarial</title>
+    </head>
+    <body>
+        <header id="navbar" class="Header navbarFixed">
+            <div class="container">
+                <div class="brand">
+                    <a href="/" alt="Logotipo hubi9"> <!-- Logotipo Hubi9 -->
+                        <img src="../assets/images/logotipo_branco.png" alt="Logotipo hubi9" />
+                    </a>
+                </div>
+                <div class="right">
+                    <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
+                        <a href="../sobre-nos.html" class="navbarNavLink Button buttonPrimary">Sobre nós</a> <!-- Links -->
+                        <a href="../servicos.html" class="navbarNavLink Button buttonPrimary active">Servicos</a>
+                        <a href="../planos-e-precos.html#precos" class="navbarNavLink Button buttonPrimary">Planos e Preços</a>
+                        <a href="../trabalhe-conosco.html" class="navbarNavLink Button buttonPrimary">Trabalhe conosco</a>
+                        <a href="../contato.html" class="navbarNavLink Button buttonPrimary">Contato</a>
+                    </nav>
+
+                    <a class="LoginButton Button buttonSecondary" href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
+                        <i class="icon fa-solid fa-user"></i>
+                        <span>Entrar</span>
+                     </a>
+                    <button data-target="#menu" class="btn-toggle HamburguerButton">
+                        <i class="icon fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main id="protesto_de_titulos">
+            <div class="ServiceDetails">
+                <section class="serviceDetailsHeader">
+                   <div class="Divider"></div>
+                   <h1 class="serviceDetailsHeading">Protesto de Títulos</h1>
+                   <div class="Divider"></div>
+                </section>
+                <section class="serviceDetailsDesc">
+                   <h1 class="serviceDetailsHeading">Protesto de Títulos</h1>
+                   <div class="Divider"></div>
+                   <p>O Art. 1º da Lei 9.492/97, "Protesto é o ato formal e solene pelo qual se prova a inadimplência e o descumprimento de obrigação originada em títulos e outros documentos de dívida" e serve também para fixação do termo de inicial de encargo, quando o título não lhe trouxer expresso. </p>
+                   <p>A finalidade do protesto, basicamente, é cumprir duas funções: a de provar publicamente o atraso do devedor e a de resguardar o direito de crédito.</p>
+                </section>
+             </div>
+
+             <section id="consulta_gratuita"> <!-- Seção de consulta gratuita -->
+                <div id="FreeQuery" class="Section">
+                    <h2 class="sectionTitle dark" style="margin-top: 70px;">Consulta gratuita</h2> <!-- Título -->
+                    <div class="Divider"></div>
+                    <div class="container">
+                        <div class="FreeQueryForm">
+                            <h3 class="formTitle">Protesto Nacional</h3>
+                            <form method="post"> <!-- Formulário de consulta gratuita -->
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="Input">
+                                            <label for="identification">CPF ou CNPJ</label>
+                                            <input name="identification" placeholder="Digite o número do seu CPF ou CNPJ" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button variant="primary" class=" Button buttonPrimary">Consultar</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div style="width: 304px; height: 78px;"><div>
+                                            <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LckwbggAAAAAIBaV9vlQ937LOFFYhbqE4tNz2GK&amp;co=aHR0cHM6Ly9zYW50YW5hZmVsaXBlOTguZ2l0aHViLmlvOjQ0Mw..&amp;hl=pt-BR&amp;type=image&amp;v=4rwLQsl5N_ccppoTAwwwMrEN&amp;theme=light&amp;size=normal&amp;badge=bottomright&amp;cb=hdfz0mnrvpx2" width="304" height="78" role="presentation" name="a-v1ynepkgkzp7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"></iframe>
+                                        </div>
+                                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                    </div>
+                                    <iframe style="display: none;"></iframe>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="como_protestar" class="HowToProtestACostumer Section">
+                <h2 class="sectionTitle light">Como protestar</h2>
+                <div></div>
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-6 steps">
+                        <div id="step_slider">
+                            <div class="CustomStepCard">
+                                <div class="icon">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                                <h5>1. Mantenha o cadastro completo do cliente na sua empresa.</h5>
+                            </div>
+                            <div class="CustomStepCard">
+                                <div class="icon">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                </div>
+                                <h5>2. Tenha um documento comprobatório da dívida.</h5>
+                            </div>
+                            <div class="CustomStepCard">
+                                <div class="icon">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <h5>3. Verifique o tempo de atraso da prestação.</h5>
+                            </div>
+                            <div class="CustomStepCard">
+                                <div class="icon">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </div>
+                                <h5>4. Acesse o sistema da hubi9 para fazer o protesto.</h5>
+                            </div>
+                            <div class="CustomStepCard">
+                                <div class="icon">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </div>
+                                <h5>5. Depois de aberto, o devedor é informado da cobrança e essas informações também são levadas a órgãos de proteção ao crédito.</h5>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                         <div class="image"><img src="../assets/images/protesto_de_cliente.png" alt="Como protestar um cliente"></div>
+                      </div>
+                   </div>
+                </div>
+            </section>
+
+            <section id="vantagens_protesto_de_titulos" class="Benefits Section"> <!-- Vantagens Protesto de Títulos -->
+                <h2 class="sectionTitle light">Vantagens</h2>
+                <div class="Divider"></div>
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-6 image"><img src="../assets/images/vantagens_protesto_de_titulos.jpg" alt="Vantagens"></div>
+                      <div class="col-md-6 items">
+                         <div class="BenefitCard"> <!-- Cards das vantagens -->
+                            <div class="icon">
+                                <i class="fa-solid fa-money-bill-trend-up"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Colabora com o crescimento da economia do país.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-chart-bar"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Alto índice de recuperação de crédito.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-hammer"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Desafogar o judiciário.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Facilidade para o devedor.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">O protesto não caduca depois de 5 anos.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-money-check"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Negativação de dívidas antigas.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </section>
+
+            <section id="o_que_pode_ser_protestado" class="SectionList dark">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-6">
+                         <div class="d-flex flex-col alignItemsCenter">
+                            <h1 class="sectionTitle">O que pode ser protestado?</h1>
+                            <div class="Divider"></div>
+                            <p class="sectionDescription">As principais opções pelas quais os consumidores podem ter o titulo protestado são:</p>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Cheques</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Notas promissórias</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Taxa condominial</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Contratos de aluguel</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Sentenças judiciais</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Letras de câmbio</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Duplicatas de prestação de serviço</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Cédulas de crédito bancário</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-6 image"><img src="../assets/images/o_que_pode_ser_protestado.png" alt="Imagem da seção"></div>
+                   </div>
+                </div>
+            </section>
+
+            <section class="FrequentlyAskedQueries Section">
+                <h2 class="sectionTitle light">Perguntas Frequentes</h2>
+                <div class="Divider"></div>
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">O que é protesto?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden">
+                               <span>
+                                  <p>É o ato formal e solene pelo qual se prova a inadimplência e o descumprimento de obrigação originada em título e outros documentos de dívida. O protesto de títulos é de competência dos tabelionatos de protesto de títulos.</p>
+                                  <p>O protesto do título pode ser lavrado por falta de aceite, por falta de devolução de duplicatas, por falta de pagamento após seu vencimento, para garantia do direito de regressivo contra endossantes, ou para finalidade especial de se requerer falência do devedor.</p>
+                               </span>
+                            </div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Qualquer pessoa ou empresa pode protestar um título ou documento de dívida?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Sim, quando o título for parcialmente pago e estando vencido, o credor pode pedir o seu protesto pelo saldo que indicar.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Posso protestar pela internet?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>A hubi9 possibilita que títulos e documentos de dívida sejam protestados online.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Em caso de ser credor, como fazer para protestar um título?</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Basta acessar o sistema da hubi9 e cadastrar os dados do devedor para protesto.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Que documentos ou títulos posso protestar</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Qualquer documento ou título que demonstre a existência de uma dívida pode ser protestado. Alguns exemplos: cheques, notas promissórias, duplicatas, contratos, confissões de dívida, sentenças judiciais, certidão de dívida ativa, encargos condominiais, entre outros.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Como é feita a intimação do devedor?</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>A intimação para o pagamento/aceite é remetida ao devedor, por prepostos do tabelião, ou na impossibilidade, via AR (Aviso de Recebimento).</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Se o devedor tiver mudado de endereço ou se encontrar em local incerto ou não sabido, como será cumprida a intimação?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>O devedor com endereço incerto ou indeterminado, ou ainda, não localizado, será intimado por edital publicado no Jornal do Protesto.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle"> Após recebida a intimação, onde deve ser efetuado o pagamento do título?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Existem duas possibilidades: pagar o boleto da intimação, ou se dirigir até o tabelionato onde foi apontado o título ou documento de dívida e realizar o pagamento conforme instrução.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">O que ocorre se não efetuar o pagamento da dívida dentro do período de intimação?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Se o pagamento não for efetuado dentro do prazo estipulado três (3) dias úteis (72 horas), contados da intimação ou da publicação do edital, o título será protestado, e o nome do devedor será incluído no banco de dados dos órgãos de proteção ao crédito.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle"> O que devo fazer se tiver um título protestado?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Deve-se dirigir ao tabelionato de protesto de títulos onde teve o título ou documento de dívida protestado, solicitar uma certidão para identificar quem o protestou, caso já tenha esse conhecimento, procurar quitar o título junto ao credor, solicitando uma carta de anuência ou o instrumento de protesto; juntamente com o título protestado, dirigir-se ao tabelionato de protesto e solicitar cancelamento do protesto do título, obtendo, após uma certidão negativa.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle"> Quanto tempo leva para o protesto ser cancelado?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Após a solicitação do cancelamento junto ao tabelionato e o recolhimento dos emolumentos, o tabelionato efetuará o cancelamento em vinte e quatro (72) horas.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Enquanto não efetuar o pagamento o nome do devedor constará no SPC, Serasa e etc.?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Sim, após protestado e enquanto não quitado o título, o nome do devedor figurará nas listagens das entidades protetoras de crédito.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Como saber se tenho um protesto em meu CPF ou CNPJ?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Através da  Hubi9, &nbsp;é possível descobrir a existência de Protesto de pessoas físicas e jurídicas dentro dos Estados integrantes. Basta consultar o CPf ou CNPJ na página principal do site.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">O protesto pode “caducar”?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>O protesto em cartório nunca caduca. Após cinco anos, o título protestado deixa de ter restrição para consulta pública. O protesto continua lavrado no cartório, constando os títulos inadimplentes – o que permite ao credor a opção de ainda executar judicialmente o título protestado, por exemplo. Isso significa que, após cinco anos do protesto, devedores negativados têm seus nomes excluídos dos arquivos mesmo sem ter quitado suas dívidas com os respectivos credores, mas a dívida continua a existir. Com o Protesto fica estabelecida a ligação eterna entre credor e devedor, que só extingue com o pagamento da dívida.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Como me certifico se é o cartório mesmo que está me cobrando?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden">
+                               <span>
+                                  <p>A intimação é realizada por meio do funcionário do cartório ou pelos Correios via AR. Nunca um protesto ocorrerá sem que seja enviada uma intimação previamente ao devedor com anuência de recebimento.</p>
+                                  <p>Se você receber um telefonema ou um e-mail informando ter um título protestado em seu nome ou em nome da sua empresa e oferecendo a oportunidade de negociar um protesto por meio de depósito ou transferência bancária, fique atento: é golpe! Em caso de dúvida, entre em contato com o Cartório que emitiu o seu protesto.</p>
+                               </span>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </section>
+             
+             
+        </main>
+
+        <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank" class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
+            <i class="fa-brands fa-whatsapp"></i>
+         </a>
+
+        <div class="SectionScroller"> <!-- Scroller lateral -->
+            <nav class="sectionNav"> <!-- Links -->
+                <a class="sectionNavLink " href="/">
+                    <span class="icon">
+                      <i class="fa-solid fa-house"></i>
+                    </span>
+                    <div class="title">Home</div>
+                 </a>
+                 <a class="sectionNavLink " href="./analise-de-credito.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <div class="title">Análise de Crédito</div>
+                 </a>
+                 <a class="sectionNavLink " href="./analise-de-credito.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-calculator"></i>
+                    </span>
+                    <div class="title">Recuperação de Recebíveis</div>
+                 </a>
+                 <a class="sectionNavLink " href="./solucoes-em-pagamento.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-credit-card"></i>
+                    </span>
+                    <div class="title">Soluções em Pagamento</div>
+                 </a>
+                 <a class="sectionNavLink " href="./planos-e-precos.html#precos">
+                      <span class="icon">
+                          <i class="fa-solid fa-dollar-sign"></i>
+                      </span>
+                      <div class="title">Planos e Preços</div>
+                </a>
+                <a class="sectionNavLink " href="../contratar.html">
+                    <span class="icon">
+                    <i class="fa-solid fa-file-contract"></i>
+                    </span>
+                    <div class="title">Contratar</div>
+                </a>
+            </nav>
+            <div class="scrollbar" style="height: 250px;">
+               <div class="progress"></div>
+            </div>
+        </div>
+
+        <footer> <!-- Rodapé -->
+            <div class="container">
+                <img class="footerBrand" src="../assets/images/logotipo_branco.png" alt="Logotipo Hubi9" />
+                <div class="SocialMedia"> <!-- Redes sociais -->
+                    <a class="SocialButton" href="https://www.facebook.com/hubi9" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="SocialButton" href="https://www.instagram.com/hubi9.2022/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="SocialButton" href="mailto:atendimento@hubi9.com.br" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <address>Rua dos Bandeirantes, 5089 Vila Lions – Votuporanga – SP<br />CEP- 15.500-210</address>
+            </div>
+        </footer>
+
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/slick.min.js"></script>
+        <script src="../assets/js/protesto-de-titulos.js"></script>
+        <script src="../assets/js/header.js"></script>
+        <script src="../assets/js/questions.js"></script>
+
+        <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+    <script type="text/javascript" charset="UTF-8">
+      document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"hubi9 - Inteligência Empresarial"});
+      });
+    </script>
+
+<!-- End Cookie Consent -->
+    <!--Start of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript" cookie-consent="functionality">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/62b536417b967b117996419e/1g69tnsqs';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+  <!--End of Tawk.to Script-->
+  <!--End of Tawk.to Script-->
+  <!--End of Tawk.to Script-->
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    </body>
+</html>

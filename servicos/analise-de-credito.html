@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="../assets/css/jquery.modal.min.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <title>Trabalhe conosco - hubi9 Inteligência Empresarial</title>
+    </head>
+    <body>
+        <header id="navbar" class="Header navbarFixed">
+            <div class="container">
+                <div class="brand">
+                    <a href="/" alt="Logotipo hubi9"> <!-- Logotipo Hubi9 -->
+                        <img src="../assets/images/logotipo_branco.png" alt="Logotipo hubi9" />
+                    </a>
+                </div>
+                <div class="right">
+                    <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
+                        <a href="../sobre-nos.html" class="navbarNavLink Button buttonPrimary">Sobre nós</a> <!-- Links -->
+                        <a href="../servicos.html" class="navbarNavLink Button buttonPrimary active">Servicos</a>
+                        <a href="../planos-e-precos.html#precos" class="navbarNavLink Button buttonPrimary">Planos e Preços</a>
+                        <a href="../trabalhe-conosco.html" class="navbarNavLink Button buttonPrimary">Trabalhe conosco</a>
+                        <a href="../contato.html" class="navbarNavLink Button buttonPrimary">Contato</a>
+                    </nav>
+
+                    <a class="LoginButton Button buttonSecondary" href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
+                        <i class="icon fa-solid fa-user"></i>
+                        <span>Entrar</span>
+                     </a>
+                    <button data-target="#menu" class="btn-toggle HamburguerButton">
+                        <i class="icon fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main id="analise_de_credito">
+            <div class="ServiceDetails">
+                <section class="serviceDetailsHeader">
+                   <div class="Divider"></div>
+                   <h1 class="serviceDetailsHeading">Análise de Crédito</h1>
+                   <div class="Divider"></div>
+                </section>
+                <section class="serviceDetailsDesc">
+                   <h1 class="serviceDetailsHeading">Análise de Crédito</h1>
+                   <div class="Divider"></div>
+                   <p>A consulta e análise de crédito, é realizada para mensurar riscos e verificar a probabilidade de um cliente não quitar o valor devido ao seu credor, visando assim, menos prejuízos e mais segurança nas suas transações. Assim, antes de fechar qualquer negócio, a hubi9 te ajuda analisar por meio do CPF ou CNPJ, mais informações sobre a conduta financeira do seu cliente.</p>
+                </section>
+             </div>
+
+             <section id="nossas_consultas" class="ourQueries Section"> <!-- Seção nossas consultas -->
+                <h2 class="sectionTitle light">Nossas consultas</h2>
+                <div class="Divider"></div>
+                <div class="container">
+                    <button class="QueryButton" data-target="#consulta_pf"> <!-- Botão consulta PF -->
+                        <img src="../assets/images/pf.png">
+                        <span class="text">Consulta PF</span> <!-- Texto botão -->
+                    </button>
+                    <button class="QueryButton" data-target="#consulta_pj"> <!-- Botão consulta PJ -->
+                        <img src="../assets/images/pj.png">
+                        <span class="text">Consulta PJ</span> <!-- Texto botão -->
+                    </button>
+                </div>
+             </section>
+             
+             <section id="banner_consultas" class="banner">
+
+                <div id="consulta_pf" class="query ServiceInfo"> <!-- Consulta PF -->
+                    <div class="serviceInfoHeader">
+                       <h2 class="serviceInfoTitle">Consulta PF</h2>
+                       <div class="Divider"></div>
+                    </div>
+                    <div class="container-fluid">
+                       <div class="row">
+                          <div class="col-sm-12 col-lg-6 col-xl-2">
+                             <div class="QueryCard">
+                                <div class="queryCardIcon"><img src="../assets/images/light.png" alt="hub Light PF"></div>
+                                <h3 class="queryCardTitle">hub Light PF</h3>
+                                <a href="#consulta_hub_light_pf" rel="modal:open" class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
+                             </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-6 col-xl-2">
+                             <div class="QueryCard">
+                                <div class="queryCardIcon"><img src="../assets/images/score.png" alt="hub Light + SCORE PF"></div>
+                                <h3 class="queryCardTitle">hub Light + SCORE PF</h3>
+                                <a href="#consulta_hub_light_score_pf" rel="modal:open" class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
+                             </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-6 col-xl-2">
+                             <div class="QueryCard">
+                                <div class="queryCardIcon"><img src="../assets/images/plus.png" alt="hub Plus PF"></div>
+                                <h3 class="queryCardTitle">hub Plus PF</h3>
+                                <a href="#consulta_hub_plus_pf" rel="modal:open" class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
+                             </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-6 col-xl-2">
+                             <div class="QueryCard">
+                                <div class="queryCardIcon"><img src="../assets/images/top.png" alt="hub Top PF"></div>
+                                <h3 class="queryCardTitle">hub Top PF</h3>
+                                <a href="#consulta_hub_top_pf" rel="modal:open" class="buttonMoreInfo Button buttonSecondary" variant="secondary">Saiba mais</a>
+                             </div>
+                          </div>
+                          <div class="col-lg-12 col-xl-2">
+                             <div class="QueryCard">
+                                <div class="queryCardIcon"><img src="../assets/images/top_completo.png" alt="hub Top Completo PF"></div>
+                                <h3 class="queryCardTitle">hub Top Completo PF</h3>
+                                <a href="#consulta_hub_top_completo" rel="modal:open" class="buttonMoreInfo Button buttonSecondary" variant="secondary">Saiba mais</a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div id="consulta_pj" class="query ServiceInfo"> <!-- Consulta PJ -->
+                    <div class="serviceInfoHeader">
+                       <h2 class="serviceInfoTitle">Consulta PJ</h2>
+                       <div class="Divider"></div>
+                    </div>
+                    <div class="container-fluid">
+                       <div class="row">
+                          <div class="col-sm-12 col-lg-6 col-xl-2">
+                             <div class="QueryCard"> <!-- Card hub light pj -->
+                                <div class="queryCardIcon"><img src="../assets/images/light.png" alt="hub Light PJ"></div>
+                                <h3 class="queryCardTitle">hub Light PJ</h3>
+                                <a href="#consulta_hub_light_pj" rel="modal:open" class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
+                             </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-6 col-xl-2">
+                             <div class="QueryCard">
+                                <div class="queryCardIcon"><img src="../assets/images/score.png" alt="hub Light + SCORE PJ"></div>
+                                <h3 class="queryCardTitle">hub Light + SCORE PJ</h3>
+                                <a href="#consulta_hub_light_score_pj" rel="modal:open" class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
+                             </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-6 col-xl-2">
+                             <div class="QueryCard">
+                                <div class="queryCardIcon"><img src="../assets/images/plus.png" alt="hub Plus PJ"></div>
+                                <h3 class="queryCardTitle">hub Plus PJ</h3>
+                                <a href="#consulta_hub_plus_pj" rel="modal:open" class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
+                             </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-6 col-xl-2">
+                             <div class="QueryCard">
+                                <div class="queryCardIcon"><img src="../assets/images/top.png" alt="hub Top PJ"></div>
+                                <h3 class="queryCardTitle">hub Top PJ</h3>
+                                <a href="#consulta_hub_top_pj" rel="modal:open" class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
+                             </div>
+                          </div>
+                          <div class="col-lg-12 col-xl-2">
+                             <div class="QueryCard">
+                                <div class="queryCardIcon"><img src="../assets/images/top_completo.png" alt="hub Top Completo PJ"></div>
+                                <h3 class="queryCardTitle">hub Top Completo PJ</h3>
+                                <a href="#consulta_hub_top_completo_pj" rel="modal:open" class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+             </section>
+
+             <section id="vantagens_analise_de_credito" style="background-image: url('../assets/images/vantagens_analise_de_risco.png'); background-repeat: no-repeat; background-size: 500px; background-position: -10% 100%;" class="BenefitsOfRiskAnalysis">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-8">
+                         <div class="header">
+                            <h1 class="benefitsTitle">Por que realizar a análise de crédito?</h1>
+                            <div class="Divider"></div>
+                         </div>
+                         <div class="BenefitItem">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <p class="benefitText">Mais segurança para a sua empresa.</p>
+                         </div>
+                         <div class="BenefitItem">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <p class="benefitText">Visibilidade dos riscos.</p>
+                         </div>
+                         <div class="BenefitItem">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <p class="benefitText">Prevenção da inadimplência.</p>
+                         </div>
+                         <div class="BenefitItem">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <p class="benefitText">Equilíbrio financeiro.</p>
+                         </div>
+                         <div class="BenefitItem">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <p class="benefitText">Proteção das finanças do cliente.</p>
+                         </div>
+                         <div class="BenefitItem">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <p class="benefitText">Garantia de fluxo de caixa estável.</p>
+                         </div>
+                         <div class="BenefitItem">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <p class="benefitText">Melhora a aquisição e o relacionamento com os clientes.</p>
+                         </div>
+                         <div class="BenefitItem">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <p class="benefitText">Redução do tempo de resposta do cliente.</p>
+                         </div>
+                         <div class="BenefitItem">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <p class="benefitText">Solução adequada a LGPD.</p>
+                         </div>
+                         <div class="BenefitItem">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <p class="benefitText">Entender a capacidade de pagamento e o valor de um novo cliente.</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </section>
+
+            <div class="BannerHubi9">
+                <div id="banner" class="container bannerRect">
+                   <img class="logo" src="../assets/images/logotipo_branco.png" alt="Logotipo hubi9">
+                   <p class="text">Com a HUBI9, sua empresa terá acesso a um portfólio de serviços e soluções, possibilitando uma melhor avaliação de risco de crédito, escolha de fornecedores, identificação de clientes em potencial, além de calcular limites, atualizar dados cadastrais, evitar fraudes, recuperação de dívidas vencidas, entre outros diferenciais.</p>
+                </div>
+            </div>
+
+            <section class="FrequentlyAskedQueries Section"> <!-- Perguntas frequentes -->
+                <h2 class="sectionTitle light">Perguntas Frequentes</h2>
+                <div class="Divider"></div>
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">O que é análise de crédito?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>A análise de crédito é uma pesquisa no histórico financeiro de uma pessoa ou empresa com objetivo de verificar identificar o perfil e as condições financeiras do cliente, a partir de suas informações básicas e de seus dados financeiros.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Como funciona a análise de crédito?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Para que a concessão de crédito seja feita com segurança, é importante se considerar uma série de informações do futuro cliente relacionadas ao seu CNPJ ou CPF,  e determinar o potencial de inadimplência do consumidor , como, por exemplo, dados financeiros e situação socioeconômica.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Quais serviços financeiros precisam de análise de crédito?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Empresas que atuam com concessão de crédito para diversos tipos de clientes, como, por exemplo, instituições financeiras, redes varejistas e concessionárias.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Como é a análise de crédito para pessoa Jurídica?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>A análise de crédito de pessoa jurídica avalia a situação do CNPJ do solicitante. Dessa forma, são verificados os dados da empresa, o score do CNPJ, a receita do negócio, o histórico financeiro da empresa e, em alguns caso, pode ser solicitado o plano de negócio.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">A consulta é em tempo real?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Sim e ainda por termos nossa própria plataforma de consulta, conseguimos controlar melhor o tempo de resposta e fornecer cada vez mais, informações mais rápidas.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Em quais faixas de risco os clientes são divididos?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden">
+                               <span>
+                                  <ul>
+                                     <li>Score 0 a 300: Alta probabilidade de inadimplência;</li>
+                                     <li>Score 301 a 700: Risco médio do cliente não cumprir suas obrigações financeiras;</li>
+                                     <li>Score 701 a 1000: Clientes com bom histórico de crédito e chances baixas de inadimplência.</li>
+                                  </ul>
+                               </span>
+                            </div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Cadastro Positivo e Score são a mesma coisa?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>O Cadastro Positivo faz parte do Score de Crédito, que é um banco de dados com informações completas com o histórico financeiro de pessoas físicas e jurídicas, e não somente as negativações e protestos, ou seja, todas as contas pagas em dia poderão ser consideradas e o consumidor, aos poucos, construirá um histórico de bom pagador.</span></div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </section>
+        </main>
+      
+        <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank" class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
+            <i class="fa-brands fa-whatsapp"></i>
+         </a>
+
+        <div class="SectionScroller"> <!-- Scroller lateral -->
+            <nav class="sectionNav"> <!-- Links -->
+                <a class="sectionNavLink " href="/">
+                    <span class="icon">
+                      <i class="fa-solid fa-house"></i>
+                    </span>
+                    <div class="title">Home</div>
+                 </a>
+                 <a class="sectionNavLink " href="./recuperacao-de-recebiveis.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-calculator"></i>
+                    </span>
+                    <div class="title">Recuperação de Recebíveis</div>
+                 </a>
+                 <a class="sectionNavLink " href="./protesto-de-titulos.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-user-xmark"></i>
+                    </span>
+                    <div class="title">Protesto de Títulos</div>
+                 </a>
+                 <a class="sectionNavLink " href="./solucoes-em-pagamento.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-credit-card"></i>
+                    </span>
+                    <div class="title">Soluções em Pagamento</div>
+                 </a>
+                 <a class="sectionNavLink " href="./planos-e-precos.html#precos">
+                      <span class="icon">
+                          <i class="fa-solid fa-dollar-sign"></i>
+                      </span>
+                      <div class="title">Planos e Preços</div>
+                </a>
+                <a class="sectionNavLink " href="../contratar.html">
+                    <span class="icon">
+                    <i class="fa-solid fa-file-contract"></i>
+                    </span>
+                    <div class="title">Contratar</div>
+                </a>
+            </nav>
+            <div class="scrollbar" style="height: 250px;">
+               <div class="progress"></div>
+            </div>
+        </div>
+
+        <footer> <!-- Rodapé -->
+            <div class="container">
+                <img class="footerBrand" src="../assets/images/logotipo_branco.png" alt="Logotipo Hubi9" />
+                <div class="SocialMedia"> <!-- Redes sociais -->
+                    <a class="SocialButton" href="https://www.facebook.com/hubi9" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="SocialButton" href="https://www.instagram.com/hubi9.2022/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="SocialButton" href="mailto:atendimento@hubi9.com.br" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <address>Rua dos Bandeirantes, 5089 Vila Lions – Votuporanga – SP<br />CEP- 15.500-210</address>
+            </div>
+        </footer>
+
+        <div id="consulta_hub_light_pf" class="modal QueryListModal"> <!-- Hub Light PF -->
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/light.png" alt="hub Light PF">
+               <h3 class="modalTitle">hub Light PF</h3>
+               <p class="modalText">Essa consulta disponibiliza as seguintes informações:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Pendência financeira</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Pendência comercial</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Pendência bancária</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Cheques sem fundos</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Protestos nacionais</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Alto volume de consultas</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <div id="consulta_hub_light_score_pf" class="modal QueryListModal"> <!-- Hub light + SCORE PF -->
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/score.png" alt="hub Light + SCORE PF">
+               <h3 class="modalTitle">hub Light + SCORE PF</h3>
+               <p class="modalText">Essa consulta disponibiliza todas as informações da HUB LIGHT PF mais:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Score com cadastro positivo</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <div id="consulta_hub_plus_pf" class="modal QueryListModal"> <!-- Hub Plus PF -->
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/plus.png" alt="hub Plus PF">
+               <h3 class="modalTitle">hub Plus PF</h3>
+               <p class="modalText">Essa consulta disponibiliza todas as informações da HUB LIGHT + SCORE PF mais:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Indicadores</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Risco de crédito</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Pontualidade do pagador</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Probabilidade de pagamento</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Relacionamento com o mercado</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Dados cadastrais</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <div id="consulta_hub_top_pf" class="modal QueryListModal"> <!-- Hub Top PF -->
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/top.png" alt="hub Top PF">
+               <h3 class="modalTitle">hub Top PF</h3>
+               <p class="modalText">Essa consulta disponibiliza todas as informações da HUB PLUS PF mais:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Identificação completa</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Situação do CPF na receita</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Confirmação de CEP</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Registro de débito</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Alerta de documentos</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Renda presumida</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <div id="consulta_hub_top_completo" class="modal QueryListModal"> <!-- Hub Top Completo -->
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/top_completo.png" alt="hub Top Completo PF">
+               <h3 class="modalTitle">hub Top Completo PF</h3>
+               <p class="modalText">Todas as vantagens da HUB TOP PF mais:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Ações na justiça</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Falências empresariais</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Alerta de documentos</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Outras grafias do nome</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Consultas anteriores por segmento</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Alertas de fraude (PF e PJ)</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Renda presumida</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Sugestão de aprovação do crédito</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Sugestão de limite de parcela / valor</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">E muito mais!</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <div id="consulta_hub_light_pj" class="modal QueryListModal"> <!-- Hub Light PJ  -->
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/light.png" alt="hub Light PJ">
+               <h3 class="modalTitle">hub Light PJ</h3>
+               <p class="modalText">Essa consulta disponibiliza as seguintes informações:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Pendência financeira</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Pendência comercial</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Pendência bancária</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Cheques sem fundos</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Protestos nacionais</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+        <div id="consulta_hub_light_score_pj" class="modal QueryListModal"> <!-- Hub Light + SCore PJ  -->
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/score.png" alt="hub Light + SCORE PJ">
+               <h3 class="modalTitle">hub Light + SCORE PJ</h3>
+               <p class="modalText">Todas as informações da HUB LIGHT PJ mais:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Score com cadastro positivo</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <div id="consulta_hub_plus_pj" class="modal QueryListModal"> <!-- Hub Plus PJ -->
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/plus.png" alt="hub Plus PJ">
+               <h3 class="modalTitle">hub Plus PJ</h3>
+               <p class="modalText">Essa consulta disponibiliza todas as informações da HUB LIGHT + SCORE PJ mais:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Anotações de inadimplência</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Recuperação judicial ou falência</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Pontualidade de pagamentos</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Relacionamento com o mercado PJ</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Informações na receita federal</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Participação em empresas</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Controle societário</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Ação judicial</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">E muito mais!</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <div id="consulta_hub_top_pj" class="modal QueryListModal"> <!-- HUB top PJ  -->
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/top.png" alt="hub Top PJ">
+               <h3 class="modalTitle">hub Top PJ</h3>
+               <p class="modalText">Essa consulta disponibiliza todas as informações da HUB PLUS PJ mais:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Faturamento presumido</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Empresas no mesmo endereço</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Quadro social com resumo de restrição</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Participação em empresas com resumo de restrição</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Limite de crédito</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">E muito mais!</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <div id="consulta_hub_top_completo_pj" class="modal QueryListModal">
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/top_completo.png" alt="hub Top Completo PJ">
+               <h3 class="modalTitle">hub Top Completo PJ</h3>
+               <p class="modalText">Essa consulta disponibiliza todas as informações da HUB TOP PJ mais:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Referência de negócios</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Recomendação de negociação</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Participação societária em outras empresas</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Tempo de relacionamento com fornecedores</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Comportamento de pagamentos</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Risco empresarial (Score)</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">E muito mais!</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/jquery.modal.min.js"></script>
+        <script src="../assets/js/header.js"></script>
+        <script src="../assets/js/queries.js"></script>
+        <script src="../assets/js/questions.js"></script>
+
+        <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+    <script type="text/javascript" charset="UTF-8">
+      document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"hubi9 - Inteligência Empresarial"});
+      });
+    </script>
+
+<!-- End Cookie Consent -->
+    <!--Start of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript" cookie-consent="functionality">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/62b536417b967b117996419e/1g69tnsqs';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+  <!--End of Tawk.to Script-->
+  <!--End of Tawk.to Script-->
+  <!--End of Tawk.to Script-->
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    </body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../assets/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../../assets/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="../../assets/css/slick.css">
+        <link rel="stylesheet" href="../../assets/css/slick-theme.css">
+        <link rel="stylesheet" href="../../assets/css/jquery.modal.min.css">
+        <link rel="stylesheet" href="../../assets/css/styles.css">
+        <title>Cobrança por Cartão - hubi9 Inteligência Empresarial</title>
+    </head>
+    <body>
+        <header id="navbar" class="Header navbarFixed">
+            <div class="container">
+                <div class="brand">
+                    <a href="/" alt="Logotipo hubi9"> <!-- Logotipo Hubi9 -->
+                        <img src="../../assets/images/logotipo_branco.png" alt="Logotipo hubi9" />
+                    </a>
+                </div>
+                <div class="right">
+                    <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
+                        <a href="../../sobre-nos.html" class="navbarNavLink Button buttonPrimary">Sobre nós</a> <!-- Links -->
+                        <a href="../../servicos.html" class="navbarNavLink Button buttonPrimary active">Servicos</a>
+                        <a href="../../planos-e-precos.html#precos" class="navbarNavLink Button buttonPrimary">Planos e Preços</a>
+                        <a href="../../contratar.html" class="navbarNavLink Button buttonPrimary">Contratar</a>
+                        <a href="../../trabalhe-conosco.html" class="navbarNavLink Button buttonPrimary">Trabalhe conosco</a>
+                        <a href="../../contato.html" class="navbarNavLink Button buttonPrimary">Contato</a>
+                    </nav>
+
+                    <a class="LoginButton Button buttonSecondary" href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
+                        <i class="icon fa-solid fa-user"></i>
+                        <span>Entrar</span>
+                     </a>
+                    <button data-target="#menu" class="btn-toggle HamburguerButton">
+                        <i class="icon fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main id="cobranca_por_cartao">
+            <div class="ServiceDetails">
+                <section  class="serviceDetailsHeader">
+                   <div class="Divider"></div>
+                   <h1 class="serviceDetailsHeading">Cobrança por Cartão</h1>
+                   <div class="Divider"></div>
+                </section>
+                <section class="serviceDetailsDesc">
+                   <h1 class="serviceDetailsHeading">Cobrança por Cartão</h1>
+                   <div class="Divider"></div>
+                   <p>Aumente o faturamento da sua empresa, vendendo no crédito e no débito sem maquininha de cartão e  com as melhores taxas do mercado.</p>
+                </section>
+             </div>
+
+             <section class="CardSalesSimulator Section">
+                <h2 class="sectionTitle light">Simulador de vendas no cartão</h2>
+                <div class="Divider"></div>
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12 col-lg-6">
+                         <div class="SalesCalculator">
+                            <h3 class="formTitle">Vendas no cartão</h3>
+                            <form method="post">
+                               <div class="Input"><label for="saleValue">Valor da venda</label><input name="saleValue" placeholder="R$ 100,00" value=""></div>
+                               <div class="CustomSelect">
+                                  <label for="paymentWay">Como deseja receber</label>
+                                  <select name="paymentWay">
+                                     <option value="cd">Débito</option>
+                                     <option value="cv">Crédito a vista</option>
+                                     <option value="2x">Crédito em 2x</option>
+                                     <option value="3x">Crédito em 3x</option>
+                                     <option value="4x">Crédito em 4x</option>
+                                     <option value="5x">Crédito em 5x</option>
+                                     <option value="6x">Crédito em 6x</option>
+                                     <option value="7x">Crédito em 7x</option>
+                                     <option value="8x">Crédito em 8x</option>
+                                     <option value="9x">Crédito em 9x</option>
+                                     <option value="10x">Crédito em 10x</option>
+                                     <option value="11x">Crédito em 11x</option>
+                                     <option value="12x">Crédito em 12x</option>
+                                  </select>
+                               </div>
+                               <button variant="default" class=" Button buttonDefault">Simular venda</button>
+                            </form>
+                            <p class="hint">Para fazer uma nova simulação, basta alterar os campos acima e clicar em simular venda novamente.</p>
+                         </div>
+                      </div>
+                      <div class="col-md-12 col-lg-6">
+                         <div class="display">
+                            <div class="tabs">
+                                <button class="btnTab active" value="30DIAS"><small>1 parcela a cada</small><br>30 dias</button>
+                                <button class="btnTab " value="2DIAS"><small>Valor total em até</small><br>2 dias úteis</button>
+                            </div>
+                            <div class="displayContent">
+                               <div id="30DIAS" class="ValueCard">
+                                  <div class="text">Seu cliente paga</div>
+                                  <div class="value">R$ 100,00</div> <!-- Valor -->
+                                  <div class="description">no crédito à vista</div>
+                                  <div class="text">Com a hubi9 você recebe</div>
+                                  <div class="value">R$ 97,52</div> <!-- Valor -->
+                                  <div class="infos">
+                                     <p class="info">Já incluso taxa de 1,99% + R$ 0,49 (Taxa promocional válida por 3 meses)</p>
+                                  </div>
+                               </div>
+                               <div id="2DIAS" style="display: none;" class="ValueCard">
+                                    <div class="text">Seu cliente paga</div>
+                                    <div class="value">R$ 100,00</div>
+                                    <div class="description">no crédito à vista</div>
+                                    <div class="text">Com a hubi9 você recebe</div>
+                                    <div class="value">R$ 95,57</div>
+                                    <div class="infos">
+                                    <p class="info">Já incluso taxa de 1,99% + R$ 0,49 (Taxa promocional válida por 3 meses)</p>
+                                    <p class="info">+ taxa de antecipação de 2% ao mês</p>
+                                    <p class="info">*Toda antecipação está sujeita a análise de crédito</p>
+                                    </div>
+                             </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <section class="CardFlags Section"> <!-- Bandeiras -->
+                      <h2 class="sectionTitle light" style="margin-top: 70px;">Bandeiras aceitas pela Hubi9</h2>
+                      <div class="Divider"></div>
+                      <div class="container">
+                         <div class="brands">
+                            <img class="cardPaymentBrandLogo" src="../../assets/images/hipercard.png" alt="Hipercard">
+                            <img class="cardPaymentBrandLogo" src="../../assets/images/mastercard.png" alt="Master Card">
+                            <img class="cardPaymentBrandLogo" src="../../assets/images/visa.png" alt="Visa">
+                            <img class="cardPaymentBrandLogo" src="../../assets/images/diners_club.png" alt="Diners Club">
+                            <img class="cardPaymentBrandLogo" src="../../assets/images/elo.png" alt="Elo">
+                            <img class="cardPaymentBrandLogo" src="../../assets/images/discover.png" alt="Discover">
+                            <img class="cardPaymentBrandLogo" src="../../assets/images/american_express.png" alt="American Express">
+                        </div>
+                      </div>
+                   </section>
+                </div>
+            </section>
+             
+            <section id="vantagens_cartao" class="Section">
+                <h2 class="sectionTitle dark">Ofereça as melhores condições de pagamento</h2>
+                <div class="Divider"></div>
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-4">
+                         <div class="Card">
+                            <div class="cardContent">
+                               <img class="icon" src="../../assets/images/cobranca_avulsa.png" alt="Cobrança avulsa">
+                               <h3 class="cardTitle">Cobrança avulsa</h3>
+                               <p class="cardDescription">Ideal para pagamento à vista ou com data próxima ao vencimento.</p>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-4">
+                         <div class="Card">
+                            <div class="cardContent">
+                               <img class="icon" src="../../assets/images/parcelamento.png" alt="Parcelamento">
+                               <h3 class="cardTitle">Parcelamento</h3>
+                               <p class="cardDescription">Permita que seu cliente parcele as suas vendas em até 12 vezes, aumentando assim a lucratividade do seu negócio.</p>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-4">
+                         <div class="Card">
+                            <div class="cardContent">
+                               <img class="icon" src="../../assets/images/assinatura.png" alt="Assinatura">
+                               <h3 class="cardTitle">Assinatura</h3>
+                               <p class="cardDescription">Potencialize agora as suas vendas, e desenvolva planos de recebimentos recorrentes.</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+
+                <section class="SectionList dark">
+                    <div class="container">
+                       <div class="row">
+                          <div class="col-md-6">
+                             <div class="d-flex flex-col alignItemsCenter">
+                                <h1 class="sectionTitle">Por que gerar cobranças por cartão com a hubi9?</h1>
+                                <div class="Divider"></div>
+                                <p class="sectionDescription"></p>
+                             </div>
+                             <div class="row">
+                                <div class="col-md-12">
+                                   <div class="ListItem">
+                                      <div class="icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                      </div>
+                                      <p class="listText dark">Segurança.</p>
+                                   </div>
+                                </div>
+                                <div class="col-md-12">
+                                   <div class="ListItem">
+                                      <div class="icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                      </div>
+                                      <p class="listText dark">Comodidade.</p>
+                                   </div>
+                                </div>
+                                <div class="col-md-12">
+                                   <div class="ListItem">
+                                      <div class="icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                      </div>
+                                      <p class="listText dark">Redução de inadimplência.</p>
+                                   </div>
+                                </div>
+                                <div class="col-md-12">
+                                   <div class="ListItem">
+                                      <div class="icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                      </div>
+                                      <p class="listText dark">Possibilidade de parcelamento.</p>
+                                   </div>
+                                </div>
+                                <div class="col-md-12">
+                                   <div class="ListItem">
+                                      <div class="icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                      </div>
+                                      <p class="listText dark">Taxa fixa sobre o valor total.</p>
+                                   </div>
+                                </div>
+                                <div class="col-md-12">
+                                   <div class="ListItem">
+                                      <div class="icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                      </div>
+                                      <p class="listText dark">Previsibilidade financeira na empresa.</p>
+                                   </div>
+                                </div>
+                                <div class="col-md-12">
+                                   <div class="ListItem">
+                                      <div class="icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                      </div>
+                                      <p class="listText dark">Aumento das modalidades de pagamento.</p>
+                                   </div>
+                                </div>
+                                <div class="col-md-12">
+                                   <div class="ListItem">
+                                      <div class="icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                      </div>
+                                      <p class="listText dark">Facilidade para conquistar novos clientes.</p>
+                                   </div>
+                                </div>
+                                <div class="col-md-12">
+                                   <div class="ListItem">
+                                      <div class="icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                      </div>
+                                      <p class="listText dark">Possibilidade de personalização.</p>
+                                   </div>
+                                </div>
+                                <div class="col-md-12">
+                                   <div class="ListItem">
+                                      <div class="icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                      </div>
+                                      <p class="listText dark">Controle financeiro.</p>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-md-6 image"><img src="../../assets/images/porque_gerar_cobranca_cartao.png" alt="Imagem da seção"></div>
+                       </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="FrequentlyAskedQueries Section">
+                <h2 class="sectionTitle light" style="margin-top: 70px;">Perguntas Frequentes</h2>
+                <div style="width: 33%; height: 8px; background-color: var(--secondary-color);" class="Divider"></div>
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Quanto eu pago por cobrança gerada?</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Emitir cobranças com a hubi9 é de graça, A taxa é descontada depois que seu cliente realizar o pagamento da cobrança. Para cobrar seus clientes via cartão de crédito ou débito, é necessário verificar o plano contratado.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Quem pode emitir cobranças por cartão na hubi9?</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Tanto pessoa física quanto pessoa jurídica podem gerar cobranças por cartão na hubi9. Para isso, basta ter uma conta aprovada no sistema.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Pessoa física pode gerar cobranças por cartão?</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Sim, é possível receber por cartão na hubi9 com o cadastro de pessoa física. Basta ter uma conta aprovada no sistema.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Quais bandeiras de cartão são aceitas?</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>A hubi9 aceita as principais bandeiras do mercado. Para operações de crédito, trabalhamos com Mastercard, Visa, Elo, Amex, Diners, Hipercard e Discover. Já para operações de débito, aceitamos Maestro e Visa Eletron.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Eu posso estornar uma cobrança de cartão?</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Sim. Você pode cancelar a cobrança de cartão desde que esteja dentro do prazo de cancelamento da operadora. E o melhor: sem pagar nada por isso.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Em quanto tempo recebo meu dinheiro?</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden">
+                               <span>
+                                  <p>Após seu cliente efetuar o pagamento da cobrança com cartão, você receberá esse valor em 30 dias corridos após o pagamento. Caso seja uma cobrança parcelada, você receberá uma parcela a cada 30 dias.</p>
+                                  <p>Se precisar do valor com urgência, você pode solicitar a antecipação integral da cobrança. Após a aprovação da análise de crédito, você recebe o valor de todas as parcelas em até 2 dias úteis, pagando uma taxa conforme plano contratado.</p>
+                               </span>
+                            </div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">A hubi9 possui sistema antifraude?</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Sim, a hubi9 possui um sistema antifraude que auxilia na detecção de atividades suspeitas, como tentativas de fraude e golpes nas compras realizadas por cartão. O antifraude da hubi9 é gratuito e será acionado em todas as suas cobranças por cartão, reduzindo os riscos de prejuízos financeiros e chargeback.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Como recebo meu dinheiro?</div>
+                               <button class="buttonCollapse">
+                                <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Você pode transferir o dinheiro da sua Conta hubi9 para o banco de sua preferência.</span></div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank" class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
+            <i class="fa-brands fa-whatsapp"></i>
+         </a>
+
+        <div class="SectionScroller"> <!-- Scroller lateral -->
+            <nav class="sectionNav"> <!-- Links -->
+                <a class="sectionNavLink " href="/">
+                    <span class="icon">
+                      <i class="fa-solid fa-house"></i>
+                    </span>
+                    <div class="title">Home</div>
+                 </a>
+                 <a class="sectionNavLink" href="./pix.html">
+                    <span class="icon">
+                      <i class="fa-brands fa-pix"></i>
+                    </span>
+                    <div class="title">Pix</div>
+                 </a>
+                 <a class="sectionNavLink " href="./boleto.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-barcode"></i>
+                    </span>
+                    <div class="title">Boleto</div>
+                 </a>
+                 <a class="sectionNavLink " href="./link-de-pagamento.html">
+                      <span class="icon">
+                          <i class="fa-solid fa-link"></i>
+                      </span>
+                      <div class="title">Link de Pagamento</div>
+                </a>
+                <a class="sectionNavLink " href="../../contratar.html">
+                    <span class="icon">
+                    <i class="fa-solid fa-file-contract"></i>
+                    </span>
+                    <div class="title">Contratar</div>
+                </a>
+            </nav>
+            <div class="scrollbar" style="height: 250px;">
+               <div class="progress"></div>
+            </div>
+        </div>
+
+
+        <footer> <!-- Rodapé -->
+            <div class="container">
+                <img class="footerBrand" src="../../assets/images/logotipo_branco.png" alt="Logotipo Hubi9" />
+                <div class="SocialMedia"> <!-- Redes sociais -->
+                    <a class="SocialButton" href="https://www.facebook.com/hubi9" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="SocialButton" href="https://www.instagram.com/hubi9.2022/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="SocialButton" href="mailto:atendimento@hubi9.com.br" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <address>Rua dos Bandeirantes, 5089 Vila Lions – Votuporanga – SP<br />CEP- 15.500-210</address>
+            </div>
+        </footer>
+
+        <script src="../../assets/js/jquery.min.js"></script>
+        <script src="../../assets/js/slick.min.js"></script>
+        <script src="../../assets/js/header.js"></script>
+        <script src="../../assets/js/cobranca-por-cartao.js"></script>
+        <script src="../../assets/js/step-slider.js"></script>
+        <script src="../../assets/js/questions.js"></script>
+
+        <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+    <script type="text/javascript" charset="UTF-8">
+      document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"hubi9 - Inteligência Empresarial"});
+      });
+    </script>
+
+<!-- End Cookie Consent -->
+    <!--Start of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript" cookie-consent="functionality">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/62b536417b967b117996419e/1g69tnsqs';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+  <!--End of Tawk.to Script-->
+  <!--End of Tawk.to Script-->
+  <!--End of Tawk.to Script-->
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    </body>
+</html>

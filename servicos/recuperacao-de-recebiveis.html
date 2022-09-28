@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="../assets/css/jquery.modal.min.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <title>Recuperação de Recebíveis - hubi9 Inteligência Empresarial</title>
+    </head>
+    <body>
+        <header id="navbar" class="Header navbarFixed">
+            <div class="container">
+                <div class="brand">
+                    <a href="/" alt="Logotipo hubi9"> <!-- Logotipo Hubi9 -->
+                        <img src="../assets/images/logotipo_branco.png" alt="Logotipo hubi9" />
+                    </a>
+                </div>
+                <div class="right">
+                    <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
+                        <a href="../sobre-nos.html" class="navbarNavLink Button buttonPrimary">Sobre nós</a> <!-- Links -->
+                        <a href="../servicos.html" class="navbarNavLink Button buttonPrimary active">Servicos</a>
+                        <a href="../planos-e-precos.html#precos" class="navbarNavLink Button buttonPrimary">Planos e Preços</a>
+                        <a href="../trabalhe-conosco.html" class="navbarNavLink Button buttonPrimary">Trabalhe conosco</a>
+                        <a href="../contato.html" class="navbarNavLink Button buttonPrimary">Contato</a>
+                    </nav>
+
+                    <a class="LoginButton Button buttonSecondary" href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
+                        <i class="icon fa-solid fa-user"></i>
+                        <span>Entrar</span>
+                     </a>
+                    <button data-target="#menu" class="btn-toggle HamburguerButton">
+                        <i class="icon fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main id="recuperacao_de_recebiveis">
+            <div class="ServiceDetails">
+                <section class="serviceDetailsHeader">
+                   <div class="Divider"></div>
+                   <h1 class="serviceDetailsHeading">Recuperação de Recebíveis</h1>
+                   <div class="Divider"></div>
+                </section>
+                <section class="serviceDetailsDesc">
+                   <h1 class="serviceDetailsHeading">Recuperação de Recebíveis</h1>
+                   <div class="Divider"></div>
+                   <p>A HUBi9 automatiza e gerencia todo o processo de cobrança de dívidas. Por meio desta ferramenta, o nome do devedor é inserido no órgão de proteção ao crédito para evitar a contratação de novos empréstimos, financiamentos e vendas a prazo até a quitação dos valores em aberto. Todo o procedimento está previsto no Código de Defesa do Consumidor (CDC).</p>
+                </section>
+            </div>
+
+            <section id="como_negativar_um_cliente" class="HowToDenyACostumer Section">
+                <h2 class="sectionTitle light">Como negativar?</h2>
+                <div class="Divider"></div>
+                <div class="container">
+                   <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                         <div class="StepItem lt">
+                            <div class="stepWrapper">
+                               <div class="icon">
+                                    <i class="fa-solid fa-user"></i>
+                               </div>
+                               <div class="textContent">
+                                  <h5>1. Mantenha o cadastro completo do cliente na sua empresa.</h5>
+                                  <p></p>
+                               </div>
+                            </div>
+                            <div class="path"><img src="data:image/png;base64,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" alt="Caminho esquerdo"></div>
+                         </div>
+                         <div class="StepItem rt">
+                            <div class="stepWrapper">
+                               <div class="icon">
+                                    <i class="fa-solid fa-file-lines"></i>
+                               </div>
+                               <div class="textContent">
+                                  <h5>2. Tenha um documento comprobatório da dívida.</h5>
+                                  <p></p>
+                               </div>
+                            </div>
+                            <div class="path"><img src="data:image/png;base64,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" alt="Caminho direito"></div>
+                         </div>
+                         <div class="StepItem lt">
+                            <div class="stepWrapper">
+                               <div class="icon">
+                                    <i class="fa-regular fa-clock"></i>
+                               </div>
+                               <div class="textContent">
+                                  <h5>3. Verifique o tempo de atraso da prestação.</h5>
+                                  <p></p>
+                               </div>
+                            </div>
+                            <div class="path"><img src="data:image/png;base64,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" alt="Caminho esquerdo"></div>
+                         </div>
+                         <div class="StepItem rt">
+                            <div class="stepWrapper">
+                               <div class="icon">
+                                    <i class="fa-solid fa-square-up-right"></i>
+                               </div>
+                               <div class="textContent">
+                                  <h5>4. Acesse o sistema da hubi9 para fazer a negativação.</h5>
+                                  <p></p>
+                               </div>
+                            </div>
+                            <div class="path"><img src="data:image/png;base64,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" alt="Caminho direito"></div>
+                         </div>
+                         <div class="StepItem lt">
+                            <div class="stepWrapper">
+                               <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                               </div>
+                               <div class="textContent">
+                                  <h5>5. Retire o nome do cliente assim que ele quitar a dívida.</h5>
+                                  <p></p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                         <div class="image"><img src="../assets/images/passo_a_passo_recuperacao_de_recebiveis.png" alt="Computador e Celular"></div>
+                      </div>
+                   </div>
+                </div>
+            </section>
+
+            <section id="beneficios_negativacao" class="BenefitsOfDenial Section">
+                <h2 class="sectionTitle light" style="margin-top: 70px;">Vantagens</h2>
+                <div style="width: 33%; height: 8px; background-color: var(--secondary-color);" class="Divider"></div>
+                <div class="container">
+                   <div class="row">
+                      <div class="col-sm-12 col-md-6"></div>
+                      <div class="col-sm-12 col-md-6">
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Precisão no processo de cobrança.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-ban"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Redução de inadimplentes.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-money-bill-1"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Maior facilidade e agilidade no pagamento.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-hourglass"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Redução de tempo e custos.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-minus"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Negativação de dívidas antigas.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-ruler"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Régua de cobrança.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-comments-dollar"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Não intermediação em despesas cartoriais.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-user-minus"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Negativação com cobrança.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-window-maximize"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Plataforma de gestão de inadimplentes.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                         <div class="BenefitCard">
+                            <div class="icon">
+                                <i class="fa-solid fa-chart-column"></i>
+                            </div>
+                            <div class="textContent">
+                               <h5 class="title">Relatório de inclusões e exclusões feitas em tempo real.</h5>
+                               <div class="text"></div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </section>
+
+            <section id="o_que_pode_ser_negativado" class="SectionList dark">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-6">
+                         <div class="d-flex flex-col alignItemsCenter">
+                            <h1 class="sectionTitle">O que pode ser negativado?</h1>
+                            <div class="Divider"></div>
+                            <p class="sectionDescription">As principais opções pelas quais os consumidores podem ser negativados são:</p>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Notas promissórias.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Duplicatas.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Boletos bancários.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Contratos.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Mensalidades escolares.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Taxas condominiais.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Aluguéis.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Letras de câmbio.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Notas fiscais.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Cheques sem fundos.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Títulos protestados em cartório ou não.</p>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                               <div class="ListItem">
+                                  <div class="icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                  </div>
+                                  <p class="listText dark">Dívidas antigas, que ainda não completaram 05 anos.</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-6 image"><img src="../assets/images/o_que_pode_ser_negativado.png" alt="Imagem da seção"></div>
+                   </div>
+                </div>
+            </section>
+
+            <section class="FrequentlyAskedQueries Section">
+                <h2 class="sectionTitle light">Perguntas Frequentes</h2>
+                <div class="Divider"></div>
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Qual o prazo limite para eu negativar um inadimplente?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>O prazo para negativação de documentos é de 4 anos e 11 meses contados a partir da data de vencimento do título.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Eu posso negativar um cupom fiscal?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden">
+                               <span>
+                                  <div>
+                                     <p>Sim, desde que observados os seguintes itens:</p>
+                                     <ul>
+                                        <li>O credor da dívida deverá certificar-se se em sua unidade da federal sobre a possibilidade de emissão do cupom fiscal para operações de vendas a prazo, em conformidade com a legislação local (estado e/ou distrito federal);</li>
+                                        <li>O cupom fiscal deverá ter as características definidas nos incisos i e ii, do § 5º, do artigo 50, do convênio s/nº, de 15 de dezembro de 1970, que diz:</li>
+                                        <li>Identificação do adquirente, por meio do número de inscrição no cadastro de contribuintes do ministério da fazenda (CPF ou CNPJ);</li>
+                                        <li>Código previsto na cláusula quadragésima quinta do convênio icms 156/94, de 7 de dezembro de 1994, e a descrição das mercadorias objeto da operação, aindaque resumida.</li>
+                                     </ul>
+                                  </div>
+                               </span>
+                            </div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Posso negativar um devedor e seu coobrigado (fiador ou avalista)?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Sim, desde que o coobrigado tenha assinado o documento da dívida.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Posso negativar e protestar um mesmo documento?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Sim, pois as bases são diferentes.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Já dei baixa na dívida, quanto tempo demora para o nome sair?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Por analogia ao código de defesa do consumidor, utilizamos o prazo de até 5 dias uteis (art 43 § 3º). Art. 15. O associado deve promover em até (05) cinco dias úteis, contados da data da efetiva regularização da inadimplência, a exclusão do nome do devedor.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">Posso fazer a negativação de clientes depois de quantos dias de atraso no pagamento?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>O cdc (código de defesa do consumidor) não estipula um prazo mínimo para que o empreendedor seja autorizado a incluir o nome de um cliente inadimplente nos órgãos de proteção ao crédito. Ou seja, se a dívida de um cliente estiver com o pagamento atrasado há um dia, ele já pode ser inserido na lista de devedores.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">O credor precisa avisar que o inadimplente será negativado?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>O credor não precisa avisar sobre a negativação, pois essa responsabilidade é do órgão de proteção de crédito.</span></div>
+                         </div>
+                         <div class="Question">
+                            <div class="questionHeader">
+                               <div class="questionTitle">É possível limpar o nome sem pagar a dívida?</div>
+                               <button class="buttonCollapse">
+                                    <i class="icon fa-solid fa-angle-right"></i>
+                               </button>
+                            </div>
+                            <div class="answerWrapper hidden"><span>Não é possível limpar o nome sem pagar a dívida. O inadimplente precisa regularizar a pendência para que ela seja baixada junto aos órgãos de proteção de crédito.</span></div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </section>
+           
+        </main>
+
+        <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank" class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
+            <i class="fa-brands fa-whatsapp"></i>
+         </a>
+
+        <div class="SectionScroller"> <!-- Scroller lateral -->
+            <nav class="sectionNav"> <!-- Links -->
+                <a class="sectionNavLink " href="/">
+                    <span class="icon">
+                      <i class="fa-solid fa-house"></i>
+                    </span>
+                    <div class="title">Home</div>
+                 </a>
+                 <a class="sectionNavLink " href="./recuperacao-de-recebiveis.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-calculator"></i>
+                    </span>
+                    <div class="title">Recuperação de Recebíveis</div>
+                 </a>
+                 <a class="sectionNavLink " href="./protesto-de-titulos.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-user-xmark"></i>
+                    </span>
+                    <div class="title">Protesto de Títulos</div>
+                 </a>
+                 <a class="sectionNavLink " href="./solucoes-em-pagamento.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-credit-card"></i>
+                    </span>
+                    <div class="title">Soluções em Pagamento</div>
+                 </a>
+                 <a class="sectionNavLink " href="./planos-e-precos.html#precos">
+                      <span class="icon">
+                          <i class="fa-solid fa-dollar-sign"></i>
+                      </span>
+                      <div class="title">Planos e Preços</div>
+                </a>
+                <a class="sectionNavLink " href="../contratar.html">
+                    <span class="icon">
+                    <i class="fa-solid fa-file-contract"></i>
+                    </span>
+                    <div class="title">Contratar</div>
+                </a>
+            </nav>
+            <div class="scrollbar" style="height: 250px;">
+               <div class="progress"></div>
+            </div>
+        </div>
+
+        <footer> <!-- Rodapé -->
+            <div class="container">
+                <img class="footerBrand" src="../assets/images/logotipo_branco.png" alt="Logotipo Hubi9" />
+                <div class="SocialMedia"> <!-- Redes sociais -->
+                    <a class="SocialButton" href="https://www.facebook.com/hubi9" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="SocialButton" href="https://www.instagram.com/hubi9.2022/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="SocialButton" href="mailto:atendimento@hubi9.com.br" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <address>Rua dos Bandeirantes, 5089 Vila Lions – Votuporanga – SP<br />CEP- 15.500-210</address>
+            </div>
+        </footer>
+
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/header.js"></script>
+        <script src="../assets/js/questions.js"></script>
+
+        <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+    <script type="text/javascript" charset="UTF-8">
+      document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"hubi9 - Inteligência Empresarial"});
+      });
+    </script>
+
+<!-- End Cookie Consent -->
+    <!--Start of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript" cookie-consent="functionality">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/62b536417b967b117996419e/1g69tnsqs';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+  <!--End of Tawk.to Script-->
+  <!--End of Tawk.to Script-->
+  <!--End of Tawk.to Script-->
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    </body>
+</html>
