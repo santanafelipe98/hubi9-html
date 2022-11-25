@@ -1,0 +1,65 @@
+hub super pf OK
+
+cheque sem fundo
+score
+
+-----------------
+
+hub super pf + score OK
+
+cheque sem fundo
+score
+score positivo
+
+
+individamento bancário
+
+Empréstimos
+Financiamentos
+Limites de crédito
+Faturas a vencer
+Compras parceladas
+
+
+individamento bancário + score
+
+Empréstimos
+Financiamentos
+Limites de crédito
+Faturas a vencer
+Compras parceladas
+Score
+
+
+PFe PJ
+
+Básico 70
+-------------
+individamento bancário 15,00
+individamento bancário + score 21,00
+
+Intermediário 130
+-------------------------
+individamento bancário 14,50
+individamento bancário + score 20,50
+
+Profissional 200
+-------------------------
+individamento bancário 13,50
+individamento bancário + score 20,00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+in
