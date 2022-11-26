@@ -1,7 +1,7 @@
 // Escurece o cabeçalho ao rolar a página
 
 function responsive(width) {
-    const BREAKPOINT = 1200
+    const BREAKPOINT = 1400
 
     if (width >= BREAKPOINT) {
         const toggle = $('.btn-toggle');

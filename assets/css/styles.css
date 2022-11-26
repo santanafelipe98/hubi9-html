@@ -503,13 +503,29 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    border-bottom: 4px solid var(--primary-color);
 }
 
-footer .container {
+footer hr {
+    margin: 50px 0;
+    border-bottom: 1px solid #333;
+}
+
+.footerNav {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+}
+
+.footerNavLink {
+    padding: 5px;
+    color: #fff;
+    transition: color .3s ease;
+}
+
+.footerNavLink:hover {
+    color: var(--primary-color);
 }
 
 footer address {
@@ -517,11 +533,7 @@ footer address {
     text-align: center;
     font-size: .9rem;
     margin-top: 20px;
-}
-
-footer .SocialMedia {
-    justify-content: center;
-    margin-left: calc(50% - 200px);
+    line-height: 1.8;
 }
 
 footer .footerBrand {
@@ -810,8 +822,7 @@ footer .footerBrand {
 /* Nossos valiosos clientes */
 
 .OurCustomers {
-    padding-top: 200px;
-    padding-bottom: 50px;
+    padding: 50px 0;
     min-height: 200px;
     position: relative;
 }
@@ -3310,12 +3321,13 @@ footer .footerBrand {
 }
 
 #videoCallBanner {
-    padding: 100px 0;
+    padding-top: 200px;
 }
 
 #videoCallText {
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 
 #videoCallGif {
@@ -3414,33 +3426,6 @@ footer .footerBrand {
     .Card .cardContent {
         min-height: 280px;
     }
-}
-
-@media screen and (max-width:1199.8px) {
-    #banner_promocional .counter {
-        bottom: -200px;
-    }
-
-    .Card .cardContent {
-        min-height: 150px;
-    }
-
-    .titleText {
-        display: none;
-    }
-
-    #contratar .PriceCard {
-        margin-bottom: 20px;
-    }
-
-    .LoginButton {
-        margin-right: 20px;
-    }
-
-    .PixCard {
-        margin-bottom: 40px;
-        min-height: auto;
-    }
 
     .Header .navbarNav {
         position: absolute;
@@ -3473,6 +3458,37 @@ footer .footerBrand {
         background: #333;
         top: 70px;
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width:1199.8px) {
+    .footerNav {
+        align-items: center;
+    }
+
+    #banner_promocional .counter {
+        bottom: -200px;
+    }
+
+    .Card .cardContent {
+        min-height: 150px;
+    }
+
+    .titleText {
+        display: none;
+    }
+
+    #contratar .PriceCard {
+        margin-bottom: 20px;
+    }
+
+    .LoginButton {
+        margin-right: 20px;
+    }
+
+    .PixCard {
+        margin-bottom: 40px;
+        min-height: auto;
     }
 
     .QueryCard {
