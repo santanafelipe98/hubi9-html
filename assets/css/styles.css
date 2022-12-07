@@ -159,6 +159,7 @@ body {
     margin: 2px 6px;
     width: auto;
     min-width: auto;
+    font-size: 12px;
 }
 
 .LoginButton {
@@ -2524,7 +2525,19 @@ footer .footerBrand {
 
 .FrequentlyAskedQueries ul {
     list-style-type: disc;
+}
+
+.FrequentlyAskedQueries ol,
+.FrequentlyAskedQueries ul {
     padding: revert;
+}
+
+.FrequentlyAskedQueries ol li {
+    display: list-item;
+}
+
+.list-style-a {
+    list-style-type: lower-alpha;
 }
 
 .questionIcon {
@@ -2576,10 +2589,25 @@ footer .footerBrand {
     overflow: hidden;
     text-align: justify;
     height: auto;
-    max-height: 500px;
+    max-height: 10000000px;
     font-size: 1rem;
     line-height: 1.5;
     transition: max-height .5s ease-in-out;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.answerWrapper p,
+.answerWrapper h1,
+.answerWrapper h2,
+.answerWrapper h3,
+.answerWrapper h4,
+.answerWrapper h5,
+.answerWrapper h6 {
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 .answerWrapper span {
@@ -3427,6 +3455,11 @@ footer .footerBrand {
         min-height: 280px;
     }
 
+    
+}
+
+@media screen and (max-width:1199.8px) {
+
     .Header .navbarNav {
         position: absolute;
         top: 0;
@@ -3459,9 +3492,7 @@ footer .footerBrand {
         top: 70px;
         transform: translateY(0);
     }
-}
 
-@media screen and (max-width:1199.8px) {
     .footerNav {
         align-items: center;
     }
