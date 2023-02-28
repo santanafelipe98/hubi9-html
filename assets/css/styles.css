@@ -1364,9 +1364,15 @@ footer .footerBrand {
     color: var(--primary-color);
 }
 
-.TextIcon.dark .title {
+.TextIcon.dark .title, .TextIcon.dark .description {
    color: #fff;
 }
+
+.TextIcon .description {
+    text-align: center;
+}
+
+
 
 .TextIcon .title {
     text-align: center;
@@ -1899,10 +1905,6 @@ footer .footerBrand {
     border-color: var(--secondary-color);
 }
 
-.queryItem:not(:last-child) {
-    margin-right: 30px;
-}
-
 .QueryListModal {
     background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/consultas.png");
     background-position: 0px 0px, 50% 50%;
@@ -1912,6 +1914,89 @@ footer .footerBrand {
 }
 
 /* Análise de crédito */
+
+
+ /* Saque FGTS */
+
+ #saque_fgts .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/saque-fgts.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+.textPrimary {
+    color: var(--primary-color);
+}
+
+.engageButton {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+    min-width: 200px;
+}
+
+.Section.dark .sectionTitle {
+    color: #fff;
+    max-width: 700px;
+}
+
+#fgts_vantagens .TextIcon {
+    min-height: 300px;
+}
+
+#fgts_vantagens {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url( "../images/fgts_vantagens.webp");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    padding: 50px 0;
+}
+
+.TitleLg {
+    font-size: 40px;
+}
+
+.Timeline {
+    margin-left: 20px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.Event {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.EventNumber {
+    position: absolute;
+    left: -40px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#fgts_img {
+    position: relative;
+}
+
+#fgts_img img {
+    width: 100%;
+}
+
 
 /* Recuperação de recebíveis */
 
@@ -3075,6 +3160,12 @@ footer .footerBrand {
 .CustomSelect select option {
     background: #fff;
     color: #333;
+}
+
+.btnCallToAction {
+    min-width: 300px;
+    height: 64px;
+    font-size: 16px;
 }
 
 #cobranca_por_cartao .serviceDetailsHeader {
