@@ -160,6 +160,24 @@ body {
     width: auto;
     min-width: auto;
     font-size: 12px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    position: relative;
+}
+
+.Header .navbarNav .navbarNavLink .bar {
+    width: 0;
+    height: 3px;
+    background: var(--secondary-color);
+    transition: width .3s ease-in-out;
+    margin-top: 5px;
+}
+.Header .navbarNav .navbarNavLink:hover .bar {
+    width: 100%;
 }
 
 .LoginButton {
@@ -689,6 +707,10 @@ footer .footerBrand {
     padding-left: 15px;
     padding-right: 15px;
     min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Card .cardContent .icon {
@@ -720,6 +742,10 @@ footer .footerBrand {
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+.OurServices .Card {
+    margin-bottom: 20px;
 }
 
 /* Nossos serviços */
@@ -1346,7 +1372,7 @@ footer .footerBrand {
     transition:  border-color .3s ease, transform .3s ease;
     padding: 20px;
     border-radius: 10px;
-    min-height: 200px;
+    min-height: 300px;
     position: relative;
 }
 
@@ -1990,7 +2016,7 @@ footer .footerBrand {
 }
 
 .TitleMd {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .Timeline {
@@ -2835,7 +2861,7 @@ footer .footerBrand {
 }
 
 #indicadores {
-    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/indicadores.png");
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/indicadores.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -3526,6 +3552,24 @@ footer .footerBrand {
     transform: translateY(-20px);
 }
 
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 14px;
+}
+
+.messageSuccess {
+    background: var(--success-color);
+    color: #fff;
+}
+
+.messageError {
+    background: var(--danger-color);
+    color: #fff;
+}
+
 .videoCallThumbnail {
     position: relative;
     margin-right: 10px;
@@ -3720,6 +3764,8 @@ footer .footerBrand {
 
     .Card .cardContent {
         min-height: 150px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .titleText {
@@ -3871,6 +3917,10 @@ footer .footerBrand {
 
     .OurServices .Card {
         margin-bottom: 30px;
+    }
+
+    #nossos_servicos .container .row {
+        justify-content: center;
     }
 
     .Card .cardThumb img {
