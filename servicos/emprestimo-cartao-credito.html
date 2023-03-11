@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
         <link rel="stylesheet" href="../assets/css/jquery.modal.min.css">
+        <link rel="stylesheet" href="../assets/css/aos.css">
         <link rel="stylesheet" href="../assets/css/styles.css">
         <title>Empréstimo no Cartão de Crédito - hubi9 Inteligência Empresarial</title>
     </head>
@@ -20,12 +21,30 @@
                 </div>
                 <div class="right">
                     <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
-                        <a href="../sobre-nos.html" class="navbarNavLink Button buttonPrimary">Sobre nós</a> <!-- Links -->
-                        <a href="../servicos.html" class="navbarNavLink Button buttonPrimary active">Serviços</a>
-                        <a href="../planos-e-precos.html#precos" class="navbarNavLink Button buttonPrimary">Planos e Preços</a>
-                        <a href="../termos-condicoes.html" class="navbarNavLink Button buttonPrimary">Termos e Condições</a>
-                        <a href="../trabalhe-conosco.html" class="navbarNavLink Button buttonPrimary">Trabalhe conosco</a>
-                        <a href="../contato.html" class="navbarNavLink Button buttonPrimary">Contato</a>
+                     <a href="../sobre-nos.html" class="navbarNavLink">
+                        Sobre nós
+                        <span class="bar"></span>
+                     </a> <!-- Links -->
+                     <a href="../servicos.html" class="navbarNavLink active">
+                        Serviços
+                        <span class="bar"></span>
+                     </a>
+                     <a href="../planos-e-precos.html#precos" class="navbarNavLink">
+                        Planos e Preços Pós
+                        <span class="bar"></span>
+                     </a>
+                     <a href="../termos-condicoes.html" class="navbarNavLink">
+                        Termos e Condições
+                        <span class="bar"></span>
+                     </a>
+                     <a href="../trabalhe-conosco.html" class="navbarNavLink">
+                        Trabalhe conosco
+                        <span class="bar"></span>
+                     </a>
+                     <a href="../contato.html" class="navbarNavLink">
+                        Contato
+                        <span class="bar"></span>
+                     </a>
                     </nav>
 
                     <a class="LoginButton Button buttonSecondary" href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
@@ -41,14 +60,14 @@
         <main>
             <div id="emprestimo_cartao_credito" class="ServiceDetails">
                 <section class="serviceDetailsHeader">
-                   <div class="Divider"></div>
-                   <h1 class="serviceDetailsHeading">Empréstimo no Cartão de Crédito</h1>
-                   <div class="Divider"></div>
+                   <div data-aos="zoom-in" class="Divider"></div>
+                   <h1 data-aos="zoom-in" class="serviceDetailsHeading">Empréstimo no Cartão de Crédito</h1>
+                   <div data-aos="zoom-in" class="Divider"></div>
                 </section>
                 <section class="serviceDetailsDesc">
-                   <h1 class="serviceDetailsHeading">Empréstimo no Cartão de Crédito</h1>
+                   <h1 data-aos="fade-up" class="serviceDetailsHeading">Empréstimo no Cartão de Crédito</h1>
                    <div class="Divider"></div>
-                   <p class="mb-4">Não perca mais tempo lidando com despesas imprevistas e preocupações financeiras. Solicite agora o seu empréstimo no cartão de crédito e tenha a tranquilidade de saber que está no controle das suas finanças. Com a HUBi9 Seu limite de cartão de crédito vira dinheiro na sua mão em poucos minutos!</p>
+                   <p data-aos="fade-up" data-aos-delay="200" class="mb-4">Não perca mais tempo lidando com despesas imprevistas e preocupações financeiras. Solicite agora o seu empréstimo no cartão de crédito e tenha a tranquilidade de saber que está no controle das suas finanças. Com a HUBi9 Seu limite de cartão de crédito vira dinheiro na sua mão em poucos minutos!</p>
                </section>
             </div>
 
@@ -63,7 +82,7 @@
                            <div class="Divider"></div>
                         </div>
                         
-                        <div id="formSimulacaoEmprestimo" class="mt-4">
+                        <div data-aos="fade-right" data-aos-delay="200" id="formSimulacaoEmprestimo" class="mt-4">
                            <div id="formSimulacaoMessage" class="message"></div>
                            <div class="form-group">
                               <label for="nome_completo" class="textPrimary">Nome Completo</label>
@@ -87,7 +106,7 @@
                         </div>
                      </div>
                      <div id="credito_img" class="col-md-12 col-lg-8">
-                        <img src="../assets/images/credito-img.png" alt="Mulher apontando dedo">
+                        <img data-aos="zoom-in" src="../assets/images/credito-img.png" alt="Mulher apontando dedo">
                      </div>
                   </div>
                </div>
@@ -100,7 +119,7 @@
                    <div class="row">
                      <div class="col-md-6 col-lg-3">
 
-                        <div class="TextIcon dark">
+                        <div data-aos="fade-up" class="TextIcon dark">
                            <img class="icon" src="../assets/images/juros-baixo.png" alt="Empréstimo com juros baixo">
                            <h3 class="title mb-3">Empréstimo com juros baixo</h3>
 
@@ -108,7 +127,7 @@
                         </div>
                      </div>
                      <div class="col-md-6 col-lg-3">
-                        <div class="TextIcon dark">
+                        <div data-aos="fade-up" data-aos-delay="200" class="TextIcon dark">
                            <img class="icon" src="../assets/images/simulacao.png" alt="Simulação de empréstimo grátis">
                            <h3 class="title mb-3">Simulação de empréstimo</h3>
 
@@ -116,7 +135,7 @@
                         </div>
                      </div>
                      <div class="col-md-6 col-lg-3">
-                        <div class="TextIcon dark">
+                        <div data-aos="fade-up" data-aos-delay="400" class="TextIcon dark">
                            <img class="icon" src="../assets/images/emprestimo-rapido.png" alt="Empréstimo rápido e fácil">
                            <h3 class="title mb-3">Empréstimo rápido e fácil</h3>
 
@@ -124,7 +143,7 @@
                         </div>
                      </div>
                      <div class="col-md-6 col-lg-3">
-                        <div class="TextIcon dark">
+                        <div data-aos="fade-up" data-aos-delay="600" class="TextIcon dark">
                            <img class="icon" src="../assets/images/emprestimo-seguro.png" alt="Empréstimo seguro">
                            <h3 class="title mb-3">Empréstimo seguro</h3>
 
@@ -134,7 +153,7 @@
 
                      <div class="col-md-6 col-lg-3">
 
-                        <div class="TextIcon dark">
+                        <div data-aos="fade-up" data-aos-delay="800" class="TextIcon dark">
                            <img class="icon" src="../assets/images/24h.png" alt="Receba em atá 24h em Conta Bancária">
                            <h3 class="title mb-3">Receba em até 24h em Conta Bancária</h3>
 
@@ -142,7 +161,7 @@
                         </div>
                      </div>
                      <div class="col-md-6 col-lg-3">
-                        <div class="TextIcon dark">
+                        <div data-aos="fade-up" data-aos-delay="1000" class="TextIcon dark">
                            <img class="icon" src="../assets/images/debit-card.png" alt="Use 100% do limite livre do seu cartão de crédito">
                            <h3 class="title mb-3">Use 100% do limite livre do seu cartão de crédito</h3>
 
@@ -150,7 +169,7 @@
                         </div>
                      </div>
                      <div class="col-md-6 col-lg-3">
-                        <div class="TextIcon dark">
+                        <div data-aos="fade-up" data-aos-delay="1200" class="TextIcon dark">
                            <img class="icon" src="../assets/images/parcelamento.png" alt="Parcele em até 12 vezes">
                            <h3 class="title mb-3">Parcele em até 12 vezes</h3>
 
@@ -158,7 +177,7 @@
                         </div>
                      </div>
                      <div class="col-md-6 col-lg-3">
-                        <div class="TextIcon dark">
+                        <div data-aos="fade-up" data-aos-delay="1400" class="TextIcon dark">
                            <img class="icon" src="../assets/images/query.png" alt="Não consultamos SPC/Serasa">
                            <h3 class="title mb-3">Não consultamos SPC/Serasa</h3>
 
@@ -170,7 +189,7 @@
                 </div>
 
                 <div class="d-flex justitfy-content-center">
-                  <a href="#simule_agora" class="Button buttonSecondary engageButton">Simule aqui</a>
+                  <a data-aos="zoom-in" href="#simule_agora" class="Button buttonSecondary engageButton">Simule aqui</a>
                 </div>
             </section>
 
@@ -298,6 +317,18 @@
                     </span>
                     <div class="title">Soluções em Pagamento</div>
                  </a>
+                 <a class="sectionNavLink " href="./saque-fgts.html">
+                  <span class="icon">
+                     <i class="fas fa-money-bill"></i>
+                  </span>
+                  <div class="title">Saque FGTS</div>
+               </a>
+               <a class="sectionNavLink " href="./emprestimo-cartao-credito.html">
+                  <span class="icon">
+                     <i class="fas fa-circle-dollar-to-slot"></i>
+                  </span>
+                  <div class="title">Empréstimo no Cartão de Crédito</div>
+               </a>
                  <a class="sectionNavLink " href="./planos-e-precos.html#precos">
                       <span class="icon">
                           <i class="fa-solid fa-dollar-sign"></i>
@@ -305,9 +336,6 @@
                       <div class="title">Planos e Preços</div>
                 </a>
             </nav>
-            <div class="scrollbar" style="height: 250px;">
-               <div class="progress"></div>
-            </div>
         </div>
 
         <footer>
@@ -389,10 +417,15 @@
       </footer>
 
         <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/aos.js"></script>
         <script src="https://unpkg.com/imask"></script>
         <script src="../assets/js/header.js"></script>
         <script src="../assets/js/questions.js"></script>
         <script src="../assets/js/emprestimo-cartao-credito.js"></script>
+
+        <script>
+         AOS.init();
+       </script>
 
         <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
     <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
@@ -401,15 +434,6 @@
       cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"hubi9 - Inteligência Empresarial"});
       });
     </script>
-
-   <script>
-      window.NuVidioId = "hubi9.comercial";
-      window.NuVidioConfigs = {
-         fabButton: false,
-      }
-   </script>
-
-   <script type="text/javascript" src="https://widget.nuvidio.com/init.js" async=""></script>
 
 <!-- End Cookie Consent -->
     <!--Start of Tawk.to Script-->

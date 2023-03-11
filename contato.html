@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="./assets/css/aos.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
         <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/apple-icon-60x60.png">
@@ -57,7 +58,7 @@
                   Trabalhe conosco
                   <span class="bar"></span>
                </a>
-               <a href="./contato.html" class="navbarNavLink">
+               <a href="./contato.html" class="navbarNavLink active">
                   Contato
                   <span class="bar"></span>
                </a>
@@ -78,8 +79,8 @@
                 <div class="container">
                    <div class="row">
                       <div class="col call-to-action">
-                         <h2 class="contactUsHeading">Você quer saber como nós podemos fazer sua empresa crescer?</h2>
-                         <p class="contactUsText">Fale com um especialista agora por meio dos nossos canais de atendimento.</p>
+                         <h2 data-aos="zoom-in" class="contactUsHeading">Você quer saber como nós podemos fazer sua empresa crescer?</h2>
+                         <p data-aos="fade-up" data-aos-delay="200" class="contactUsText">Fale com um especialista agora por meio dos nossos canais de atendimento.</p>
                       </div>
                    </div>
                 </div>
@@ -89,7 +90,7 @@
                 <div class="container">
                    <div class="row">
                       <div class="col-md-12 col-lg-4">
-                         <div class="ContactCard">
+                         <div data-aos="fade-up" class="ContactCard">
                             <div class="icon">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </div>
@@ -98,7 +99,7 @@
                          </div>
                       </div>
                       <div class="col-md-12 col-lg-4">
-                         <div class="ContactCard">
+                         <div data-aos="fade-up" data-aos-delay="200" class="ContactCard">
                             <div class="icon">
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
@@ -107,7 +108,7 @@
                          </div>
                       </div>
                       <div class="col-md-12 col-lg-4">
-                         <div class="ContactCard">
+                         <div data-aos="fade-up" data-aos-delay="400" class="ContactCard">
                             <div class="icon">
                                 <i class="fa-regular fa-message"></i>
                             </div>
@@ -133,9 +134,6 @@
                   <div class="title">Home</div>
                </a>
             </nav>
-            <div class="scrollbar" style="height: 100px;">
-               <div class="progress"></div>
-            </div>
          </div>
 
          <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
@@ -228,9 +226,15 @@
             
          </footer>
         <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/slick.min.js"></script>
         <script src="./assets/js/header.js"></script>
         <script src="./assets/js/index.js"></script>
+
+
+      <script>
+         AOS.init();
+      </script>
 
         <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
     <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
@@ -239,15 +243,6 @@
       cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"hubi9 - Inteligência Empresarial"});
       });
     </script>
-
-    <script>
-        window.NuVidioId = "hubi9.comercial";
-        window.NuVidioConfigs = {
-        fabButton: false,
-        }
-    </script>
-
-    <script type="text/javascript" src="https://widget.nuvidio.com/init.js" async=""></script>
 
 <!-- End Cookie Consent -->
     <!--Start of Tawk.to Script-->

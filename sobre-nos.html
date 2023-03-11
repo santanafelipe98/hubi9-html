@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/apple-icon-60x60.png">
@@ -41,7 +42,7 @@
                 <nav id="menu" class="navbarNav">
                     <!-- Barra de navegação -->
                     <!-- Barra de navegação -->
-               <a href="./sobre-nos.html" class="navbarNavLink">
+               <a href="./sobre-nos.html" class="navbarNavLink active">
                 Sobre nós
                 <span class="bar"></span>
              </a> <!-- Links -->
@@ -80,15 +81,15 @@
     </header>
     <main id="sobre_nos">
         <div class="ServiceDetails">
-            <section id="aboutUsHeader" class="serviceDetailsHeader">
-                <div class="Divider"></div>
-                <h1 class="serviceDetailsHeading">Sobre Nós</h1>
-                <div class="Divider"></div>
+            <section  id="aboutUsHeader" class="serviceDetailsHeader">
+                <div data-aos="zoom-in" class="Divider"></div>
+                <h1 data-aos="zoom-in" class="serviceDetailsHeading">Sobre Nós</h1>
+                <div data-aos="zoom-in" class="Divider"></div>
             </section>
             <section class="serviceDetailsDesc">
-                <h1 class="serviceDetailsHeading">Produto certo para sua empresa, seja ela de pequeno, médio ou grande
+                <h1 data-aos="fade-up" class="serviceDetailsHeading">Produto certo para sua empresa, seja ela de pequeno, médio ou grande
                     porte.</h1>
-                <div class="Divider"></div>
+                <div data-aos="fade-up" data-aos-delay="200" class="Divider"></div>
                 <p>Oferecemos toda tecnologia e suporte necessários para estruturar uma operação financeira inteligente,
                     automatizada e eficiente oferecendo soluções que ajudam as empresas a crescerem com maior eficiência
                     operacional, de maneira sustentável, vendendo mais e sempre.</p>
@@ -156,9 +157,6 @@
                 <div class="title">Trabalhe Conosco</div>
             </a>
         </nav>
-        <div class="scrollbar" style="height: 250px;">
-            <div class="progress"></div>
-        </div>
     </div>
 
     <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
@@ -253,7 +251,12 @@
 
 
     <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/header.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
     <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js"
@@ -282,14 +285,7 @@
     <!--End of Tawk.to Script-->
     <!--End of Tawk.to Script-->
     <!--End of Tawk.to Script-->
-    <script>
-        window.NuVidioId = "hubi9.comercial";
-        window.NuVidioConfigs = {
-           fabButton: false,
-        }
-     </script>
-    
-     <script type="text/javascript" src="https://widget.nuvidio.com/init.js" async=""></script>
+
     <!-- Google tag (gtag.js) -->
    <script async="https://www.googletagmanager.com/gtag/js?=AW-10996385642"></script>
    <script>

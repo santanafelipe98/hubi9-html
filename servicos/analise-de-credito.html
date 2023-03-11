@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
    <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
    <link rel="stylesheet" href="../assets/css/jquery.modal.min.css">
+   <link rel="stylesheet" href="../assets/css/aos.css">
    <link rel="stylesheet" href="../assets/css/styles.css">
    <title>Análise de Crédito - hubi9 Inteligência Empresarial</title>
 </head>
@@ -28,7 +29,7 @@
                   Sobre nós
                   <span class="bar"></span>
                </a> <!-- Links -->
-               <a href="../servicos.html" class="navbarNavLink">
+               <a href="../servicos.html" class="navbarNavLink active">
                   Serviços
                   <span class="bar"></span>
                </a>
@@ -64,14 +65,14 @@
    <main id="analise_de_credito">
       <div class="ServiceDetails">
          <section class="serviceDetailsHeader">
-            <div class="Divider"></div>
-            <h1 class="serviceDetailsHeading">Análise de Crédito</h1>
-            <div class="Divider"></div>
+            <div data-aos="zoom-in" class="Divider"></div>
+            <h1 data-aos="zoom-in" class="serviceDetailsHeading">Análise de Crédito</h1>
+            <div data-aos="zoom-in" class="Divider"></div>
          </section>
          <section class="serviceDetailsDesc">
-            <h1 class="serviceDetailsHeading">Análise de Crédito</h1>
+            <h1 data-aos="fade-up" class="serviceDetailsHeading">Análise de Crédito</h1>
             <div class="Divider"></div>
-            <p>A consulta e análise de crédito, é realizada para mensurar riscos e verificar a probabilidade de um
+            <p data-aos="fade-up" data-aos-delay="200">A consulta e análise de crédito, é realizada para mensurar riscos e verificar a probabilidade de um
                cliente não quitar o valor devido ao seu credor, visando assim, menos prejuízos e mais segurança nas suas
                transações. Assim, antes de fechar qualquer negócio, a hubi9 te ajuda analisar por meio do CPF ou CNPJ,
                mais informações sobre a conduta financeira do seu cliente.</p>
@@ -83,12 +84,12 @@
          <h2 class="sectionTitle light">Nossas consultas</h2>
          <div class="Divider"></div>
          <div class="container">
-            <button class="QueryButton" data-target="#consulta_pf">
+            <button data-aos="zoom-in" class="QueryButton" data-target="#consulta_pf">
                <!-- Botão consulta PF -->
                <img src="../assets/images/pf.png">
                <span class="text">Consulta PF</span> <!-- Texto botão -->
             </button>
-            <button class="QueryButton" data-target="#consulta_pj">
+            <button data-aos="zoom-in" data-aos-delay="200" class="QueryButton" data-target="#consulta_pj">
                <!-- Botão consulta PJ -->
                <img src="../assets/images/pj.png">
                <span class="text">Consulta PJ</span> <!-- Texto botão -->
@@ -635,22 +636,25 @@
             </span>
             <div class="title">Soluções em Pagamento</div>
          </a>
+         <a class="sectionNavLink " href="./saque-fgts.html">
+            <span class="icon">
+               <i class="fas fa-money-bill"></i>
+            </span>
+            <div class="title">Saque FGTS</div>
+         </a>
+         <a class="sectionNavLink " href="./emprestimo-cartao-credito.html">
+            <span class="icon">
+               <i class="fas fa-circle-dollar-to-slot"></i>
+            </span>
+            <div class="title">Empréstimo no Cartão de Crédito</div>
+         </a>
          <a class="sectionNavLink " href="../planos-e-precos.html#precos">
             <span class="icon">
                <i class="fa-solid fa-dollar-sign"></i>
             </span>
             <div class="title">Planos e Preços Pós</div>
          </a>
-         <a class="sectionNavLink " href="../contratar.html">
-            <span class="icon">
-               <i class="fa-solid fa-file-contract"></i>
-            </span>
-            <div class="title">Contratar</div>
-         </a>
       </nav>
-      <div class="scrollbar" style="height: 250px;">
-         <div class="progress"></div>
-      </div>
    </div>
 
    <footer>
@@ -1302,9 +1306,14 @@
          </div>
       <script src="../assets/js/jquery.min.js"></script>
       <script src="../assets/js/jquery.modal.min.js"></script>
+      <script src="../assets/js/aos.js"></script>
       <script src="../assets/js/header.js"></script>
       <script src="../assets/js/queries.js"></script>
       <script src="../assets/js/questions.js"></script>
+
+      <script>
+         AOS.init();
+       </script>
 
       <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
       <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js"
@@ -1343,14 +1352,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      window.NuVidioId = "hubi9.comercial";
-      window.NuVidioConfigs = {
-         fabButton: false,
-      }
-   </script>
-  
-   <script type="text/javascript" src="https://widget.nuvidio.com/init.js" async=""></script>
 
    <!-- Google tag (gtag.js) -->
    <script async="https://www.googletagmanager.com/gtag/js?=AW-10996385642"></script>

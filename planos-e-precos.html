@@ -7,6 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+   <link rel="stylesheet" href="./assets/css/aos.css">
    <link rel="stylesheet" href="./assets/css/styles.css">
    <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/apple-icon-57x57.png">
    <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/apple-icon-60x60.png">
@@ -58,7 +59,7 @@
                   Serviços
                   <span class="bar"></span>
                </a>
-               <a href="./planos-e-precos.html#precos" class="navbarNavLink">
+               <a href="./planos-e-precos.html#precos" class="navbarNavLink active">
                   Planos e Preços Pós
                   <span class="bar"></span>
                </a>
@@ -90,14 +91,14 @@
    <main id="planos_e_precos">
       <div class="ServiceDetails">
          <section class="serviceDetailsHeader">
-            <div class="Divider"></div>
-            <h1 class="serviceDetailsHeading">Nossos planos</h1> <!-- Título -->
-            <div class="Divider"></div>
+            <div data-aos="zoom-in" class="Divider"></div>
+            <h1 data-aos="zoom-in" class="serviceDetailsHeading">Nossos planos</h1> <!-- Título -->
+            <div data-aos="zoom-in" class="Divider"></div>
          </section>
          <section class="serviceDetailsDesc">
-            <h1 class="serviceDetailsHeading">Aqui tem a solução ideal para a sua empresa!</h1> <!-- Subtitulo -->
+            <h1 data-aos="fade-up" class="serviceDetailsHeading">Aqui tem a solução ideal para a sua empresa!</h1> <!-- Subtitulo -->
             <div class="Divider"></div>
-            <p>Conheça as condições para suas vendas avulsas ou recorrentes e escolha a melhor opção para o seu negócio.
+            <p data-aos="fade-up" data-aos-delay="200">Conheça as condições para suas vendas avulsas ou recorrentes e escolha a melhor opção para o seu negócio.
             </p> <!-- Descrição -->
          </section>
       </div>
@@ -108,7 +109,7 @@
          <div class="Divider"></div>
          <div class="container-fluid">
             <div class="row">
-               <div class="col-sm-12 col-md-6 col-lg-3">
+               <div data-aos="fade-up" class="col-sm-12 col-md-6 col-lg-3">
                   <div class="PriceCard">
                      <div class="cardTitle">Básico</div>
                      <div class="service">
@@ -306,7 +307,7 @@
                   
                </div>
                <div class="col-sm-12 col-md-6 col-lg-3">
-                  <div class="PriceCard">
+                  <div data-aos="fade-up" data-aos-delay="200" class="PriceCard">
                      <div class="cardTitle">Intermediário</div>
                      <div class="service">
                         <div class="itemTitle">Análise de Crédito PF</div>
@@ -502,7 +503,7 @@
                   </div>
                </div>
                <div class="col-sm-12 col-md-6 col-lg-3">
-                  <div class="PriceCard">
+                  <div data-aos="fade-up" data-aos-delay="400" class="PriceCard">
                      <div class="cardTitle">Profissional</div>
                      <div class="service">
                         <div class="itemTitle">Análise de Crédito PF</div>
@@ -698,14 +699,14 @@
                   </div>
                </div>
                <div class="col-sm-12 col-md-6 col-lg-3">
-                  <div class="PriceCard">
+                  <div data-aos="fade-up" data-aos-delay="600" class="PriceCard">
                      <div class="cardTitle">Personalizado</div>
                      <p class="cardDescription">Precisa de algo mais específico para sua empresa?</p>
                      <a class=" Button  buttonPrimary" href="javascript:void(Tawk_API.toggle())">Solicitar
                         negociação</a>
                   </div>
                   <br>
-                  <div class="PriceCard">
+                  <div data-aos="fade-up" data-aos-delay="800" class="PriceCard">
                      <p class="cardDescription">Contrate aqui a negociação já definida com o nosso
                         time</p>
                      <a class=" Button  buttonPrimary"
@@ -716,7 +717,7 @@
 
             <div class="row">
                <div class="col-lg-9">
-                  <div id="setupBanner" class="PriceCard">
+                  <div data-aos="fade-up" id="setupBanner" class="PriceCard">
                      <div class="cardTitle">Taxa de Setup</div>
 
                      <div class="value mt-3">R$ 150,00</div>
@@ -789,9 +790,6 @@
             <div class="title">Serviços</div>
          </a>
       </nav>
-      <div class="scrollbar" style="height: 150px;">
-         <div class="progress"></div>
-      </div>
    </div>
 
    <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
@@ -886,7 +884,12 @@
 
 
    <script src="./assets/js/jquery.min.js"></script>
+   <script src="./assets/js/aos.js"></script>
    <script src="./assets/js/header.js"></script>
+
+   <script>
+      AOS.init();
+   </script>
 
    <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js"

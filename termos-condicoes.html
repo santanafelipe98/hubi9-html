@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="./assets/css/aos.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
         <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/apple-icon-60x60.png">
@@ -49,7 +50,7 @@
                   Planos e Preços Pós
                   <span class="bar"></span>
                </a>
-               <a href="./termos-condicoes.html" class="navbarNavLink">
+               <a href="./termos-condicoes.html" class="navbarNavLink active">
                   Termos e Condições
                   <span class="bar"></span>
                </a>
@@ -76,14 +77,14 @@
         <main id="termos_condicoes">
             <div class="ServiceDetails">
                 <section class="serviceDetailsHeader">
-                   <div class="Divider"></div>
-                   <h1 class="serviceDetailsHeading">Termos e Condições</h1> <!-- Título -->
-                   <div class="Divider"></div>
+                   <div data-aos="zoom-in" class="Divider"></div>
+                   <h1 data-aos="zoom-in" class="serviceDetailsHeading">Termos e Condições</h1> <!-- Título -->
+                   <div data-aos="zoom-in" class="Divider"></div>
                 </section>
                 <section class="serviceDetailsDesc">
-                   <h1 class="serviceDetailsHeading">LGPD</h1> <!-- Subtítulo -->
+                   <h1 data-aos="fade-up" class="serviceDetailsHeading">LGPD</h1> <!-- Subtítulo -->
                    <div class="Divider"></div>
-                   <p>A LGPD (Lei Geral de Proteção de Dados Pessoais) cria um conjunto de novos conceitos jurídicos (e.g. "dados pessoais", "dados pessoais sensíveis"), estabelece as condições nas quais os dados pessoais podem ser tratados, define um conjunto de direitos para os titulares dos dados, gera obrigações específicas para os controladores dos dados e cria uma série de procedimentos e normas para que haja maior cuidado com o tratamento de dados pessoais e compartilhamento com terceiros.</p> <!-- Descrição -->
+                   <p data-aos="fade-up" data-aos-delay="200">A LGPD (Lei Geral de Proteção de Dados Pessoais) cria um conjunto de novos conceitos jurídicos (e.g. "dados pessoais", "dados pessoais sensíveis"), estabelece as condições nas quais os dados pessoais podem ser tratados, define um conjunto de direitos para os titulares dos dados, gera obrigações específicas para os controladores dos dados e cria uma série de procedimentos e normas para que haja maior cuidado com o tratamento de dados pessoais e compartilhamento com terceiros.</p> <!-- Descrição -->
                 </section>
              </div>
 
@@ -2129,9 +2130,7 @@ Barueri, 26 de Julho de 2022.
                   <div class="title">Home</div>
                </a>
             </nav>
-            <div class="scrollbar" style="height: 100px;">
-               <div class="progress"></div>
-            </div>
+
         </div>
 
       <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank" class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
@@ -2228,11 +2227,17 @@ Barueri, 26 de Julho de 2022.
          
       </footer>
         <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/header.js"></script>
         <script src="./assets/js/jquery.mask.js"></script>
         <script src="./assets/js/masks.js"></script>
         <script src="./assets/js/alert.js"></script>
         <script src="./assets/js/questions.js"></script>
+        
+
+      <script>
+         AOS.init();
+       </script>
 
         <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
     <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
@@ -2261,14 +2266,6 @@ Barueri, 26 de Julho de 2022.
   <!--End of Tawk.to Script-->
   <!--End of Tawk.to Script-->
 
-  <script>
-    window.NuVidioId = "hubi9.comercial";
-    window.NuVidioConfigs = {
-       fabButton: false,
-    }
- </script>
-
- <script type="text/javascript" src="https://widget.nuvidio.com/init.js" async=""></script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

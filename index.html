@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+   <link rel="stylesheet" href="./assets/css/aos.css">
    <link rel="stylesheet" href="./assets/css/styles.css">
    <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/apple-icon-57x57.png">
    <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/apple-icon-60x60.png">
@@ -45,7 +46,7 @@
                   Sobre nós
                   <span class="bar"></span>
                </a> <!-- Links -->
-               <a href="./servicos.html" class="navbarNavLink">
+               <a href="./servicos.html" class="navbarNavLink active">
                   Serviços
                   <span class="bar"></span>
                </a>
@@ -86,8 +87,8 @@
                <source src="./assets/videos/jumbotron.mp4">
             </video>
          </div>
-         <h1 class="heading">Venha impulsionar o futuro<br> do seu negócio!</h1> <!-- Título do Jumbotron -->
-         <p class="description">A mais completa solução para análise de crédito, gerenciamento de cobranças e
+         <h1 class="heading" data-aos="zoom-in">Venha impulsionar o futuro<br> do seu negócio!</h1> <!-- Título do Jumbotron -->
+         <p class="description" data-aos="fade-up" data-aos-delay="300">A mais completa solução para análise de crédito, gerenciamento de cobranças e
             recebimento de pagamentos.</p> <!-- Descrição do Jumbotron -->
       </section>
 
@@ -99,7 +100,7 @@
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-md-12 col-lg-3">
-                  <div class="Card">
+                  <div data-aos="fade-up" class="Card">
                      <div class="cardThumb"><img src="assets/images/consulta_veicular.jpg" alt="Consulta Veicular">
                      </div>
                      <div class="cardContent">
@@ -115,7 +116,7 @@
                   </div>
                </div>
                <div class="col-md-12 col-lg-3">
-                  <div class="Card">
+                  <div data-aos="fade-up" data-aos-delay="200" class="Card">
                      <div class="cardThumb"><img src="./assets/images/analise_de_credito.png" alt="Análise de Crédito">
                      </div>
                      <div class="cardContent">
@@ -132,7 +133,7 @@
                   </div>
                </div>
                <div class="col-md-12 col-lg-3">
-                  <div class="Card">
+                  <div data-aos="fade-up" data-aos-delay="400" class="Card">
                      <div class="cardThumb"><img src="./assets/images/recuperacao_de_recebiveis.png"
                            alt="Recuperação de Recebíveis"></div>
                      <div class="cardContent">
@@ -146,7 +147,7 @@
                   </div>
                </div>
                <div class="col-md-12 col-lg-3">
-                  <div class="Card">
+                  <div data-aos="fade-up" data-aos-delay="600" class="Card">
                      <div class="cardThumb"><img src="./assets/images/protesto_de_titulos.png"
                            alt="Protesto de Títulos"></div>
                      <div class="cardContent">
@@ -163,7 +164,7 @@
                   </div>
                </div>
                <div class="col-md-12 col-lg-3">
-                  <div class="Card">
+                  <div data-aos="fade-up" data-aos-delay="800" class="Card">
                      <div class="cardThumb"><img src="./assets/images/gestao_financeira.png"
                            alt="Soluções em Pagamento"></div>
                      <div class="cardContent">
@@ -180,7 +181,7 @@
                </div>
 
                <div class="col-md-12 col-lg-3">
-                  <div class="Card">
+                  <div data-aos="fade-up" data-aos-delay="1000" class="Card">
                      <div class="cardThumb"><img src="./assets/images/saque-fgts.jpg"
                            alt="Saque FGTS"></div>
                      <div class="cardContent">
@@ -196,7 +197,7 @@
                </div>
                
                <div class="col-md-12 col-lg-3">
-                  <div class="Card">
+                  <div data-aos="fade-up" data-aos-delay="1200" class="Card">
                      <div class="cardThumb"><img src="./assets/images/emprestimo_cartao_credito.jpg"
                            alt="Saque FGTS"></div>
                      <div class="cardContent">
@@ -224,7 +225,7 @@
 
       <section id="responsabilidade_social" class="SocialResponsibility">
          <!-- Responsabilidade social -->
-         <div class="Content">
+         <div data-aos="zoom-in" class="Content">
             <div class="call-to-action">
                <img class="image" src="./assets/images/santa_fe.png" alt="Santa Fé Logotipo">
                <p class="socialResponsibilityText">A hubi9 apoia esse projeto.</p>
@@ -322,9 +323,7 @@
       </section>
 
       <div class="SectionScroller">
-         <!-- Scroller lateral -->
          <nav class="sectionNav">
-            <!-- Links -->
             <a class="sectionNavLink " href="/">
                <span class="icon">
                   <i class="fa-solid fa-house"></i>
@@ -361,16 +360,25 @@
                </span>
                <div class="title">Soluções em Pagamento</div>
             </a>
-            <a class="sectionNavLink " href="./planos-e-precos.html#precos">
+            <a class="sectionNavLink " href="./servicos/saque-fgts.html">
+               <span class="icon">
+                  <i class="fas fa-money-bill"></i>
+               </span>
+               <div class="title">Saque FGTS</div>
+            </a>
+            <a class="sectionNavLink " href="./servicos/emprestimo-cartao-credito.html">
+               <span class="icon">
+                  <i class="fas fa-circle-dollar-to-slot"></i>
+               </span>
+               <div class="title">Empréstimo no Cartão de Crédito</div>
+            </a>
+            <a class="sectionNavLink " href="./saque-fgts.html">
                <span class="icon">
                   <i class="fa-solid fa-dollar-sign"></i>
                </span>
                <div class="title">Planos e Preços Pós</div>
             </a>
          </nav>
-         <div class="scrollbar" style="height: 250px;">
-            <div class="progress"></div>
-         </div>
       </div>
 
       <section id="indicadores" class="Indicators Section">
@@ -500,12 +508,18 @@
       
       
    </footer>
+
    <script src="./assets/js/jquery.min.js"></script>
    <script src="./assets/js/slick.min.js"></script>
+   <script src="./assets/js/aos.js"></script>
    <script src="./assets/js/header.js"></script>
    <script src="./assets/js/index.js"></script>
    <script src="./assets/js/jquery.mask.js"></script>
    <script src="./assets/js/masks.js"></script>
+
+   <script>
+      AOS.init();
+    </script>
 
    <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js"
@@ -534,15 +548,6 @@
    <!--End of Tawk.to Script-->
    <!--End of Tawk.to Script-->
    <!--End of Tawk.to Script-->
-
-   <script>
-      window.NuVidioId = "hubi9.comercial";
-      window.NuVidioConfigs = {
-         fabButton: false,
-      }
-   </script>
-  
-   <script type="text/javascript" src="https://widget.nuvidio.com/init.js" async=""></script>
    <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
