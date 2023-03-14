@@ -362,10 +362,11 @@ a.Button {
 
 .stepImage {
     position: relative;
+    text-align: center;
 }
 
 .stepImage img {
-    width: 100%;
+    width: 400px;
 }
 
 .QueryCard {
@@ -854,6 +855,11 @@ footer .footerBrand {
     padding: 50px 0;
     min-height: 200px;
     position: relative;
+    background: var(--secondary-color);
+}
+
+.OurCustomers .Divider {
+    background: var(--primary-color);
 }
 
 .OurCustomers .indicator {
@@ -891,7 +897,7 @@ footer .footerBrand {
 }
 
 .CustomerSlider .ourCustomersTitle {
-    color: var(--primary-color);
+    color: #fff;
     text-align: center;
     margin-bottom: 0.938rem;
     font-size: 2.2043rem;
@@ -903,9 +909,10 @@ footer .footerBrand {
 }
 
 .CustomerSlider .ourCustomersDescription {
-    font-size: .9rem;
+    max-width: 600px;
+    font-size: 15px;
     margin-bottom: 50px;
-    color: #696969;
+    color: #fff;
     text-align: center;
 }
 
@@ -1006,7 +1013,7 @@ footer .footerBrand {
 /* Nossos servicos */
 
 #nossos_servicos {
-    padding-top: 200px;
+    padding-top: 50px;
 }
 
 /* Nossos servicos */
@@ -2867,41 +2874,59 @@ footer .footerBrand {
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
-    background-attachment: scroll, fixed;
+    background-attachment: fixed;
 }
 
 .Indicators {
     padding: 50px 0;
+    padding-top: 100px;
     min-height: auto;
+    position: relative;
+}
+
+.Indicators .arrow-top {
+    position: absolute;
+    width: 150px;
+    top: -1px;
+    left: calc(50% - 75px);
 }
 
 .Indicators .row {
     justify-content: center;
 }
 
+.Indicators .description {
+    width: 600px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    color: #c4ced8;
+}
+
+.Indicators .logo {
+    width: 200px;
+}
+
 .Indicators .indicator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    width: 140px;
+    text-align: center;
+    color: #c4ced8;
     margin-bottom: 10px;
 }
 
-.indicator .title {
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 1.2;
-    color: #fff;
-    text-align: center;
+.indicator .icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 30px;
+    color: white;
 }
 
-.indicator .subtitle {
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: #fff;
+.indicator p {
+    font-size: 14px;
 }
 
 .Section {
@@ -3444,7 +3469,7 @@ footer .footerBrand {
     position: fixed;
     top: 0;
     bottom: 0;
-    right: 30px;
+    right: 0;
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -3463,8 +3488,8 @@ footer .footerBrand {
 }
 
 .sectionNavLink {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4138,6 +4163,31 @@ footer .footerBrand {
 }
 
 @media screen and (max-width: 575.8px) {
+    #indicatorsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stepImage img {
+        width: 100%;
+    }
+
+    .container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+
+    #jumbotron .heading {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #jumbotron .description {
+        width: 300px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
     .StepItem .textContent h5 {
         font-size: 1rem;
     }
