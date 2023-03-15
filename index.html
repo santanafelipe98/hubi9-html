@@ -222,8 +222,8 @@
       <section class="HowItWorks Section">
          <h2 class="sectionTitle light">Como contratar?</h2>
          <div class="Divider"></div>
-         <div class="container">
-            <div class="stepImage"><img src="./assets/images/passo_a_passo_principal.png"></div>
+         <div class="container d-flex justify-content-center">
+            <div class="stepImage"></div>
          </div>
       </section>
 
@@ -302,11 +302,11 @@
             <div class="container">
                <div class="d-flex row justifyContentCenter">
                   <div class="col-md-8 d-flex flex-col alignItemsCenter">
-                     <h2 class="ourCustomersTitle">Nossos Valiosos Clientes</h2>
-                     <div class="Divider"></div>
+                     <h2 data-aos="fade-right" class="ourCustomersTitle">Nossos Valiosos Clientes</h2>
+                     <div data-aos="fade-right" class="Divider"></div>
 
                      <div class="d-flex justify-content-center">
-                        <p class="ourCustomersDescription">
+                        <p data-aos="fade-up" data-aos-delay="200" class="ourCustomersDescription">
                            Nós valorizamos profundamente a confiança que nossos clientes depositam em nós e nos
                            esforçamos
                            para criar relacionamentos duradouros e mutuamente benéficos. Temos a sorte de trabalhar com
@@ -317,22 +317,28 @@
 
                   </div>
                </div>
-               <div id="customer_slider">
-                  <img className="image" src="./assets/images/arezzo.png" alt="Logomarca da Arezzo" />
-                  <img className="image" src="./assets/images/boticario.png" alt="Logomarca da Boticário" />
-                  <img className="image" src="./assets/images/consul.png" alt="Logomarca da Consul" />
-                  <img className="image" src="./assets/images/friboi.png" alt="Logomarca da Friboi" />
-                  <img className="image" src="./assets/images/apae.png" alt="Logomarca da APAE" />
-                  <img className="image" src="./assets/images/brasfer.png" alt="Logomarca da BRASFER" />
-                  <img className="image" src="./assets/images/eletrica_bahiana.png"
-                     alt="Logomarca da Elétrica Bahiana" />
-                  <img className="image" src="./assets/images/ifood.png" alt="Logomarca da ifood" />
-                  <img className="image" src="./assets/images/intelbras.png" alt="Logomarca da Intelbras" />
-                  <img className="image" src="./assets/images/kibon.png" alt="Logomarca da Kibon" />
-                  <img className="image" src="./assets/images/tramontina.png" alt="Logomarca da Tramontina" />
-                  <img className="image" src="./assets/images/salesiano.png" alt="Logomarca da Salesiano" />
-                  <img className="image" src="./assets/images/maxi_atacado.png" alt="Logomarca da Maxi Atacado" />
+               <div class="row justify-content-center">
+                  <div class="col-lg-6 overflow-hidden">
+                     <div id="customer_slider">
+                        <img className="image" src="./assets/images/arezzo.png" alt="Logomarca da Arezzo" />
+                        <img className="image" src="./assets/images/boticario.png" alt="Logomarca da Boticário" />
+                        <img className="image" src="./assets/images/consul.png" alt="Logomarca da Consul" />
+                        <img className="image" src="./assets/images/friboi.png" alt="Logomarca da Friboi" />
+                        <img className="image" src="./assets/images/apae.png" alt="Logomarca da APAE" />
+                        <img className="image" src="./assets/images/brasfer.png" alt="Logomarca da BRASFER" />
+                        <img className="image" src="./assets/images/eletrica_bahiana.png"
+                           alt="Logomarca da Elétrica Bahiana" />
+                        <img className="image" src="./assets/images/ifood.png" alt="Logomarca da ifood" />
+                        <img className="image" src="./assets/images/intelbras.png" alt="Logomarca da Intelbras" />
+                        <img className="image" src="./assets/images/kibon.png" alt="Logomarca da Kibon" />
+                        <img className="image" src="./assets/images/tramontina.png" alt="Logomarca da Tramontina" />
+                        <img className="image" src="./assets/images/salesiano.png" alt="Logomarca da Salesiano" />
+                        <img className="image" src="./assets/images/maxi_atacado.png" alt="Logomarca da Maxi Atacado" />
+                     </div>
+                  </div>
                </div>
+
+
             </div>
          </div>
       </section>
@@ -399,13 +405,13 @@
       <section id="indicadores" class="Indicators Section">
          <img src="./assets/images/seta-baixo.svg" alt="Seta baixo" class="arrow-top">
 
-         <img class="logo" src="./assets/images/logotipo_branco.png" alt="Logotipo HUBi9">
+         <img data-aos="zoom-in" class="logo" src="./assets/images/logotipo_branco.png" alt="Logotipo HUBi9">
          <!-- Indicadores -->
-         <h2 class="sectionTitle dark">Nossos indicadores</h2>
-         <div class="Divider"></div>
+         <h2 data-aos="fade-right" data-aos-delay="200" class="sectionTitle dark">Nossos indicadores</h2>
+         <div data-aos="fade-right" data-aos-delay="200" class="Divider"></div>
          <div class="container">
             <div class="d-flex justify-content-center">
-               <p class="description">
+               <p data-aos="fade-up" data-aos-delay="400" class="description">
                   Aqui na nossa empresa, estamos comprometidos com a excelência em todos os aspectos do nosso negócio.
                   Nosso objetivo é sempre superar as expectativas e fornecer serviços de qualidade que ajudem nossos
                   clientes a alcançarem seus objetivos de negócios.
@@ -413,7 +419,8 @@
             </div>
 
 
-            <div id="indicatorsContainer" class="d-flex justify-content-center">
+            <div data-aos="fade-right" data-aos-delay="600" id="indicatorsContainer"
+               class="d-flex justify-content-center">
                <div class="indicator">
                   <!-- Indicador -->
                   <i class="far fa-clock icon"></i>
@@ -528,6 +535,42 @@
                </a>
                <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
                   <i class="fa-brands fa-whatsapp"></i>
+               </a>
+
+               <a href="/" class="SocialButton">
+                  <i class="fa-solid fa-house"></i>
+               </a>
+
+               <a href="./servicos/consulta-veicular.html" class="SocialButton">
+                  <i class="fa-solid fa-car"></i>
+               </a>
+
+               <a href="./servicos/analise-de-credito.html" class="SocialButton">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </a>
+
+               <a href="./servicos/recuperacao-de-recebiveis.html" class="SocialButton">
+                  <i class="fa-solid fa-calculator"></i>
+               </a>
+
+               <a href="./servicos/protesto-de-titulos.html" class="SocialButton">
+                  <i class="fa-solid fa-user-xmark"></i>
+               </a>
+
+               <a href="./servicos/solucoes-em-pagamento.html" class="SocialButton">
+                  <i class="fa-solid fa-credit-card"></i>
+               </a>
+
+               <a href="./servicos/saque-fgts.html" class="SocialButton">
+                  <i class="fas fa-money-bill"></i>
+               </a>
+
+               <a href="./servicos/emprestimo-cartao-credito.html" class="SocialButton">
+                  <i class="fas fa-circle-dollar-to-slot"></i>
+               </a>
+
+               <a href="./saque-fgts.html" class="SocialButton">
+                  <i class="fa-solid fa-dollar-sign"></i>
                </a>
             </div>
 

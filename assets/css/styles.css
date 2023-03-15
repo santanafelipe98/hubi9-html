@@ -362,11 +362,12 @@ a.Button {
 
 .stepImage {
     position: relative;
-    text-align: center;
-}
-
-.stepImage img {
-    width: 400px;
+    height: 500px;
+    width: 100%;
+    background: url('../images/passo_a_passo_horizontal.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
 .QueryCard {
@@ -630,6 +631,7 @@ footer .footerBrand {
     height: 38px;
     border-radius: 19px;
     transition: background .3s ease-in;
+    margin-bottom: 10px;
 }
 
 .SocialButton:hover {
@@ -3713,6 +3715,10 @@ footer .footerBrand {
 }
 
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 
 
 .videoCallButton {
@@ -4017,6 +4023,7 @@ footer .footerBrand {
         width: 100px;
         margin-bottom: 50px;
     }
+    
 }
 /* Media Queries */
 
@@ -4032,6 +4039,13 @@ footer .footerBrand {
 }
 
 @media screen and (max-width: 767.8px) {
+    .stepImage {
+        height: 1000px;
+        background: url('../images/passo_a_passo_principal.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
     #como_antecipar_fgts .TitleLg, .subtitle {
         text-align: center;
     }
@@ -4208,6 +4222,10 @@ footer .footerBrand {
 }
 
 @media screen and (max-width: 559.8px) {
+    .stepImage {
+        height: 700px;
+    }
+
     .TitleLg {
         font-size: 24px;
     }

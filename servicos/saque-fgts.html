@@ -1,496 +1,592 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
-        <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
-        <link rel="stylesheet" href="../assets/css/jquery.modal.min.css">
-        <link rel="stylesheet" href="../assets/css/aos.css">
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <title>Saque FGTS - hubi9 Inteligência Empresarial</title>
-    </head>
-    <body>
-        <header id="navbar" class="Header navbarFixed">
-            <div class="container">
-                <div class="brand">
-                    <a href="/" alt="Logotipo hubi9"> <!-- Logotipo Hubi9 -->
-                        <img src="../assets/images/logotipo_branco.png" alt="Logotipo hubi9" />
-                    </a>
-                </div>
-                <div class="right">
-                    <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
-                     <a href="../sobre-nos.html" class="navbarNavLink">
-                        Sobre nós
-                        <span class="bar"></span>
-                     </a> <!-- Links -->
-                     <a href="../servicos.html" class="navbarNavLink">
-                        Serviços
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../planos-e-precos.html#precos" class="navbarNavLink">
-                        Planos e Preços Pós
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../termos-condicoes.html" class="navbarNavLink">
-                        Termos e Condições
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../trabalhe-conosco.html" class="navbarNavLink">
-                        Trabalhe conosco
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../contato.html" class="navbarNavLink">
-                        Contato
-                        <span class="bar"></span>
-                     </a>
-                    </nav>
 
-                    <a class="LoginButton Button buttonSecondary" href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
-                        <i class="icon fa-solid fa-user"></i>
-                        <span>Entrar</span>
-                     </a>
-                    <button data-target="#menu" class="btn-toggle HamburguerButton">
-                        <i class="icon fa-solid fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </header>
-        <main id="saque_fgts">
-            <div class="ServiceDetails">
-                <section class="serviceDetailsHeader">
-                   <div data-aos="zoom-in" class="Divider"></div>
-                   <h1 data-aos="zoom-in" class="serviceDetailsHeading">Saque FGTS</h1>
-                   <div data-aos="zoom-in" class="Divider"></div>
-                </section>
-                <section class="serviceDetailsDesc">
-                   <h1 data-aos="fade-up" class="serviceDetailsHeading">Saque FGTS</h1>
-                   <div class="Divider"></div>
-                   <p data-aos="fade-up" data-aos-delay="200" class="mb-4">Na nossa instituição financeira, oferecemos serviços de saque do FGTS com praticidade e segurança. Com apenas alguns cliques, você pode solicitar o saque do seu FGTS e receber o dinheiro diretamente na sua conta bancária. Além disso, oferecemos taxas de juros competitivas e prazos flexíveis de pagamento para que você possa escolher a opção que melhor se adapta às suas necessidades financeiras.</p>
-                
-                  <a data-aos="zoom-in" data-aos-delay="400" href="https://api.whatsapp.com/send?phone=5511964316542&text=Olá!%20Quero%20antecipar%20meu%20FGTS" target="_blank" class="Button buttonSecondary btnCallToAction">Antecipar agora</a>
-               </section>
-            </div>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
+   <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
+   <link rel="stylesheet" href="../assets/css/jquery.modal.min.css">
+   <link rel="stylesheet" href="../assets/css/aos.css">
+   <link rel="stylesheet" href="../assets/css/styles.css">
+   <title>Saque FGTS - hubi9 Inteligência Empresarial</title>
+</head>
 
-            <section id="ComoAntecipar" class="Section">
-                <h2 class="sectionTitle light">Como antecipar?</h2>
-                <div class="Divider"></div>
-                <div class="container">
-                  <div class="row">
-                     <div class="col-lg-4">
-                        <div data-aos="fade-up" class="GenericCard">
-                           <h3 class="Title"><span class="textSecondary TitleMd">1.</span> Confirme sua opção pelo Saque Aniversário (app FGTS)</h3>
-                           <img class="Icon" src="../assets/images/checkmark.png" alt="Checkmark">
-                           <p class="Text">
-                              Você pode fazer isso pelo próprio celular, baixando o app FGTS. O Saque Aniversário permite que você retire uma parte do seu fundo de garantia todos os anos, no mês do seu aniversário. O valor depende do seu saldo no FGTS.
-                           </p>
-                        </div>
+<body>
+   <header id="navbar" class="Header navbarFixed">
+      <div class="container">
+         <div class="brand">
+            <a href="/" alt="Logotipo hubi9"> <!-- Logotipo Hubi9 -->
+               <img src="../assets/images/logotipo_branco.png" alt="Logotipo hubi9" />
+            </a>
+         </div>
+         <div class="right">
+            <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
+               <a href="../sobre-nos.html" class="navbarNavLink">
+                  Sobre nós
+                  <span class="bar"></span>
+               </a> <!-- Links -->
+               <a href="../servicos.html" class="navbarNavLink active">
+                  Serviços
+                  <span class="bar"></span>
+               </a>
+               <a href="../planos-e-precos.html#precos" class="navbarNavLink">
+                  Planos e Preços Pós
+                  <span class="bar"></span>
+               </a>
+               <a href="../termos-condicoes.html" class="navbarNavLink">
+                  Termos e Condições
+                  <span class="bar"></span>
+               </a>
+               <a href="../trabalhe-conosco.html" class="navbarNavLink">
+                  Trabalhe conosco
+                  <span class="bar"></span>
+               </a>
+               <a href="../contato.html" class="navbarNavLink">
+                  Contato
+                  <span class="bar"></span>
+               </a>
+            </nav>
+
+            <a class="LoginButton Button buttonSecondary"
+               href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
+               <i class="icon fa-solid fa-user"></i>
+               <span>Entrar</span>
+            </a>
+            <button data-target="#menu" class="btn-toggle HamburguerButton">
+               <i class="icon fa-solid fa-bars"></i>
+            </button>
+         </div>
+      </div>
+   </header>
+   <main id="saque_fgts">
+      <div class="ServiceDetails">
+         <section class="serviceDetailsHeader">
+            <div data-aos="zoom-in" class="Divider"></div>
+            <h1 data-aos="zoom-in" class="serviceDetailsHeading">Saque FGTS</h1>
+            <div data-aos="zoom-in" class="Divider"></div>
+         </section>
+         <section class="serviceDetailsDesc">
+            <h1 data-aos="fade-up" class="serviceDetailsHeading">Saque FGTS</h1>
+            <div class="Divider"></div>
+            <p data-aos="fade-up" data-aos-delay="200" class="mb-4">Na nossa instituição financeira, oferecemos serviços
+               de saque do FGTS com praticidade e segurança. Com apenas alguns cliques, você pode solicitar o saque do
+               seu FGTS e receber o dinheiro diretamente na sua conta bancária. Além disso, oferecemos taxas de juros
+               competitivas e prazos flexíveis de pagamento para que você possa escolher a opção que melhor se adapta às
+               suas necessidades financeiras.</p>
+
+            <a data-aos="zoom-in" data-aos-delay="400"
+               href="https://api.whatsapp.com/send?phone=5511964316542&text=Olá!%20Quero%20antecipar%20meu%20FGTS"
+               target="_blank" class="Button buttonSecondary btnCallToAction">Antecipar agora</a>
+         </section>
+      </div>
+
+      <section id="ComoAntecipar" class="Section">
+         <h2 class="sectionTitle light">Como antecipar?</h2>
+         <div class="Divider"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4">
+                  <div data-aos="fade-up" class="GenericCard">
+                     <h3 class="Title"><span class="textSecondary TitleMd">1.</span> Confirme sua opção pelo Saque
+                        Aniversário (app FGTS)</h3>
+                     <img class="Icon" src="../assets/images/checkmark.png" alt="Checkmark">
+                     <p class="Text">
+                        Você pode fazer isso pelo próprio celular, baixando o app FGTS. O Saque Aniversário permite que
+                        você retire uma parte do seu fundo de garantia todos os anos, no mês do seu aniversário. O valor
+                        depende do seu saldo no FGTS.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div data-aos="fade-up" data-aos-delay="200" class="GenericCard">
+                     <h3 class="Title"><span class="textSecondary TitleMd">2.</span> Consulte o seu saldo do FGTS</h3>
+                     <img class="Icon" src="../assets/images/transfer.png" alt="Checkmark">
+                     <p class="Text">
+                        No app, você também consulta o seu saldo e o valor da parcela anual do seu Saque Aniversário. Aí
+                        você escolhe: pelo Mercantil do Brasil, você antecipa até 10 parcelas com taxa de 1,49% a.m. Ao
+                        invés de sacar uma parte a cada ano, você recebe um valor maior
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div data-aos="fade-up" data-aos-delay="400" class="GenericCard">
+                     <h3 class="Title"><span class="textSecondary TitleMd">3.</span> Contrate a Antecipação do Saque
+                        Aniversário do FGTS</h3>
+                     <img class="Icon" src="../assets/images/salary.png" alt="Checkmark">
+                     <p class="Text">
+                        O dinheiro da antecipação do Saque Aniversário do FGTS cai rapidinho na sua conta e você não
+                        precisa nem ir na agência. Contrate pelo seu WhatsApp mesmo, sem burocracia e com toda
+                        segurança: o Mercantil do Brasil tem 79 anos de mercado e toma todos os cuidados pra garantir a
+                        sua tranquilidade.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="fgts_vantagens" class="Section dark">
+         <h1 class="sectionTitle">Quais são as vantagens do Empréstimo FGTS?</h1>
+         <div class="Divider"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+
+                  <div data-aos="fade-up" class="TextIcon dark">
+                     <img class="icon" src="../assets/images/money-bag.png" alt="Dinheiro rápido">
+                     <h3 class="title mb-3">Dinheiro rápido</h3>
+
+                     <p class="description">Receba seu dinheiro em até um dia útil após a aprovação.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div data-aos="fade-up" data-aos-delay="200" class="TextIcon dark">
+                     <img class="icon" src="../assets/images/spending.png" alt="Juros baixos">
+                     <h3 class="title mb-3">Juros baixos</h3>
+
+                     <p class="description">Contrate com taxas a partir de apenas 1,49% ao mês.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div data-aos="fade-up" data-aos-delay="400" v class="TextIcon dark">
+                     <img class="icon" src="../assets/images/reject.png" alt="Disponível para negativado">
+                     <h3 class="title mb-3">Disponível para negativado</h3>
+
+                     <p class="description">Seu CPF não será consultado nos birôs de crédito.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div data-aos="fade-up" data-aos-delay="600" class="TextIcon dark">
+                     <img class="icon" src="../assets/images/credit-card.png" alt="Sem dívidas">
+                     <h3 class="title mb-3">Sem dívidas mensais</h3>
+
+                     <p class="description">Seu CPF não será consultado nos birôs de crédito.</p>
+                  </div>
+               </div>
+
+
+               <div class="col-md-4">
+                  <div data-aos="fade-up" data-aos-delay="800" class="TextIcon dark">
+                     <img class="icon" src="../assets/images/money-bag.png" alt="Liberdade para usar">
+                     <h3 class="title mb-3">Liberdade para usar</h3>
+
+                     <p class="description">Use o dinheiro como quiser, sem precisar comprovar renda.</p>
+                  </div>
+               </div>
+
+               <div class="col-md-4">
+                  <div data-aos="fade-up" data-aos-delay="1000" class="TextIcon dark">
+                     <img class="icon" src="../assets/images/assinatura.png" alt="Contratação 100% on-line">
+                     <h3 class="title mb-3">Contratação 100% on-line</h3>
+
+                     <p class="description">Simule e contrate de forma segura sem sair de casa.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="d-flex justitfy-content-center">
+            <a data-aos="zoom-in"
+               href="https://api.whatsapp.com/send?phone=5511964316542&text=Olá!%20Quero%20antecipar%20meu%20FGTS"
+               target="_blank" class="Button buttonSecondary engageButton">Antecipar agora</a>
+         </div>
+      </section>
+
+      <section class="FrequentlyAskedQueries Section">
+         <h2 class="sectionTitle light">Perguntas Frequentes</h2>
+         <div class="Divider"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">O que é FGTS?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
                      </div>
-                     <div class="col-lg-4">
-                        <div data-aos="fade-up" data-aos-delay="200" class="GenericCard">
-                           <h3 class="Title"><span class="textSecondary TitleMd">2.</span> Consulte o seu saldo do FGTS</h3>
-                           <img class="Icon" src="../assets/images/transfer.png" alt="Checkmark">
-                           <p class="Text">
-                              No app, você também consulta o seu saldo e o valor da parcela anual do seu Saque Aniversário. Aí você escolhe: pelo Mercantil do Brasil, você antecipa até 10 parcelas com taxa de 1,49% a.m. Ao invés de sacar uma parte a cada ano, você recebe um valor maior
-                           </p>
-                        </div>
+                     <div class="answerWrapper hidden"><span>O Fundo de Garantia do Tempo de Serviço (FGTS) é
+                           constituído pelos saldos das contas vinculadas formadas pelos depósitos realizados pelos
+                           empregadores em nome dos trabalhadores.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">O que é o Saque Aniversário?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
                      </div>
-                     <div class="col-lg-4">
-                        <div data-aos="fade-up" data-aos-delay="400" class="GenericCard">
-                           <h3 class="Title"><span class="textSecondary TitleMd">3.</span> Contrate a Antecipação do Saque Aniversário do FGTS</h3>
-                           <img class="Icon" src="../assets/images/salary.png" alt="Checkmark">
-                           <p class="Text">
-                              O dinheiro da antecipação do Saque Aniversário do FGTS cai rapidinho na sua conta e você não precisa nem ir na agência. Contrate pelo seu WhatsApp mesmo, sem burocracia e com toda segurança: o Mercantil do Brasil tem 79 anos de mercado e toma todos os cuidados pra garantir a sua tranquilidade.
-                           </p>
-                        </div>
+                     <div class="answerWrapper hidden">
+                        <span>
+                           É uma modalidade que permite a retirada de parte do saldo da conta do FGTS, anualmente, no
+                           mês do aniversário do cliente.
+                        </span>
                      </div>
                   </div>
-                </div>
-            </section>
-
-            <section id="fgts_vantagens" class="Section dark">
-               <h1 class="sectionTitle">Quais são as vantagens do Empréstimo FGTS?</h1>
-               <div class="Divider"></div>
-                <div class="container">
-                   <div class="row">
-                     <div class="col-md-4">
-
-                        <div data-aos="fade-up" class="TextIcon dark">
-                           <img class="icon" src="../assets/images/money-bag.png" alt="Dinheiro rápido">
-                           <h3 class="title mb-3">Dinheiro rápido</h3>
-
-                           <p class="description">Receba seu dinheiro em até um dia útil após a aprovação.</p>
-                        </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">O que é o Saque Aniversário?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
                      </div>
-                     <div class="col-md-4">
-                        <div data-aos="fade-up" data-aos-delay="200" class="TextIcon dark">
-                           <img class="icon" src="../assets/images/spending.png" alt="Juros baixos">
-                           <h3 class="title mb-3">Juros baixos</h3>
-
-                           <p class="description">Contrate com taxas a partir de apenas 1,49% ao mês.</p>
-                        </div>
+                     <div class="answerWrapper hidden"><span>É uma modalidade que permite a retirada de parte do saldo
+                           da conta do FGTS, anualmente, no mês do aniversário do cliente.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Como funciona?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
                      </div>
-                     <div class="col-md-4">
-                        <div data-aos="fade-up" data-aos-delay="400"v class="TextIcon dark">
-                           <img class="icon" src="../assets/images/reject.png" alt="Disponível para negativado">
-                           <h3 class="title mb-3">Disponível para negativado</h3>
-
-                           <p class="description">Seu CPF não será consultado nos birôs de crédito.</p>
-                        </div>
+                     <div class="answerWrapper hidden">
+                        <p>A Caixa Econômica Federal viabiliza para as instituições financeiras as seguintes
+                           funcionalidades:<br>• Consultar valores disponíveis para saque nos próximos anos;<br>•
+                           Bloquear saldo do FGTS;<br>• Cancelar valor bloqueado;<br>• Amortizar valor bloqueado;<br>•
+                           Liberar valor bloqueado.</p>
                      </div>
-                     <div class="col-md-4">
-                        <div data-aos="fade-up" data-aos-delay="600" class="TextIcon dark">
-                           <img class="icon" src="../assets/images/credit-card.png" alt="Sem dívidas">
-                           <h3 class="title mb-3">Sem dívidas mensais</h3>
-
-                           <p class="description">Seu CPF não será consultado nos birôs de crédito.</p>
-                        </div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">A que outras vantagens terei acesso?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
                      </div>
-
-
-                     <div class="col-md-4">
-                        <div data-aos="fade-up" data-aos-delay="800" class="TextIcon dark">
-                           <img class="icon" src="../assets/images/money-bag.png" alt="Liberdade para usar">
-                           <h3 class="title mb-3">Liberdade para usar</h3>
-
-                           <p class="description">Use o dinheiro como quiser, sem precisar comprovar renda.</p>
-                        </div>
+                     <div class="answerWrapper hidden">
+                        <p>• Não impacta na contratação de outras linhas de crédito;<br>• Pagamento direto do saldo do
+                           FGTS;<br>• Possibilita retirar o dinheiro que está parado na conta do FGTS;<br>• Taxa de
+                           juros reduzida;<br>• Pode ser contratado por negativados;<br>• Contratação fácil e rápida.
+                        </p>
                      </div>
-
-                     <div class="col-md-4">
-                        <div data-aos="fade-up" data-aos-delay="1000" class="TextIcon dark">
-                           <img class="icon" src="../assets/images/assinatura.png" alt="Contratação 100% on-line">
-                           <h3 class="title mb-3">Contratação 100% on-line</h3>
-
-                           <p class="description">Simule e contrate de forma segura sem sair de casa.</p>
-                        </div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">O que é o empréstimo Saque Aniversário com Garantia do FGTS?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
                      </div>
-                   </div>
-                </div>
+                     <div class="answerWrapper hidden"><span>Esse empréstimo consiste em uma antecipação do valor do
+                           saque disponibilizado no mês do seu aniversário. O saldo do FGTS é utilizado como garantia da
+                           operação, e as parcelas são pagas automaticamente da conta vinculada ao FGTS.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Quais as vantagens do empréstimo com garantia do FGTS?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>O crédito tem garantia de 100% do valor cedido, possui taxa
+                           de juros atrativa, fôlego financeiro – sem prestações mensais, não impacta na contratação de
+                           outras linhas de crédito, e as parcelas são pagas anualmente.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Quando posso contratar o empréstimo com garantia do FGTS?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>Você consegue contratar o empréstimo com garantia do FGTS
+                           em qualquer dia útil, das 7h às 22h.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Quais os pré-requisitos para contratação?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden">
+                        <p>• Idade entre 18 e 75 anos;<br>• CPF em situação regular na Receita Federal;<br>• Possuir
+                           saldo em sua conta FGTS;<br>• Optar pelo Saque de Aniversário nos canais disponibilizados
+                           pela Caixa;<br>• Autorizar o Mercantil do Brasil a ter acesso aos valores e dados do FGTS nos
+                           canais disponibilizados pela Caixa.</p>
+                     </div>
+                  </div>
 
-                <div class="d-flex justitfy-content-center">
-                  <a data-aos="zoom-in" href="https://api.whatsapp.com/send?phone=5511964316542&text=Olá!%20Quero%20antecipar%20meu%20FGTS" target="_blank" class="Button buttonSecondary engageButton">Antecipar agora</a>
-                </div>
-            </section>
-
-            <section class="FrequentlyAskedQueries Section">
-                <h2 class="sectionTitle light">Perguntas Frequentes</h2>
-                <div class="Divider"></div>
-                <div class="container">
-                   <div class="row">
-                      <div class="col-md-12">
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">O que é FGTS?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>O Fundo de Garantia do Tempo de Serviço (FGTS) é constituído pelos saldos das contas vinculadas formadas pelos depósitos realizados pelos empregadores em nome dos trabalhadores.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">O que é o Saque Aniversário?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden">
-                               <span>
-                                 É uma modalidade que permite a retirada de parte do saldo da conta do FGTS, anualmente, no mês do aniversário do cliente.
-                               </span>
-                            </div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">O que é o Saque Aniversário?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>É uma modalidade que permite a retirada de parte do saldo da conta do FGTS, anualmente, no mês do aniversário do cliente.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Como funciona?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><p>A Caixa Econômica Federal viabiliza para as instituições financeiras as seguintes funcionalidades:<br>•  Consultar valores disponíveis para saque nos próximos anos;<br>•  Bloquear saldo do FGTS;<br>•  Cancelar valor bloqueado;<br>•    Amortizar valor bloqueado;<br>•   Liberar valor bloqueado.</p></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">A que outras vantagens terei acesso?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden">
-                              <p>•  Não impacta na contratação de outras linhas de crédito;<br>•  Pagamento direto do saldo do FGTS;<br>•   Possibilita retirar o dinheiro que está parado na conta do FGTS;<br>• Taxa de juros reduzida;<br>•  Pode ser contratado por negativados;<br>• Contratação fácil e rápida.</p>
-                            </div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">O que é o empréstimo Saque Aniversário com Garantia do FGTS?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Esse empréstimo consiste em uma antecipação do valor do saque disponibilizado no mês do seu aniversário. O saldo do FGTS é utilizado como garantia da operação, e as parcelas são pagas automaticamente da conta vinculada ao FGTS.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Quais as vantagens do empréstimo com garantia do FGTS?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>O crédito tem garantia de 100% do valor cedido, possui taxa de juros atrativa, fôlego financeiro – sem prestações mensais, não impacta na contratação de outras linhas de crédito, e as parcelas são pagas anualmente.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Quando posso contratar o empréstimo com garantia do FGTS?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Você consegue contratar o empréstimo com garantia do FGTS em qualquer dia útil, das 7h às 22h.</span></div>
-                         </div>
-                         <div class="Question">
-                           <div class="questionHeader">
-                              <div class="questionTitle">Quais os pré-requisitos para contratação?</div>
-                              <button class="buttonCollapse">
-                                   <i class="icon fa-solid fa-angle-right"></i>
-                              </button>
-                           </div>
-                           <div class="answerWrapper hidden"><p>• Idade entre 18 e 75 anos;<br>• CPF em situação regular na Receita Federal;<br>• Possuir saldo em sua conta FGTS;<br>• Optar pelo Saque de Aniversário nos canais disponibilizados pela Caixa;<br>• Autorizar o Mercantil do Brasil a ter acesso aos valores e dados do FGTS nos canais disponibilizados pela Caixa.</p></div>
-                        </div>
-
-                        <div class="Question">
-                           <div class="questionHeader">
-                              <div class="questionTitle">Quais documentos são necessários para contratação?</div>
-                              <button class="buttonCollapse">
-                                   <i class="icon fa-solid fa-angle-right"></i>
-                              </button>
-                           </div>
-                           <div class="answerWrapper hidden"><p>Durante a contratação, pediremos foto dos dois lados do RG ou da CNH dentro da validade e emitidos há, no máximo, 10 anos. É importante que as fotos sejam tiradas em um ambiente bem iluminado e os dados estejam legíveis. <br><br>Para garantirmos sua segurança, pediremos também a gravação de um vídeo com uma frase-chave que será passada. Você precisará estar sem adereços que dificultem a identificação do seu rosto, como máscaras e óculos escuros. Evite lugares muito movimentados e fique atento para que o vídeo seja gravado em um ambiente bem iluminado, com o som ativo e com a câmera no modo selfie.</p></div>
-                        </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Quais documentos são necessários para contratação?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden">
+                        <p>Durante a contratação, pediremos foto dos dois lados do RG ou da CNH dentro da validade e
+                           emitidos há, no máximo, 10 anos. É importante que as fotos sejam tiradas em um ambiente bem
+                           iluminado e os dados estejam legíveis. <br><br>Para garantirmos sua segurança, pediremos
+                           também a gravação de um vídeo com uma frase-chave que será passada. Você precisará estar sem
+                           adereços que dificultem a identificação do seu rosto, como máscaras e óculos escuros. Evite
+                           lugares muito movimentados e fique atento para que o vídeo seja gravado em um ambiente bem
+                           iluminado, com o som ativo e com a câmera no modo selfie.</p>
+                     </div>
+                  </div>
 
 
-                        <div class="Question">
-                           <div class="questionHeader">
-                              <div class="questionTitle">Como consultar o saldo do meu FGTS?</div>
-                              <button class="buttonCollapse">
-                                   <i class="icon fa-solid fa-angle-right"></i>
-                              </button>
-                           </div>
-                           <div class="answerWrapper hidden"><p>Através dos canais digitais do FGTS.</p></div>
-                        </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Como consultar o saldo do meu FGTS?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden">
+                        <p>Através dos canais digitais do FGTS.</p>
+                     </div>
+                  </div>
 
-                        <div class="Question">
-                           <div class="questionHeader">
-                              <div class="questionTitle">É possível antecipar a liquidação do empréstimo e desbloquear o meu FGTS?</div>
-                              <button class="buttonCollapse">
-                                   <i class="icon fa-solid fa-angle-right"></i>
-                              </button>
-                           </div>
-                           <div class="answerWrapper hidden"><p>A liquidação do empréstimo é possível mediante o pagamento com recursos próprios, não sendo possível a utilização de recursos do FGTS. Após a liquidação, o saldo do FGTS será liberado.</p></div>
-                        </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">É possível antecipar a liquidação do empréstimo e desbloquear o meu
+                           FGTS?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden">
+                        <p>A liquidação do empréstimo é possível mediante o pagamento com recursos próprios, não sendo
+                           possível a utilização de recursos do FGTS. Após a liquidação, o saldo do FGTS será liberado.
+                        </p>
+                     </div>
+                  </div>
 
-                        <div class="Question">
-                           <div class="questionHeader">
-                              <div class="questionTitle">É possível antecipar a liquidação do empréstimo e desbloquear o meu FGTS?</div>
-                              <button class="buttonCollapse">
-                                   <i class="icon fa-solid fa-angle-right"></i>
-                              </button>
-                           </div>
-                           <div class="answerWrapper hidden"><p>A liquidação do empréstimo é possível mediante o pagamento com recursos próprios, não sendo possível a utilização de recursos do FGTS. Após a liquidação, o saldo do FGTS será liberado.</p></div>
-                        </div>
-                      </div>
-                   </div>
-                </div>
-            </section>
-           
-        </main>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">É possível antecipar a liquidação do empréstimo e desbloquear o meu
+                           FGTS?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden">
+                        <p>A liquidação do empréstimo é possível mediante o pagamento com recursos próprios, não sendo
+                           possível a utilização de recursos do FGTS. Após a liquidação, o saldo do FGTS será liberado.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
-        <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank" class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
-            <i class="fa-brands fa-whatsapp"></i>
+   </main>
+
+   <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank"
+      class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
+      <i class="fa-brands fa-whatsapp"></i>
+   </a>
+
+   <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
+      <div class="videoCallThumbnail">
+         <img src="../assets/images/atendente.png" alt="Atendente">
+      </div>
+      <div class="videoCallBannerText">
+         <h3>Alguma dúvida?</h3>
+
+         <button class="nuvidio-widget-button Button buttonPrimary"><i class="fas fa-video me-2"></i>Fale com um
+            especialista</button>
+      </div>
+   </div>
+
+   <div class="SectionScroller"> <!-- Scroller lateral -->
+      <nav class="sectionNav"> <!-- Links -->
+         <a class="sectionNavLink " href="/">
+            <span class="icon">
+               <i class="fa-solid fa-house"></i>
+            </span>
+            <div class="title">Home</div>
          </a>
+         <a class="sectionNavLink " href="./consulta-veicular.html">
+            <span class="icon">
+               <i class="fa-solid fa-car"></i>
+            </span>
+            <div class="title">Consulta Veicular</div>
+         </a>
+         <a class="sectionNavLink " href="./recuperacao-de-recebiveis.html">
+            <span class="icon">
+               <i class="fa-solid fa-calculator"></i>
+            </span>
+            <div class="title">Recuperação de Recebíveis</div>
+         </a>
+         <a class="sectionNavLink " href="./protesto-de-titulos.html">
+            <span class="icon">
+               <i class="fa-solid fa-user-xmark"></i>
+            </span>
+            <div class="title">Protesto de Títulos</div>
+         </a>
+         <a class="sectionNavLink " href="./solucoes-em-pagamento.html">
+            <span class="icon">
+               <i class="fa-solid fa-credit-card"></i>
+            </span>
+            <div class="title">Soluções em Pagamento</div>
+         </a>
+         <a class="sectionNavLink " href="./emprestimo-cartao-credito.html">
+            <span class="icon">
+               <i class="fas fa-circle-dollar-to-slot"></i>
+            </span>
+            <div class="title">Empréstimo no Cartão de Crédito</div>
+         </a>
+         <a class="sectionNavLink " href="./planos-e-precos.html#precos">
+            <span class="icon">
+               <i class="fa-solid fa-dollar-sign"></i>
+            </span>
+            <div class="title">Planos e Preços</div>
+         </a>
+      </nav>
+   </div>
 
-         <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
-            <div class="videoCallThumbnail">
-               <img src="../assets/images/atendente.png" alt="Atendente">
+   <footer>
+      <!-- Rodapé -->
+      <div class="container">
+
+         <div class="row">
+
+            <div
+               class="col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-lg-start">
+               <img class="footerBrand" src="../assets/images/logotipo_branco.png" alt="Logotipo Hubi9" />
             </div>
-            <div class="videoCallBannerText">
-               <h3>Alguma dúvida?</h3>
-      
-               <button class="nuvidio-widget-button Button buttonPrimary"><i class="fas fa-video me-2"></i>Fale com um especialista</button>
+
+            <div class="col-lg-3 mb-4 mb-lg-0">
+               <nav class="footerNav">
+                  <a href="./consulta-veicular.html" class="footerNavLink">Consulta Veicular</a>
+                  <a href="./analise-de-credito.html" class="footerNavLink">Análise de Crédito</a>
+                  <a href="./protesto-de-titulos.html" class="footerNavLink">Protesto de Títulos</a>
+                  <a href="./solucoes-em-pagamento.html" class="footerNavLink">Soluções de Pagamento</a>
+               </nav>
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0">
+
+               <nav class="footerNav">
+                  <a href="./solucoes-em-pagamento/pix.html" class="footerNavLink">Pix</a>
+                  <a href="./solucoes-em-pagamento/boleto.html" class="footerNavLink">Boleto</a>
+                  <a href="./solucoes-em-pagamento/cobranca-por-cartao.html" class="footerNavLink">Cobrança por
+                     cartão</a>
+                  <a href="./solucoes-em-pagamento/link-de-pagamento.html" class="footerNavLink">Link de Pagamento</a>
+                  <a href="../planos-e-precos.html" class="footerNavLink">Planos e Preços</a>
+                  <a href="../sobre-nos.html" class="footerNavLink">Sobre Nós</a>
+                  <a href="../trabalhe-conosco.html" class="footerNavLink">Trabalhe Conosco</a>
+               </nav>
+
+            </div>
+
+            <div class="col-lg-3">
+
+               <nav class="footerNav">
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Privacidade</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Cookies</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Termos e Condições de Uso</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Abertura de Conta de
+                     Pagamento para Entidade Públicas</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Termo de Autorização - SCR</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Termo Aditivo - Negativação</a>
+               </nav>
+
+            </div>
+
+         </div>
+
+         <hr>
+
+         <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="SocialMedia">
+               <!-- Redes sociais -->
+               <a class="SocialButton" href="https://www.facebook.com/hubi9" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+               </a>
+               <a class="SocialButton" href="https://www.instagram.com/hubi9.2022/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+               </a>
+               <a class="SocialButton" href="mailto:atendimento@hubi9.com.br" target="_blank">
+                  <i class="fa-regular fa-envelope"></i>
+               </a>
+               <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+               </a>
+
+               <a href="/" class="SocialButton">
+                  <i class="fa-solid fa-house"></i>
+               </a>
+
+               <a href="./consulta-veicular.html" class="SocialButton">
+                  <i class="fa-solid fa-car"></i>
+               </a>
+
+               <a href="./recuperacao-de-recebiveis.html" class="SocialButton">
+                  <i class="fa-solid fa-calculator"></i>
+               </a>
+
+               <a href="./protesto-de-titulos.html" class="SocialButton">
+                  <i class="fa-solid fa-user-xmark"></i>
+               </a>
+
+               <a href="./solucoes-em-pagamento.html" class="SocialButton">
+                  <i class="fa-solid fa-credit-card"></i>
+               </a>
+
+               <a href="./emprestimo-cartao-credito.html" class="SocialButton">
+                  <i class="fas fa-circle-dollar-to-slot"></i>
+               </a>
+
+               <a href="./planos-e-precos.html#precos" class="SocialButton">
+                  <i class="fa-solid fa-dollar-sign"></i>
+               </a>
+            </div>
+
+            <div class="container">
+               <address>Alameda Ria Negro 1147- Alphaville Industrial, Barueri - SP<br />CEP- 42.701-320</address>
             </div>
          </div>
 
-        <div class="SectionScroller"> <!-- Scroller lateral -->
-            <nav class="sectionNav"> <!-- Links -->
-                <a class="sectionNavLink " href="/">
-                    <span class="icon">
-                      <i class="fa-solid fa-house"></i>
-                    </span>
-                    <div class="title">Home</div>
-                 </a>
-                 <a class="sectionNavLink " href="./consulta-veicular.html">
-                  <span class="icon">
-                     <i class="fa-solid fa-car"></i>
-                  </span>
-                  <div class="title">Consulta Veicular</div>
-               </a>
-                 <a class="sectionNavLink " href="./recuperacao-de-recebiveis.html">
-                    <span class="icon">
-                      <i class="fa-solid fa-calculator"></i>
-                    </span>
-                    <div class="title">Recuperação de Recebíveis</div>
-                 </a>
-                 <a class="sectionNavLink " href="./protesto-de-titulos.html">
-                    <span class="icon">
-                      <i class="fa-solid fa-user-xmark"></i>
-                    </span>
-                    <div class="title">Protesto de Títulos</div>
-                 </a>
-                 <a class="sectionNavLink " href="./solucoes-em-pagamento.html">
-                    <span class="icon">
-                      <i class="fa-solid fa-credit-card"></i>
-                    </span>
-                    <div class="title">Soluções em Pagamento</div>
-                 </a>
-               <a class="sectionNavLink " href="./emprestimo-cartao-credito.html">
-                  <span class="icon">
-                     <i class="fas fa-circle-dollar-to-slot"></i>
-                  </span>
-                  <div class="title">Empréstimo no Cartão de Crédito</div>
-               </a>
-                 <a class="sectionNavLink " href="./planos-e-precos.html#precos">
-                      <span class="icon">
-                          <i class="fa-solid fa-dollar-sign"></i>
-                      </span>
-                      <div class="title">Planos e Preços</div>
-                </a>
-            </nav>
-        </div>
+      </div>
 
-        <footer>
-         <!-- Rodapé -->
-         <div class="container">
-   
-            <div class="row">
-   
-               <div class="col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-lg-start">
-                  <img class="footerBrand" src="../assets/images/logotipo_branco.png" alt="Logotipo Hubi9" />
-               </div>
-   
-               <div class="col-lg-3 mb-4 mb-lg-0">
-                  <nav class="footerNav">
-                     <a href="./consulta-veicular.html" class="footerNavLink">Consulta Veicular</a>
-                     <a href="./analise-de-credito.html" class="footerNavLink">Análise de Crédito</a>
-                     <a href="./protesto-de-titulos.html" class="footerNavLink">Protesto de Títulos</a>
-                     <a href="./solucoes-em-pagamento.html" class="footerNavLink">Soluções de Pagamento</a>
-                  </nav>
-               </div>
-   
-               <div class="col-lg-3 mb-4 mb-lg-0">
-   
-                  <nav class="footerNav">
-                     <a href="./solucoes-em-pagamento/pix.html" class="footerNavLink">Pix</a>
-                     <a href="./solucoes-em-pagamento/boleto.html" class="footerNavLink">Boleto</a>
-                     <a href="./solucoes-em-pagamento/cobranca-por-cartao.html" class="footerNavLink">Cobrança por cartão</a>
-                     <a href="./solucoes-em-pagamento/link-de-pagamento.html" class="footerNavLink">Link de Pagamento</a>
-                     <a href="../planos-e-precos.html" class="footerNavLink">Planos e Preços</a>
-                     <a href="../sobre-nos.html" class="footerNavLink">Sobre Nós</a>
-                     <a href="../trabalhe-conosco.html" class="footerNavLink">Trabalhe Conosco</a>
-                  </nav>
-   
-               </div>
-   
-               <div class="col-lg-3">
-   
-                  <nav class="footerNav">
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Privacidade</a>
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Cookies</a>
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Termos e Condições de Uso</a>
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Abertura de Conta de Pagamento para Entidade Públicas</a>
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Termo de Autorização - SCR</a>
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Termo Aditivo - Negativação</a>
-                  </nav>
-   
-               </div>
-   
-            </div>
-   
-            <hr>
-   
-            <div class="d-flex flex-column align-items-center justify-content-center">
-               <div class="SocialMedia">
-                  <!-- Redes sociais -->
-                  <a class="SocialButton" href="https://www.facebook.com/hubi9" target="_blank">
-                     <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                  <a class="SocialButton" href="https://www.instagram.com/hubi9.2022/" target="_blank">
-                     <i class="fa-brands fa-instagram"></i>
-                  </a>
-                  <a class="SocialButton" href="mailto:atendimento@hubi9.com.br" target="_blank">
-                     <i class="fa-regular fa-envelope"></i>
-                  </a>
-                  <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
-                     <i class="fa-brands fa-whatsapp"></i>
-                  </a>
-               </div>
-   
-               <div class="container">
-                  <address>Alameda Ria Negro 1147- Alphaville Industrial, Barueri - SP<br />CEP- 42.701-320</address>
-               </div>
-            </div>
-            
-         </div>
-   
-         
-         
-      </footer>
 
-        <script src="../assets/js/jquery.min.js"></script>
-        <script src="../assets/js/aos.js"></script>
-        <script src="../assets/js/header.js"></script>
-        <script src="../assets/js/questions.js"></script>
 
-      <script>
-         AOS.init();
-      </script>
+   </footer>
 
-        <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
-    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
-    <script type="text/javascript" charset="UTF-8">
+   <script src="../assets/js/jquery.min.js"></script>
+   <script src="../assets/js/aos.js"></script>
+   <script src="../assets/js/header.js"></script>
+   <script src="../assets/js/questions.js"></script>
+
+   <script>
+      AOS.init();
+   </script>
+
+   <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+   <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js"
+      charset="UTF-8"></script>
+   <script type="text/javascript" charset="UTF-8">
       document.addEventListener('DOMContentLoaded', function () {
-      cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"hubi9 - Inteligência Empresarial"});
+         cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "pt", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "hubi9 - Inteligência Empresarial" });
       });
-    </script>
+   </script>
 
-<!-- End Cookie Consent -->
-    <!--Start of Tawk.to Script-->
-    <!--Start of Tawk.to Script-->
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript" cookie-consent="functionality">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/62b536417b967b117996419e/1g69tnsqs';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
+   <!-- End Cookie Consent -->
+   <!--Start of Tawk.to Script-->
+   <!--Start of Tawk.to Script-->
+   <!--Start of Tawk.to Script-->
+   <script type="text/javascript" cookie-consent="functionality">
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+      (function () {
+         var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+         s1.async = true;
+         s1.src = 'https://embed.tawk.to/62b536417b967b117996419e/1g69tnsqs';
+         s1.charset = 'UTF-8';
+         s1.setAttribute('crossorigin', '*');
+         s0.parentNode.insertBefore(s1, s0);
       })();
-      </script>
-  <!--End of Tawk.to Script-->
-  <!--End of Tawk.to Script-->
-  <!--End of Tawk.to Script-->
-    <!--
+   </script>
+   <!--End of Tawk.to Script-->
+   <!--End of Tawk.to Script-->
+   <!--End of Tawk.to Script-->
+   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -500,5 +596,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    </body>
+</body>
+
 </html>
