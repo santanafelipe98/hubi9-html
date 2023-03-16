@@ -362,12 +362,11 @@ a.Button {
 
 .stepImage {
     position: relative;
-    height: 500px;
+    text-align: center;
+}
+
+.stepImage img {
     width: 100%;
-    background: url('../images/passo_a_passo_horizontal.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
 }
 
 .QueryCard {
@@ -855,23 +854,27 @@ footer .footerBrand {
 
 .OurCustomers {
     padding: 50px 0;
-    min-height: 200px;
+    min-height: 500px;
     position: relative;
-    background: var(--secondary-color);
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/valiosos_clientes.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed;
 }
 
 .OurCustomers .Divider {
     background: var(--primary-color);
 }
 
-.OurCustomers .indicator {
+/* .indicator {
     width: 12px;
     height: 12px;
     border-radius: 6px;
     background: rgba(34,34,34,.4);
     display: inline-block;
     cursor: pointer;
-}
+} */
 
 .OurCustomers .container {
     overflow: hidden;
@@ -885,11 +888,11 @@ footer .footerBrand {
     max-height: 100px;
 }
 
-.OurCustomers .indicator.active {
+.indicator.active {
     background: #222;
 }
 
-.OurCustomers .indicator:not(:last-child) {
+.indicator:not(:last-child) {
     margin-right: 12px;
 }
 
@@ -910,16 +913,49 @@ footer .footerBrand {
     margin-bottom: 50px;
 }
 
-.CustomerSlider .ourCustomersDescription {
-    max-width: 600px;
-    font-size: 15px;
-    margin-bottom: 50px;
-    color: #fff;
-    text-align: center;
-}
-
 .CustomerSlider .slick-slide {
     margin: 0 10px;
+}
+
+#certificado_digital .serviceDetailsHeader {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/bg_certificado_ideal.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#certificado_pf {
+    background-image: linear-gradient(rgb(33, 37, 41), transparent 10%), linear-gradient(transparent 50%, rgb(33, 37, 41)), linear-gradient(rgba(7, 8, 9, 0.35), rgba(7, 8, 9, 0.35)), linear-gradient(rgba(48, 48, 64, 0.75), rgba(48, 48, 64, 0.75)), url("../images/pessoa_fisica.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#certificado_pj {
+    background-image: linear-gradient(rgb(33, 37, 41), transparent 10%), linear-gradient(transparent 50%, rgb(33, 37, 41)), linear-gradient(rgba(7, 8, 9, 0.35), rgba(7, 8, 9, 0.35)), linear-gradient(rgba(48, 48, 64, 0.75), rgba(48, 48, 64, 0.75)), url("../images/pessoa-juridica.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#customer_slider {
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#certificados .Card .cardContent {
+    min-height: 150px;
+}
+
+.cardImg {
+    position: relative;
+}
+
+.cardImg img {
+    width: 100%;
 }
 
 /* Nossos valiosos clientes */
@@ -2886,18 +2922,8 @@ footer .footerBrand {
     position: relative;
 }
 
-.Indicators .arrow-top {
-    position: absolute;
-    width: 150px;
-    top: -1px;
-    left: calc(50% - 75px);
-}
-
-.Indicators .row {
-    justify-content: center;
-}
-
-.Indicators .description {
+.Indicators .description,
+.ourCustomersDescription {
     width: 600px;
     margin-top: 0;
     margin-bottom: 32px;
@@ -2913,7 +2939,7 @@ footer .footerBrand {
     width: 200px;
 }
 
-.Indicators .indicator {
+.indicator {
     width: 140px;
     text-align: center;
     color: #c4ced8;
@@ -4039,12 +4065,6 @@ footer .footerBrand {
 }
 
 @media screen and (max-width: 767.8px) {
-    .stepImage {
-        height: 1000px;
-        background: url('../images/passo_a_passo_principal.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
 
     #como_antecipar_fgts .TitleLg, .subtitle {
         text-align: center;
@@ -4177,7 +4197,7 @@ footer .footerBrand {
 }
 
 @media screen and (max-width: 575.8px) {
-    #indicatorsContainer {
+    .indicatorsContainer {
         flex-direction: column;
         align-items: center;
     }
@@ -4222,10 +4242,6 @@ footer .footerBrand {
 }
 
 @media screen and (max-width: 559.8px) {
-    .stepImage {
-        height: 700px;
-    }
-
     .TitleLg {
         font-size: 24px;
     }

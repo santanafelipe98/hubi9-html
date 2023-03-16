@@ -215,6 +215,24 @@
                   </div>
 
                </div>
+
+               <div class="col-md-12 col-lg-3">
+                  <div data-aos="fade-up" data-aos-delay="1400" class="Card">
+                     <div class="cardThumb"><img src="./assets/images/bg_certificado_ideal.jpg" alt="Saque FGTS">
+                     </div>
+                     <div class="cardContent">
+                        <h3 class="cardTitle">Certificado Digital</h3>
+                        <p class="cardDescription">Adquira agora
+                           mesmo um certificado digital A1 ou A3 e tenha a certeza de que suas informações estão seguras
+                           e protegidas.</p>
+                     </div>
+                     <div class="d-flex justify-content-center">
+                        <a class="buttonMoreInfo Button buttonDefault" href="./servicos/certificado-digital.html">Saiba
+                           mais</a>
+                     </div>
+                  </div>
+
+               </div>
             </div>
          </div>
       </section>
@@ -223,7 +241,9 @@
          <h2 class="sectionTitle light">Como contratar?</h2>
          <div class="Divider"></div>
          <div class="container d-flex justify-content-center">
-            <div class="stepImage"></div>
+            <div class="stepImage">
+               <img src="./assets/images/passo_a_passo_principal.png" alt="Passo a passo como contratar?">
+            </div>
          </div>
       </section>
 
@@ -311,14 +331,46 @@
                            esforçamos
                            para criar relacionamentos duradouros e mutuamente benéficos. Temos a sorte de trabalhar com
                            empresas de diversos setores e tamanhos, e cada uma delas tem necessidades únicas e
-                           específicas.
+                           específicas. Tudo isso graças a um conjunto de princípios que são
+                           a base de nosso negócio.
                         </p>
                      </div>
 
                   </div>
+
+                  <div class="row">
+
+                     <div data-aos="fade-right" data-aos-delay="600"
+                        class="d-flex justify-content-center indicatorsContainer mb-5">
+                        <div class="indicator">
+                           <i class="far fa-eye icon"></i>
+                           <p>Visão</p>
+                        </div>
+                        <div class="indicator">
+                           <!-- Indicador -->
+                           <i class="far fa-heart icon"></i>
+                           <p>Valores</p>
+                        </div>
+                        <div class="indicator">
+                           <i class="fa-solid fa-bolt-lightning icon"></i>
+                           <p>Foco</p>
+                        </div>
+                        <div class="indicator">
+                           <i class="fa-solid fa-briefcase icon"></i>
+                           <p>Comprometimento</p>
+                        </div>
+                        <div class="indicator">
+                           <i class="fa-solid fa-chart-column icon"></i>
+                           <p>Resultados</p>
+                        </div>
+                     </div>
+                  </div>
                </div>
-               <div class="row justify-content-center">
-                  <div class="col-lg-6 overflow-hidden">
+
+
+
+               <div class="row justify-content-center" id="customer_slider_container">
+                  <div class="col-lg-6">
                      <div id="customer_slider">
                         <img className="image" src="./assets/images/arezzo.png" alt="Logomarca da Arezzo" />
                         <img className="image" src="./assets/images/boticario.png" alt="Logomarca da Boticário" />
@@ -403,7 +455,6 @@
       </div>
 
       <section id="indicadores" class="Indicators Section">
-         <img src="./assets/images/seta-baixo.svg" alt="Seta baixo" class="arrow-top">
 
          <img data-aos="zoom-in" class="logo" src="./assets/images/logotipo_branco.png" alt="Logotipo HUBi9">
          <!-- Indicadores -->
@@ -419,8 +470,8 @@
             </div>
 
 
-            <div data-aos="fade-right" data-aos-delay="600" id="indicatorsContainer"
-               class="d-flex justify-content-center">
+            <div data-aos="fade-right" data-aos-delay="600" class="d-flex justify-content-center
+               indicatorsContainer">
                <div class="indicator">
                   <!-- Indicador -->
                   <i class="far fa-clock icon"></i>
@@ -594,7 +645,8 @@
    <script src="./assets/js/masks.js"></script>
 
    <script>
-      AOS.init();
+      $(document).ready(() => AOS.init());
+
    </script>
 
    <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
