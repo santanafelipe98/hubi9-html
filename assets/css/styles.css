@@ -1091,7 +1091,7 @@ footer .footerBrand {
 /* Planos e preços */
 
 #precos .sectionTitle {
-    margin-top: 110px;
+    margin-top: 50px;
 }
 
 #planos_e_precos .serviceDetailsHeader {
@@ -1689,8 +1689,8 @@ footer .footerBrand {
 
 #banner_consultas1 {
     background-image: linear-gradient(rgb(33, 37, 41), transparent 10%), linear-gradient(transparent 50%, rgb(33, 37, 41)), linear-gradient(rgba(7, 8, 9, 0.35), rgba(7, 8, 9, 0.35)), linear-gradient(rgba(48, 48, 64, 0.75), rgba(48, 48, 64, 0.75)), url("../images/consultas1.jpg");
+    background-size: cover;
     background-position: 50% 50%;
-    background-size: 100%;
 }
 
 #banner_consultas1 .QueryCard {
@@ -3871,6 +3871,10 @@ footer .footerBrand {
 
 #form_parceiro:hover {
     border-color: var(--primary-color);
+}
+
+#planos_e_precos .serviceDetailsDesc {
+    padding: 50px 0 !important;
 }
 
 /* Section Scroller */
