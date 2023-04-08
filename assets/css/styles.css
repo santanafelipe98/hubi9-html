@@ -960,6 +960,24 @@ footer .footerBrand {
     padding: 10px;
 }
 
+.brandBox {
+    background: #f9f9f9;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brandBox img {
+    width: 70%;
+    filter: grayscale(1);
+    transition: filter .3s ease-in-out;
+}
+.brandBox:hover img{
+    filter: grayscale(0);
+}
+
 #certificados .Card .cardContent {
     min-height: 150px;
 }
@@ -4352,6 +4370,10 @@ footer .footerBrand {
 @media screen and (max-width: 559.8px) {
     .TitleLg {
         font-size: 24px;
+    }
+
+    .brandBox {
+        height: 80px;
     }
 
     .Tab .title {
