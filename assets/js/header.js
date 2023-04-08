@@ -15,22 +15,9 @@ function responsive(width) {
     }
 }
 
-function menuOpacity() {
-    const navbar = $('#navbar');
-
-    let top =  $(window).scrollTop();
-    let alpha = Math.min(300, top / 300);
-
-    navbar.css('background-color', `rgba(33,37,41, ${alpha})`);
-}
-
-$(window).on('scroll', menuOpacity);
-
 $(function() {
     const width = $(window).innerWidth();
     responsive(width);
-
-    menuOpacity();
 });
 
 $(window).on('resize', function() {
