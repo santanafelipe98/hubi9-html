@@ -1,449 +1,467 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../assets/css/bootstrap-grid.min.css">
-        <link rel="stylesheet" href="../../assets/css/fontawesome.min.css" />
-        <link rel="stylesheet" href="../../assets/css/slick.css">
-        <link rel="stylesheet" href="../../assets/css/slick-theme.css">
-        <link rel="stylesheet" href="../../assets/css/jquery.modal.min.css">
-        <link rel="stylesheet" href="../../assets/css/aos.css">
-        <link rel="stylesheet" href="../../assets/css/styles.css">
-        <title>Boleto - hubi9 Inteligência Empresarial</title>
-    </head>
-    <body>
-        <header id="navbar" class="Header navbarFixed">
-            <div class="container">
-                <div class="brand">
-                    <a href="/" alt="Logotipo hubi9"> <!-- Logotipo Hubi9 -->
-                        <img src="../../assets/images/logotipo_branco.png" alt="Logotipo hubi9" />
-                    </a>
-                </div>
-                <div class="right">
-                    <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
-                     <a href="../../sobre-nos.html" class="navbarNavLink">
-                        Sobre nós
-                        <span class="bar"></span>
-                     </a> <!-- Links -->
-                     <a href="../../servicos.html" class="navbarNavLink active">
-                        Serviços
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../../planos-e-precos.html#precos" class="navbarNavLink">
-                        Planos e Preços Pós
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../../termos-condicoes.html" class="navbarNavLink">
-                        Termos e Condições
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../../trabalhe-conosco.html" class="navbarNavLink">
-                        Trabalhe conosco
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../../contato.html" class="navbarNavLink">
-                        Contato
-                        <span class="bar"></span>
-                     </a>
-                    </nav>
 
-                    <a class="LoginButton Button buttonSecondary" href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
-                        <i class="icon fa-solid fa-user"></i>
-                        <span>Entrar</span>
-                     </a>
-                    <button data-target="#menu" class="btn-toggle HamburguerButton">
-                        <i class="icon fa-solid fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </header>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../assets/css/bootstrap-grid.min.css">
+   <link rel="stylesheet" href="../../assets/css/fontawesome.min.css" />
+   <link rel="stylesheet" href="../../assets/css/slick.css">
+   <link rel="stylesheet" href="../../assets/css/slick-theme.css">
+   <link rel="stylesheet" href="../../assets/css/jquery.modal.min.css">
+   <link rel="stylesheet" href="../../assets/css/aos.css">
+   <link rel="stylesheet" href="../../assets/css/styles.css">
+   <title>Boleto - hubi9 Inteligência Empresarial</title>
+</head>
 
-        <main id="boleto">
-            <div class="ServiceDetails"> <!-- Cabeçalho -->
-                <section class="serviceDetailsHeader">
-                   <div data-aos="zoom-in" class="Divider"></div>
-                   <h1 data-aos="zoom-in" class="serviceDetailsHeading">Boleto bancário</h1>
-                   <div data-aos="zoom-in" class="Divider"></div>
-                </section>
-                <section class="serviceDetailsDesc">
-                   <h1 data-aos="fade-up" class="serviceDetailsHeading">Boleto bancário</h1>
-                   <div class="Divider"></div>
-                   <p data-aos="fade-up" data-aos-delay="200">O boleto ainda é uma das formas de cobrança mais democráticas do Brasil. Com a Hubi9, você
-                      pode emitir boletos sem nenhum custo e pagar uma pequena tarifa apenas quando receber do
-                      seu cliente. Gerar boletos com a HUBI9 é simples, rápido e seguro!
-                   </p>
-                </section>
-            </div>             
-
-            <section class=" Section">
-                <h2 class="sectionTitle light">Ofereça a melhor opção para o seu cliente</h2>
-                <div class="Divider"></div>
-                <div class="container">
-                   <div class="row">
-                      <div class="col-md-8">
-                         <div class="CustomTabs">
-                            <div class="header">
-                               <div class="tabs">
-                                  <div class="Tab active">
-                                    <i class="fa-solid fa-barcode"></i>
-                                     <span class="title">Boleto avulso</span>
-                                  </div>
-                                  <div class="Tab ">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                     <span class="title">Parcelamento</span>
-                                  </div>
-                                  <div class="Tab ">
-                                     <i class="fa-solid fa-file-signature"></i>
-                                     <span class="title">Assinatura</span>
-                                  </div>
-                               </div>
-                            </div>
-                            <div class="tabSlider content">
-                               <div class="contentWrapper">
-                                  <div class="TabContent">
-                                     <h3 class="title">Para pagamentos únicos</h3>
-                                     <p class="text">Boletos registrados, sem tarifas de emissão, baixa ou cancelamento.</p>
-                                  </div>
-                               </div>
-                               <div class="contentWrapper">
-                                  <div class="TabContent">
-                                     <h3 class="title">Para pagamentos em prestações</h3>
-                                     <p class="text">Parcele as vendas do seu cliente em até 100 vezes e aumente o faturamento da sua empresa.</p>
-                                  </div>
-                               </div>
-                               <div class="contentWrapper">
-                                  <div class="TabContent">
-                                     <h3 class="title">Para pagamentos recorrentes</h3>
-                                     <p class="text">Configure o valor e data de vencimento apenas uma vez, e deixe que a HUBi9 automatize a cobrança para a empresa de uma maneira simples e eficiente.</p>
-                                  </div>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="col-md-4 sectionImage"><img src="../../assets/images/smartphone.png"></div>
-                   </div>
-                </div>
-            </section>
-
-            <section id="vantagens_boleto" class="SectionList dark">
-                <div class="container">
-                   <div class="row">
-                      <div class="col-md-12">
-                         <div class="d-flex flex-col alignItemsCenter">
-                            <h1 class="sectionTitle">Vantagens</h1>
-                            <div class="Divider"></div>
-                            <p class="sectionDescription"></p>
-                         </div>
-                         <div class="row">
-                            <div class="col-md-6">
-                               <div data-aos="fade-right" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Gera maior segurança a quem cobra.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-6">
-                               <div data-aos="fade-right" data-aos-delay="200" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Gerar boleto online é mais econômico.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-6">
-                               <div data-aos="fade-right" data-aos-delay="400" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Rapidez para liberação de pagamento.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-6">
-                               <div data-aos="fade-right" data-aos-delay="600" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Profissionalize a comunicação.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-6">
-                               <div data-aos="fade-right" data-aos-delay="800" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Ter uma das menores taxas do mercado.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-6">
-                               <div data-aos="fade-right" data-aos-delay="1000" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Melhora a gestão financeira do seu negócio.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-6">
-                               <div data-aos="fade-right" data-aos-delay="1200" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Não exigir convênio com banco ou quantidade mínima.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-6">
-                               <div data-aos="fade-right" data-aos-delay="1400" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">O boleto não precisa ser pago se o cliente não realizar o pagamento.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-6">
-                               <div data-aos="fade-right" data-aos-delay="1600" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Evita enganos de cálculos sobre multas e encargos quando os boletos vencem.</p>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-            </section>
-             
-            <section class="FrequentlyAskedQueries Section">
-                <h2 class="sectionTitle light" style="margin-top: 70px;">Perguntas Frequentes</h2>
-                <div class="Divider"></div>
-                <div class="container">
-                   <div class="row">
-                      <div class="col-md-12">
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Quanto eu pago por boleto bancário?</div>
-                               <button class="buttonCollapse">
-                                <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Emitir boletos com a hubi9 é de graça. Você só é taxado depois que seu cliente realizar o pagamento do boleto conforme plano contratado.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Quem pode gerar boleto com a hubi9?</div>
-                               <button class="buttonCollapse">
-                                <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Você pode transferir o dinheiro da sua Conta hubi9 para o banco de sua preferência.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Pessoa física pode gerar boletos?</div>
-                               <button class="buttonCollapse">
-                                <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Sim, é possível emitir boletos na hubi9 com o cadastro de pessoa física. Basta ter uma conta aprovada no sistema.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Eu posso cancelar um boleto emitido?</div>
-                               <button class="buttonCollapse">
-                                <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Sim. Você pode cancelar a emissão de um boleto a qualquer momento. E o melhor: sem pagar nada por isso.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Como recebo meu dinheiro?</div>
-                               <button class="buttonCollapse">
-                                <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Você pode transferir o dinheiro da sua Conta Hubi9 para o banco de sua preferência.</span></div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-            </section>
-             
-        </main>
-
-        <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank" class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
-            <i class="fa-brands fa-whatsapp"></i>
-         </a>
-
-        <div class="SectionScroller"> <!-- Scroller lateral -->
-            <nav class="sectionNav"> <!-- Links -->
-                <a class="sectionNavLink " href="/">
-                    <span class="icon">
-                      <i class="fa-solid fa-house"></i>
-                    </span>
-                    <div class="title">Home</div>
-                 </a>
-                 <a class="sectionNavLink" href="./pix.html">
-                    <span class="icon">
-                      <i class="fa-brands fa-pix"></i>
-                    </span>
-                    <div class="title">Pix</div>
-                 </a>
-                 <a class="sectionNavLink " href="./cobranca-por-cartao.html">
-                    <span class="icon">
-                      <i class="fa-solid fa-credit-card"></i>
-                    </span>
-                    <div class="title">Cobrança por Cartão</div>
-                 </a>
-                 <a class="sectionNavLink " href="./link-de-pagamento.html">
-                      <span class="icon">
-                          <i class="fa-solid fa-link"></i>
-                      </span>
-                      <div class="title">Link de Pagamento</div>
-                </a>
+<body>
+   <header id="navbar" class="Header navbarFixed">
+      <div class="container">
+         <div class="brand">
+            <a href="/" alt="Logotipo hubi9"> <!-- Logotipo Hubi9 -->
+               <img src="../../assets/images/logotipo_colorido.png" alt="Logotipo hubi9" />
+            </a>
+         </div>
+         <div class="right">
+            <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
+               <a href="../../sobre-nos.html" class="navbarNavLink">
+                  Sobre nós
+                  <span class="bar"></span>
+               </a> <!-- Links -->
+               <a href="../../servicos.html" class="navbarNavLink active">
+                  Serviços
+                  <span class="bar"></span>
+               </a>
+               <a href="../../planos-e-precos.html#precos" class="navbarNavLink">
+                  Planos e Preços Pós
+                  <span class="bar"></span>
+               </a>
+               <a href="../../termos-condicoes.html" class="navbarNavLink">
+                  Termos e Condições
+                  <span class="bar"></span>
+               </a>
+               <a href="../../trabalhe-conosco.html" class="navbarNavLink">
+                  Trabalhe conosco
+                  <span class="bar"></span>
+               </a>
+               <a href="../../contato.html" class="navbarNavLink">
+                  Contato
+                  <span class="bar"></span>
+               </a>
             </nav>
-        </div>
 
-        <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
-         <div class="videoCallThumbnail">
-            <img src="../../assets/images/atendente.png" alt="Atendente">
+            <a class="LoginButton Button buttonSecondary"
+               href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
+               <i class="icon fa-solid fa-user"></i>
+               <span>Entrar</span>
+            </a>
+            <button data-target="#menu" class="btn-toggle HamburguerButton">
+               <i class="icon fa-solid fa-bars"></i>
+            </button>
          </div>
-         <div class="videoCallBannerText">
-            <h3>Alguma dúvida?</h3>
-   
-            <button class="nuvidio-widget-button Button buttonPrimary"><i class="fas fa-video me-2"></i>Fale com um especialista</button>
+      </div>
+   </header>
+
+   <main id="boleto">
+      <div class="ServiceDetails"> <!-- Cabeçalho -->
+         <section class="serviceDetailsHeader">
+            <div data-aos="zoom-in" class="Divider"></div>
+            <h1 data-aos="zoom-in" class="serviceDetailsHeading">Boleto bancário</h1>
+            <div data-aos="zoom-in" class="Divider"></div>
+         </section>
+         <section class="serviceDetailsDesc">
+            <h1 data-aos="fade-up" class="serviceDetailsHeading">Boleto bancário</h1>
+            <div class="Divider"></div>
+            <p data-aos="fade-up" data-aos-delay="200">O boleto ainda é uma das formas de cobrança mais democráticas do
+               Brasil. Com a Hubi9, você
+               pode emitir boletos sem nenhum custo e pagar uma pequena tarifa apenas quando receber do
+               seu cliente. Gerar boletos com a HUBI9 é simples, rápido e seguro!
+            </p>
+         </section>
+      </div>
+
+      <section class=" Section">
+         <h2 class="sectionTitle light">Ofereça a melhor opção para o seu cliente</h2>
+         <div class="Divider"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8">
+                  <div class="CustomTabs">
+                     <div class="header">
+                        <div class="tabs">
+                           <div class="Tab active">
+                              <i class="fa-solid fa-barcode"></i>
+                              <span class="title">Boleto avulso</span>
+                           </div>
+                           <div class="Tab ">
+                              <i class="fa-solid fa-calendar-days"></i>
+                              <span class="title">Parcelamento</span>
+                           </div>
+                           <div class="Tab ">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="title">Assinatura</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabSlider content">
+                        <div class="contentWrapper">
+                           <div class="TabContent">
+                              <h3 class="title">Para pagamentos únicos</h3>
+                              <p class="text">Boletos registrados, sem tarifas de emissão, baixa ou cancelamento.</p>
+                           </div>
+                        </div>
+                        <div class="contentWrapper">
+                           <div class="TabContent">
+                              <h3 class="title">Para pagamentos em prestações</h3>
+                              <p class="text">Parcele as vendas do seu cliente em até 100 vezes e aumente o faturamento
+                                 da sua empresa.</p>
+                           </div>
+                        </div>
+                        <div class="contentWrapper">
+                           <div class="TabContent">
+                              <h3 class="title">Para pagamentos recorrentes</h3>
+                              <p class="text">Configure o valor e data de vencimento apenas uma vez, e deixe que a HUBi9
+                                 automatize a cobrança para a empresa de uma maneira simples e eficiente.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 sectionImage"><img src="../../assets/images/smartphone.png"></div>
+            </div>
          </div>
+      </section>
+
+      <section id="vantagens_boleto" class="SectionList dark">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="d-flex flex-col alignItemsCenter">
+                     <h1 class="sectionTitle">Vantagens</h1>
+                     <div class="Divider"></div>
+                     <p class="sectionDescription"></p>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div data-aos="fade-right" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Gera maior segurança a quem cobra.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div data-aos="fade-right" data-aos-delay="200" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Gerar boleto online é mais econômico.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div data-aos="fade-right" data-aos-delay="400" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Rapidez para liberação de pagamento.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div data-aos="fade-right" data-aos-delay="600" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Profissionalize a comunicação.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div data-aos="fade-right" data-aos-delay="800" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Ter uma das menores taxas do mercado.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div data-aos="fade-right" data-aos-delay="1000" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Melhora a gestão financeira do seu negócio.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div data-aos="fade-right" data-aos-delay="1200" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Não exigir convênio com banco ou quantidade mínima.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div data-aos="fade-right" data-aos-delay="1400" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">O boleto não precisa ser pago se o cliente não realizar o pagamento.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div data-aos="fade-right" data-aos-delay="1600" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Evita enganos de cálculos sobre multas e encargos quando os boletos
+                              vencem.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="FrequentlyAskedQueries Section">
+         <h2 class="sectionTitle light" style="margin-top: 70px;">Perguntas Frequentes</h2>
+         <div class="Divider"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Quanto eu pago por boleto bancário?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>Emitir boletos com a hubi9 é de graça. Você só é taxado
+                           depois que seu cliente realizar o pagamento do boleto conforme plano contratado.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Quem pode gerar boleto com a hubi9?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>Você pode transferir o dinheiro da sua Conta hubi9 para o
+                           banco de sua preferência.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Pessoa física pode gerar boletos?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>Sim, é possível emitir boletos na hubi9 com o cadastro de
+                           pessoa física. Basta ter uma conta aprovada no sistema.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Eu posso cancelar um boleto emitido?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>Sim. Você pode cancelar a emissão de um boleto a qualquer
+                           momento. E o melhor: sem pagar nada por isso.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Como recebo meu dinheiro?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>Você pode transferir o dinheiro da sua Conta Hubi9 para o
+                           banco de sua preferência.</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank"
+      class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
+      <i class="fa-brands fa-whatsapp"></i>
+   </a>
+
+   <div class="SectionScroller"> <!-- Scroller lateral -->
+      <nav class="sectionNav"> <!-- Links -->
+         <a class="sectionNavLink " href="/">
+            <span class="icon">
+               <i class="fa-solid fa-house"></i>
+            </span>
+            <div class="title">Home</div>
+         </a>
+         <a class="sectionNavLink" href="./pix.html">
+            <span class="icon">
+               <i class="fa-brands fa-pix"></i>
+            </span>
+            <div class="title">Pix</div>
+         </a>
+         <a class="sectionNavLink " href="./cobranca-por-cartao.html">
+            <span class="icon">
+               <i class="fa-solid fa-credit-card"></i>
+            </span>
+            <div class="title">Cobrança por Cartão</div>
+         </a>
+         <a class="sectionNavLink " href="./link-de-pagamento.html">
+            <span class="icon">
+               <i class="fa-solid fa-link"></i>
+            </span>
+            <div class="title">Link de Pagamento</div>
+         </a>
+      </nav>
+   </div>
+
+   <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
+      <div class="videoCallThumbnail">
+         <img src="../../assets/images/atendente.png" alt="Atendente">
+      </div>
+      <div class="videoCallBannerText">
+         <h3>Alguma dúvida?</h3>
+
+         <button class="nuvidio-widget-button Button buttonPrimary"><i class="fas fa-video me-2"></i>Fale com um
+            especialista</button>
+      </div>
+   </div>
+
+
+   <footer>
+      <!-- Rodapé -->
+      <div class="container">
+
+         <div class="row">
+
+            <div
+               class="col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-lg-start">
+               <img class="footerBrand" src="../../assets/images/logotipo_colorido.png" alt="Logotipo Hubi9" />
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0">
+               <nav class="footerNav">
+                  <a href="../consulta-veicular.html" class="footerNavLink">Consulta Veicular</a>
+                  <a href="../analise-de-credito.html" class="footerNavLink">Análise de Crédito</a>
+                  <a href="../protesto-de-titulos.html" class="footerNavLink">Protesto de Títulos</a>
+                  <a href="../solucoes-em-pagamento.html" class="footerNavLink">Soluções de Pagamento</a>
+               </nav>
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0">
+
+               <nav class="footerNav">
+                  <a href="./pix.html" class="footerNavLink">Pix</a>
+                  <a href="./boleto.html" class="footerNavLink">Boleto</a>
+                  <a href="./cobranca-por-cartao.html" class="footerNavLink">Cobrança por cartão</a>
+                  <a href="./link-de-pagamento.html" class="footerNavLink">Link de Pagamento</a>
+                  <a href="../../planos-e-precos.html" class="footerNavLink">Planos e Preços</a>
+                  <a href="../../sobre-nos.html" class="footerNavLink">Sobre Nós</a>
+                  <a href="../../trabalhe-conosco.html" class="footerNavLink">Trabalhe Conosco</a>
+               </nav>
+
+            </div>
+
+            <div class="col-lg-3">
+
+               <nav class="footerNav">
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Privacidade</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Cookies</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Termos e Condições de Uso</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Abertura de Conta de
+                     Pagamento para Entidade Públicas</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Termo de Autorização - SCR</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Termo Aditivo - Negativação</a>
+               </nav>
+
+            </div>
+
+         </div>
+
+         <hr>
+
+         <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="SocialMedia">
+               <!-- Redes sociais -->
+               <a class="SocialButton" href="https://www.facebook.com/hubi9" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+               </a>
+               <a class="SocialButton" href="https://www.instagram.com/hubi9.2022/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+               </a>
+               <a class="SocialButton" href="mailto:atendimento@hubi9.com.br" target="_blank">
+                  <i class="fa-regular fa-envelope"></i>
+               </a>
+               <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+               </a>
+            </div>
+
+            <div class="container">
+               <address>Alameda Ria Negro 1147- Alphaville Industrial, Barueri - SP<br />CEP- 42.701-320</address>
+            </div>
+         </div>
+
       </div>
 
 
-      <footer>
-         <!-- Rodapé -->
-         <div class="container">
-   
-            <div class="row">
-   
-               <div class="col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-lg-start">
-                  <img class="footerBrand" src="../../assets/images/logotipo_branco.png" alt="Logotipo Hubi9" />
-               </div>
-   
-               <div class="col-lg-3 mb-4 mb-lg-0">
-                  <nav class="footerNav">
-                     <a href="../consulta-veicular.html" class="footerNavLink">Consulta Veicular</a>
-                     <a href="../analise-de-credito.html" class="footerNavLink">Análise de Crédito</a>
-                     <a href="../protesto-de-titulos.html" class="footerNavLink">Protesto de Títulos</a>
-                     <a href="../solucoes-em-pagamento.html" class="footerNavLink">Soluções de Pagamento</a>
-                  </nav>
-               </div>
-   
-               <div class="col-lg-3 mb-4 mb-lg-0">
-   
-                  <nav class="footerNav">
-                     <a href="./pix.html" class="footerNavLink">Pix</a>
-                     <a href="./boleto.html" class="footerNavLink">Boleto</a>
-                     <a href="./cobranca-por-cartao.html" class="footerNavLink">Cobrança por cartão</a>
-                     <a href="./link-de-pagamento.html" class="footerNavLink">Link de Pagamento</a>
-                     <a href="../../planos-e-precos.html" class="footerNavLink">Planos e Preços</a>
-                     <a href="../../sobre-nos.html" class="footerNavLink">Sobre Nós</a>
-                     <a href="../../trabalhe-conosco.html" class="footerNavLink">Trabalhe Conosco</a>
-                  </nav>
-   
-               </div>
-   
-               <div class="col-lg-3">
-   
-                  <nav class="footerNav">
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Privacidade</a>
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Cookies</a>
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Termos e Condições de Uso</a>
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Abertura de Conta de Pagamento para Entidade Públicas</a>
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Termo de Autorização - SCR</a>
-                     <a href="../termos-condicoes.html#termos" class="footerNavLink">Termo Aditivo - Negativação</a>
-                  </nav>
-   
-               </div>
-   
-            </div>
-   
-            <hr>
-   
-            <div class="d-flex flex-column align-items-center justify-content-center">
-               <div class="SocialMedia">
-                  <!-- Redes sociais -->
-                  <a class="SocialButton" href="https://www.facebook.com/hubi9" target="_blank">
-                     <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                  <a class="SocialButton" href="https://www.instagram.com/hubi9.2022/" target="_blank">
-                     <i class="fa-brands fa-instagram"></i>
-                  </a>
-                  <a class="SocialButton" href="mailto:atendimento@hubi9.com.br" target="_blank">
-                     <i class="fa-regular fa-envelope"></i>
-                  </a>
-                  <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
-                     <i class="fa-brands fa-whatsapp"></i>
-                  </a>
-               </div>
-   
-               <div class="container">
-                  <address>Alameda Ria Negro 1147- Alphaville Industrial, Barueri - SP<br />CEP- 42.701-320</address>
-               </div>
-            </div>
-            
-         </div>
-   
-         
-         
-      </footer>
 
-        <script src="../../assets/js/jquery.min.js"></script>
-        <script src="../../assets/js/aos.js"></script>
-        <script src="../../assets/js/slick.min.js"></script>
-        <script src="../../assets/js/header.js"></script>
-        <script src="../../assets/js/step-slider.js"></script>
-        <script src="../../assets/js/questions.js"></script>
+   </footer>
 
-      <script>
-         AOS.init();
-       </script>
+   <script src="../../assets/js/jquery.min.js"></script>
+   <script src="../../assets/js/aos.js"></script>
+   <script src="../../assets/js/slick.min.js"></script>
+   <script src="../../assets/js/header.js"></script>
+   <script src="../../assets/js/step-slider.js"></script>
+   <script src="../../assets/js/questions.js"></script>
 
-        <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
-    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
-    <script type="text/javascript" charset="UTF-8">
+   <script>
+      AOS.init();
+   </script>
+
+   <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+   <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js"
+      charset="UTF-8"></script>
+   <script type="text/javascript" charset="UTF-8">
       document.addEventListener('DOMContentLoaded', function () {
-      cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"hubi9 - Inteligência Empresarial"});
+         cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "pt", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "hubi9 - Inteligência Empresarial" });
       });
-    </script>
+   </script>
 
-<!-- End Cookie Consent -->
-    <!--Start of Tawk.to Script-->
-    <!--Start of Tawk.to Script-->
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript" cookie-consent="functionality">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/62b536417b967b117996419e/1g69tnsqs';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
+   <!-- End Cookie Consent -->
+   <!--Start of Tawk.to Script-->
+   <!--Start of Tawk.to Script-->
+   <!--Start of Tawk.to Script-->
+   <script type="text/javascript" cookie-consent="functionality">
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+      (function () {
+         var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+         s1.async = true;
+         s1.src = 'https://embed.tawk.to/62b536417b967b117996419e/1g69tnsqs';
+         s1.charset = 'UTF-8';
+         s1.setAttribute('crossorigin', '*');
+         s0.parentNode.insertBefore(s1, s0);
       })();
-      </script>
-  <!--End of Tawk.to Script-->
-  <!--End of Tawk.to Script-->
-  <!--End of Tawk.to Script-->
- 
-  <!-- Google tag (gtag.js) -->
-  <script async="https://www.googletagmanager.com/gtag/js?=AW-10996385642"></script>
-  <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+   </script>
+   <!--End of Tawk.to Script-->
+   <!--End of Tawk.to Script-->
+   <!--End of Tawk.to Script-->
 
-     gtag('config', 'AW-10996385642');
-  </script>
-    <!--
+   <!-- Google tag (gtag.js) -->
+   <script async="https://www.googletagmanager.com/gtag/js?=AW-10996385642"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-10996385642');
+   </script>
+   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -453,5 +471,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    </body>
+</body>
+
 </html>

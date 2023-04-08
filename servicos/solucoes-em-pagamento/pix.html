@@ -1,542 +1,567 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../assets/css/bootstrap-grid.min.css">
-        <link rel="stylesheet" href="../../assets/css/fontawesome.min.css" />
-        <link rel="stylesheet" href="../../assets/css/slick.css">
-        <link rel="stylesheet" href="../../assets/css/slick-theme.css">
-        <link rel="stylesheet" href="../../assets/css/jquery.modal.min.css">
-        <link rel="stylesheet" href="../../assets/css/aos.css">
-        <link rel="stylesheet" href="../../assets/css/styles.css">
-        <title>Pix - hubi9 Inteligência Empresarial</title>
-    </head>
-    <body>
-        <header id="navbar" class="Header navbarFixed">
-            <div class="container">
-                <div class="brand">
-                    <a href="/" alt="Logotipo hubi9"> <!-- Logotipo Hubi9 -->
-                        <img src="../../assets/images/logotipo_branco.png" alt="Logotipo hubi9" />
-                    </a>
-                </div>
-                <div class="right">
-                    <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
-                     <a href="../../sobre-nos.html" class="navbarNavLink">
-                        Sobre nós
-                        <span class="bar"></span>
-                     </a> <!-- Links -->
-                     <a href="../../servicos.html" class="navbarNavLink">
-                        Serviços
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../../planos-e-precos.html#precos" class="navbarNavLink">
-                        Planos e Preços Pós
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../../termos-condicoes.html" class="navbarNavLink">
-                        Termos e Condições
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../../trabalhe-conosco.html" class="navbarNavLink">
-                        Trabalhe conosco
-                        <span class="bar"></span>
-                     </a>
-                     <a href="../../contato.html" class="navbarNavLink">
-                        Contato
-                        <span class="bar"></span>
-                     </a>
-                    </nav>
 
-                    <a class="LoginButton Button buttonSecondary" href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
-                        <i class="icon fa-solid fa-user"></i>
-                        <span>Entrar</span>
-                     </a>
-                    <button data-target="#menu" class="btn-toggle HamburguerButton">
-                        <i class="icon fa-solid fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </header>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../assets/css/bootstrap-grid.min.css">
+   <link rel="stylesheet" href="../../assets/css/fontawesome.min.css" />
+   <link rel="stylesheet" href="../../assets/css/slick.css">
+   <link rel="stylesheet" href="../../assets/css/slick-theme.css">
+   <link rel="stylesheet" href="../../assets/css/jquery.modal.min.css">
+   <link rel="stylesheet" href="../../assets/css/aos.css">
+   <link rel="stylesheet" href="../../assets/css/styles.css">
+   <title>Pix - hubi9 Inteligência Empresarial</title>
+</head>
 
-        <main id="pix">
-            <div class="ServiceDetails">
-                <section class="serviceDetailsHeader">
-                   <div data-aos="zoom-in" class="Divider"></div>
-                   <h1 data-aos="zoom-in" class="serviceDetailsHeading">Pix</h1>
-                   <div data-aos="zoom-in" class="Divider"></div>
-                </section>
-                <section class="serviceDetailsDesc">
-                   <h1 data-aos="fade-up" class="serviceDetailsHeading">Pix</h1>
-                   <div class="Divider"></div>
-                   <p data-aos="fade-up" data-aos-delay="200">Pix é um novo meio de pagamentos que permite fazer transferências e pagamentos ilimitados de forma instantânea em qualquer dia e horário. Aumente as suas receitas e ainda receba dinheiro em segundos, direto na sua conta.</p>
-                </section>
-            </div>             
-            <section id="como_usar_pix" class=" Section"> <!-- Como usar o Pix?  -->
-                <h2 class="sectionTitle light">Como usar o Pix?</h2>
-                <div class="Divider"></div>
-                <div class="container">
-                   <div class="row">
-                      <div class="col-md-8">
-                         <div class="CustomTabs">
-                            <div class="header">
-                               <div class="tabs">
-                                  <div class="Tab active">
-                                     <i class="fa-solid fa-dollar-sign"></i>
-                                     <span class="title">Cobrar</span>
-                                  </div>
-                                  <div class="Tab ">
-                                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                                     <span class="title">Transferir</span>
-                                  </div>
-                                  <div class="Tab ">
-                                     <i class="fa-solid fa-credit-card"></i>
-                                     <span class="title">Pagar</span>
-                                  </div>
-                               </div>
-                            </div>
-                            <div class="tabSlider content">
-                               <div class="contentWrapper">
-                                  <div class="TabContent">
-                                     <h3 class="title">Use para cobrar</h3>
-                                     <p class="text">Basta apenas seu cliente escanear o QR code ou copiar a chave pix para realizar o pagamento.</p>
-                                  </div>
-                               </div>
-                               <div class="contentWrapper">
-                                  <div class="TabContent">
-                                     <h3 class="title">Use para transferir</h3>
-                                     <p class="text">Use a chave pix ao invés de informar todos os dados bancários. Mais simples e prático, e o dinheiro fica disponível em até 10 segundos.</p>
-                                  </div>
-                               </div>
-                               <div class="contentWrapper">
-                                  <div class="TabContent">
-                                     <h3 class="title">Use para pagar</h3>
-                                     <p class="text">Pague contas usando pix, e tenha a confirmação imediata e maior controle.</p>
-                                  </div>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="col-md-4 sectionImage"><img src="../../assets/images/smartphone.png"></div>
-                   </div>
-                </div>
-            </section>
-
-            <section id="vantagens_pix" class="SectionList dark"> <!-- Vantagens Pix -->
-                <div class="container">
-                   <div class="row">
-                      <div class="col-md-6 image"><img src="../../assets/images/porque_usar_pix.jpg" alt="Imagem da seção"></div>
-                      <div class="col-md-6">
-                         <div class="d-flex flex-col alignItemsCenter">
-                            <h1 class="sectionTitle">Por que usar o Pix na hubi9?</h1>
-                            <div class="Divider"></div>
-                            <p class="sectionDescription"></p>
-                         </div>
-                         <div class="row">
-                            <div class="col-md-12">
-                               <div data-aos="fade-right" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Operação completa em até 10 segundos.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-12">
-                               <div data-aos="fade-right" data-aos-delay="200" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Proporciona mais segurança.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-12">
-                               <div data-aos="fade-right" data-aos-delay="400" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Reduz a burocracia.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-12">
-                               <div data-aos="fade-right" data-aos-delay="600" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Sempre disponível.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-12">
-                               <div data-aos="fade-right" data-aos-delay="800" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Controle melhor.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-12">
-                               <div data-aos="fade-right" data-aos-delay="1000" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Profissional.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-12">
-                               <div data-aos="fade-right" data-aos-delay="1200" class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Simples e prático.</p>
-                               </div>
-                            </div>
-                            <div class="col-md-12">
-                               <div data-aos="fade-right" data-aos-delay="1400"  class="ListItem">
-                                  <div class="icon">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                  </div>
-                                  <p class="listText dark">Barato.</p>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-            </section>
-
-            <section id="quanto_custa_o_pix" class=" Section"> <!-- Quanto custa o pix?  -->
-                <h2 class="sectionTitle light">Quanto custa o Pix na hubi9?</h2>
-                <div class="Divider"></div>
-                <div class="container-fluid">
-                   <h3 class="pixHeading">Pagar e transferir</h3>
-                   <div class="row">
-                      <div class="col-lg-12 col-xl-6">
-                         <div data-aos="fade-up" class="PixCard">
-                            <div class="cardTitle">Pessoa física</div>
-                            <div class="pixCardItem">
-                               <div class="description">Pagamento por QR Code dinâmico</div>
-                               <div class="price">Grátis e ilimitado</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Pagamento por QR code estático</div>
-                               <div class="price">Grátis e ilimitado</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Transferência por chave</div>
-                               <div class="price">Grátis e ilimitado</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Transferência por inserção manual de dados</div>
-                               <div class="price">Grátis e ilimitado</div>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="col-lg-12 col-xl-6">
-                         <div data-aos="fade-up" data-aos-delay="200" class="PixCard">
-                            <div class="cardTitle">Pessoa jurídica</div>
-                            <div class="pixCardItem">
-                               <div class="description">Pagamento por QR Code dinâmico</div>
-                               <div class="price">Grátis e ilimitado</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Pagamento por QR code estático</div>
-                               <div class="price">30 transações grátis ao mês*.</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Transferência por chave</div>
-                               <div class="price">30 transações grátis ao mês*.</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Transferência por inserção manual de dados</div>
-                               <div class="price">30 transações grátis ao mês*.</div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <h3 class="pixHeading">Receber de seus clientes</h3>
-                   <div class="row">
-                      <div class="col-lg-12 col-xl-6">
-                         <div data-aos="fade-up" data-aos-delay="400" class="PixCard">
-                            <div class="cardTitle">Pessoa física</div>
-                            <div class="pixCardItem">
-                               <div class="description">Pagamento por QR Code dinâmico</div>
-                               <div class="price">R$ 2,50 por fatura</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Pagamento por QR code estático</div>
-                               <div class="price">R$ 2,50 por transação</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Transferência por chave</div>
-                               <div class="price">R$ 2,50 por transação</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Transferência por inserção manual de dados</div>
-                               <div class="price">R$ 2,50 por transação</div>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="col-lg-12 col-xl-6">
-                         <div data-aos="fade-up" data-aos-delay="600" class="PixCard">
-                            <div class="cardTitle">Pessoa jurídica</div>
-                            <div class="pixCardItem">
-                               <div class="description">Pagamento por QR Code dinâmico</div>
-                               <div class="price">R$ 2,50 por fatura</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Pagamento por QR code estático</div>
-                               <div class="price">R$ 2,50 por transação</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Transferência por chave</div>
-                               <div class="price">R$ 2,50 por transação</div>
-                            </div>
-                            <div class="pixCardItem">
-                               <div class="description">Transferência por inserção manual de dados</div>
-                               <div class="price">R$ 2,50 por transação</div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-            </section>
-             
-            <section class="FrequentlyAskedQueries Section">
-                <h2 class="sectionTitle light">Perguntas Frequentes</h2>
-                <div class="Divider"></div>
-                <div class="container">
-                   <div class="row">
-                      <div class="col-md-12">
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">O que é o Pix?</div>
-                               <button class="buttonCollapse">
-                                <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>O Pix é um meio de pagamento instantâneo criado pelo Banco Central, que possibilita o envio e recebimento de dinheiro em tempo real, a qualquer momento.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">O que é uma chave Pix?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>A chave Pix funciona como um apelido, que serve para identificar sua conta. Assim, você não precisa informar todos os seus dados bancários para receber um pagamento ou transferir dinheiro.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Como cadastrar uma chave Pix na hubi9?</div>
-                               <button class="buttonCollapse">
-                                <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Basta acessar a Área Pix e selecionar a opção desejada. Você pode usar como chave Pix o seu CPF ou CNPJ, e-mail e telefone ou gerar uma chave aleatória.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Como fazer vendas pelo Pix na hubi9?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Basta gerar uma cobrança e selecionar o Pix como opção de pagamento. Seu cliente receberá uma fatura por e-mail. Então, basta ele escanear o QR code ou copiar o código de cobrança e fazer o pagamento usando o aplicativo do banco ou internet banking.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Em quanto tempo recebo meu dinheiro?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Após a confirmação do pagamento, o dinheiro cai na sua Conta hubi9 imediatamente, em questão de segundos.</span></div>
-                         </div>
-                         <div class="Question">
-                            <div class="questionHeader">
-                               <div class="questionTitle">Como recebo meu dinheiro?</div>
-                               <button class="buttonCollapse">
-                                    <i class="icon fa-solid fa-angle-right"></i>
-                               </button>
-                            </div>
-                            <div class="answerWrapper hidden"><span>Você pode transferir o dinheiro da sua Conta Hubi9 para o banco de sua preferência.</span></div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-            </section>             
-        </main>
-
-        <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank" class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
-            <i class="fa-brands fa-whatsapp"></i>
-         </a>
-
-        <div class="SectionScroller"> <!-- Scroller lateral -->
-            <nav class="sectionNav"> <!-- Links -->
-                <a class="sectionNavLink " href="/">
-                    <span class="icon">
-                      <i class="fa-solid fa-house"></i>
-                    </span>
-                    <div class="title">Home</div>
-                 </a>
-                 <a class="sectionNavLink" href="./boleto.html">
-                    <span class="icon">
-                      <i class="fa-solid fa-barcode"></i>
-                    </span>
-                    <div class="title">Boleto</div>
-                 </a>
-                 <a class="sectionNavLink " href="./cobranca-por-cartao.html">
-                    <span class="icon">
-                      <i class="fa-solid fa-credit-card"></i>
-                    </span>
-                    <div class="title">Cobrança por Cartão</div>
-                 </a>
-                 <a class="sectionNavLink " href="./link-de-pagamento.html">
-                      <span class="icon">
-                          <i class="fa-solid fa-link"></i>
-                      </span>
-                      <div class="title">Link de Pagamento</div>
-                </a>
+<body>
+   <header id="navbar" class="Header navbarFixed">
+      <div class="container">
+         <div class="brand">
+            <a href="/" alt="Logotipo hubi9"> <!-- Logotipo Hubi9 -->
+               <img src="../../assets/images/logotipo_colorido.png" alt="Logotipo hubi9" />
+            </a>
+         </div>
+         <div class="right">
+            <nav id="menu" class="navbarNav"> <!-- Barra de navegação -->
+               <a href="../../sobre-nos.html" class="navbarNavLink">
+                  Sobre nós
+                  <span class="bar"></span>
+               </a> <!-- Links -->
+               <a href="../../servicos.html" class="navbarNavLink">
+                  Serviços
+                  <span class="bar"></span>
+               </a>
+               <a href="../../planos-e-precos.html#precos" class="navbarNavLink">
+                  Planos e Preços Pós
+                  <span class="bar"></span>
+               </a>
+               <a href="../../termos-condicoes.html" class="navbarNavLink">
+                  Termos e Condições
+                  <span class="bar"></span>
+               </a>
+               <a href="../../trabalhe-conosco.html" class="navbarNavLink">
+                  Trabalhe conosco
+                  <span class="bar"></span>
+               </a>
+               <a href="../../contato.html" class="navbarNavLink">
+                  Contato
+                  <span class="bar"></span>
+               </a>
             </nav>
-        </div>
 
-         <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
-            <div class="videoCallThumbnail">
-               <img src="../../assets/images/atendente.png" alt="Atendente">
+            <a class="LoginButton Button buttonSecondary"
+               href="https://erp.hubi9.com.br/sistema/logarsistema/logappclientev10.php">
+               <i class="icon fa-solid fa-user"></i>
+               <span>Entrar</span>
+            </a>
+            <button data-target="#menu" class="btn-toggle HamburguerButton">
+               <i class="icon fa-solid fa-bars"></i>
+            </button>
+         </div>
+      </div>
+   </header>
+
+   <main id="pix">
+      <div class="ServiceDetails">
+         <section class="serviceDetailsHeader">
+            <div data-aos="zoom-in" class="Divider"></div>
+            <h1 data-aos="zoom-in" class="serviceDetailsHeading">Pix</h1>
+            <div data-aos="zoom-in" class="Divider"></div>
+         </section>
+         <section class="serviceDetailsDesc">
+            <h1 data-aos="fade-up" class="serviceDetailsHeading">Pix</h1>
+            <div class="Divider"></div>
+            <p data-aos="fade-up" data-aos-delay="200">Pix é um novo meio de pagamentos que permite fazer transferências
+               e pagamentos ilimitados de forma instantânea em qualquer dia e horário. Aumente as suas receitas e ainda
+               receba dinheiro em segundos, direto na sua conta.</p>
+         </section>
+      </div>
+      <section id="como_usar_pix" class=" Section"> <!-- Como usar o Pix?  -->
+         <h2 class="sectionTitle light">Como usar o Pix?</h2>
+         <div class="Divider"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8">
+                  <div class="CustomTabs">
+                     <div class="header">
+                        <div class="tabs">
+                           <div class="Tab active">
+                              <i class="fa-solid fa-dollar-sign"></i>
+                              <span class="title">Cobrar</span>
+                           </div>
+                           <div class="Tab ">
+                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                              <span class="title">Transferir</span>
+                           </div>
+                           <div class="Tab ">
+                              <i class="fa-solid fa-credit-card"></i>
+                              <span class="title">Pagar</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabSlider content">
+                        <div class="contentWrapper">
+                           <div class="TabContent">
+                              <h3 class="title">Use para cobrar</h3>
+                              <p class="text">Basta apenas seu cliente escanear o QR code ou copiar a chave pix para
+                                 realizar o pagamento.</p>
+                           </div>
+                        </div>
+                        <div class="contentWrapper">
+                           <div class="TabContent">
+                              <h3 class="title">Use para transferir</h3>
+                              <p class="text">Use a chave pix ao invés de informar todos os dados bancários. Mais
+                                 simples e prático, e o dinheiro fica disponível em até 10 segundos.</p>
+                           </div>
+                        </div>
+                        <div class="contentWrapper">
+                           <div class="TabContent">
+                              <h3 class="title">Use para pagar</h3>
+                              <p class="text">Pague contas usando pix, e tenha a confirmação imediata e maior controle.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 sectionImage"><img src="../../assets/images/smartphone.png"></div>
             </div>
-            <div class="videoCallBannerText">
-               <h3>Alguma dúvida?</h3>
-      
-               <button class="nuvidio-widget-button Button buttonPrimary"><i class="fas fa-video me-2"></i>Fale com um especialista</button>
+         </div>
+      </section>
+
+      <section id="vantagens_pix" class="SectionList dark"> <!-- Vantagens Pix -->
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 image"><img src="../../assets/images/porque_usar_pix.jpg" alt="Imagem da seção">
+               </div>
+               <div class="col-md-6">
+                  <div class="d-flex flex-col alignItemsCenter">
+                     <h1 class="sectionTitle">Por que usar o Pix na hubi9?</h1>
+                     <div class="Divider"></div>
+                     <p class="sectionDescription"></p>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div data-aos="fade-right" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Operação completa em até 10 segundos.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div data-aos="fade-right" data-aos-delay="200" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Proporciona mais segurança.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div data-aos="fade-right" data-aos-delay="400" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Reduz a burocracia.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div data-aos="fade-right" data-aos-delay="600" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Sempre disponível.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div data-aos="fade-right" data-aos-delay="800" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Controle melhor.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div data-aos="fade-right" data-aos-delay="1000" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Profissional.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div data-aos="fade-right" data-aos-delay="1200" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Simples e prático.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div data-aos="fade-right" data-aos-delay="1400" class="ListItem">
+                           <div class="icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                           </div>
+                           <p class="listText dark">Barato.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="quanto_custa_o_pix" class=" Section"> <!-- Quanto custa o pix?  -->
+         <h2 class="sectionTitle light">Quanto custa o Pix na hubi9?</h2>
+         <div class="Divider"></div>
+         <div class="container-fluid">
+            <h3 class="pixHeading">Pagar e transferir</h3>
+            <div class="row">
+               <div class="col-lg-12 col-xl-6">
+                  <div data-aos="fade-up" class="PixCard">
+                     <div class="cardTitle">Pessoa física</div>
+                     <div class="pixCardItem">
+                        <div class="description">Pagamento por QR Code dinâmico</div>
+                        <div class="price">Grátis e ilimitado</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Pagamento por QR code estático</div>
+                        <div class="price">Grátis e ilimitado</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Transferência por chave</div>
+                        <div class="price">Grátis e ilimitado</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Transferência por inserção manual de dados</div>
+                        <div class="price">Grátis e ilimitado</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-12 col-xl-6">
+                  <div data-aos="fade-up" data-aos-delay="200" class="PixCard">
+                     <div class="cardTitle">Pessoa jurídica</div>
+                     <div class="pixCardItem">
+                        <div class="description">Pagamento por QR Code dinâmico</div>
+                        <div class="price">Grátis e ilimitado</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Pagamento por QR code estático</div>
+                        <div class="price">30 transações grátis ao mês*.</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Transferência por chave</div>
+                        <div class="price">30 transações grátis ao mês*.</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Transferência por inserção manual de dados</div>
+                        <div class="price">30 transações grátis ao mês*.</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <h3 class="pixHeading">Receber de seus clientes</h3>
+            <div class="row">
+               <div class="col-lg-12 col-xl-6">
+                  <div data-aos="fade-up" data-aos-delay="400" class="PixCard">
+                     <div class="cardTitle">Pessoa física</div>
+                     <div class="pixCardItem">
+                        <div class="description">Pagamento por QR Code dinâmico</div>
+                        <div class="price">R$ 2,50 por fatura</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Pagamento por QR code estático</div>
+                        <div class="price">R$ 2,50 por transação</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Transferência por chave</div>
+                        <div class="price">R$ 2,50 por transação</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Transferência por inserção manual de dados</div>
+                        <div class="price">R$ 2,50 por transação</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-12 col-xl-6">
+                  <div data-aos="fade-up" data-aos-delay="600" class="PixCard">
+                     <div class="cardTitle">Pessoa jurídica</div>
+                     <div class="pixCardItem">
+                        <div class="description">Pagamento por QR Code dinâmico</div>
+                        <div class="price">R$ 2,50 por fatura</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Pagamento por QR code estático</div>
+                        <div class="price">R$ 2,50 por transação</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Transferência por chave</div>
+                        <div class="price">R$ 2,50 por transação</div>
+                     </div>
+                     <div class="pixCardItem">
+                        <div class="description">Transferência por inserção manual de dados</div>
+                        <div class="price">R$ 2,50 por transação</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="FrequentlyAskedQueries Section">
+         <h2 class="sectionTitle light">Perguntas Frequentes</h2>
+         <div class="Divider"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">O que é o Pix?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>O Pix é um meio de pagamento instantâneo criado pelo Banco
+                           Central, que possibilita o envio e recebimento de dinheiro em tempo real, a qualquer
+                           momento.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">O que é uma chave Pix?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>A chave Pix funciona como um apelido, que serve para
+                           identificar sua conta. Assim, você não precisa informar todos os seus dados bancários para
+                           receber um pagamento ou transferir dinheiro.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Como cadastrar uma chave Pix na hubi9?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>Basta acessar a Área Pix e selecionar a opção desejada.
+                           Você pode usar como chave Pix o seu CPF ou CNPJ, e-mail e telefone ou gerar uma chave
+                           aleatória.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Como fazer vendas pelo Pix na hubi9?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>Basta gerar uma cobrança e selecionar o Pix como opção de
+                           pagamento. Seu cliente receberá uma fatura por e-mail. Então, basta ele escanear o QR code ou
+                           copiar o código de cobrança e fazer o pagamento usando o aplicativo do banco ou internet
+                           banking.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Em quanto tempo recebo meu dinheiro?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>Após a confirmação do pagamento, o dinheiro cai na sua
+                           Conta hubi9 imediatamente, em questão de segundos.</span></div>
+                  </div>
+                  <div class="Question">
+                     <div class="questionHeader">
+                        <div class="questionTitle">Como recebo meu dinheiro?</div>
+                        <button class="buttonCollapse">
+                           <i class="icon fa-solid fa-angle-right"></i>
+                        </button>
+                     </div>
+                     <div class="answerWrapper hidden"><span>Você pode transferir o dinheiro da sua Conta Hubi9 para o
+                           banco de sua preferência.</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <a href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank"
+      class="FloatingActionButton WhatsAppButton"> <!-- Botão whatsapp -->
+      <i class="fa-brands fa-whatsapp"></i>
+   </a>
+
+   <div class="SectionScroller"> <!-- Scroller lateral -->
+      <nav class="sectionNav"> <!-- Links -->
+         <a class="sectionNavLink " href="/">
+            <span class="icon">
+               <i class="fa-solid fa-house"></i>
+            </span>
+            <div class="title">Home</div>
+         </a>
+         <a class="sectionNavLink" href="./boleto.html">
+            <span class="icon">
+               <i class="fa-solid fa-barcode"></i>
+            </span>
+            <div class="title">Boleto</div>
+         </a>
+         <a class="sectionNavLink " href="./cobranca-por-cartao.html">
+            <span class="icon">
+               <i class="fa-solid fa-credit-card"></i>
+            </span>
+            <div class="title">Cobrança por Cartão</div>
+         </a>
+         <a class="sectionNavLink " href="./link-de-pagamento.html">
+            <span class="icon">
+               <i class="fa-solid fa-link"></i>
+            </span>
+            <div class="title">Link de Pagamento</div>
+         </a>
+      </nav>
+   </div>
+
+   <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
+      <div class="videoCallThumbnail">
+         <img src="../../assets/images/atendente.png" alt="Atendente">
+      </div>
+      <div class="videoCallBannerText">
+         <h3>Alguma dúvida?</h3>
+
+         <button class="nuvidio-widget-button Button buttonPrimary"><i class="fas fa-video me-2"></i>Fale com um
+            especialista</button>
+      </div>
+   </div>
+
+   <footer>
+      <!-- Rodapé -->
+      <div class="container">
+
+         <div class="row">
+
+            <div
+               class="col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-lg-start">
+               <img class="footerBrand" src="../../assets/images/logotipo_colorido.png" alt="Logotipo Hubi9" />
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0">
+               <nav class="footerNav">
+                  <a href="../consulta-veicular.html" class="footerNavLink">Consulta Veicular</a>
+                  <a href="../analise-de-credito.html" class="footerNavLink">Análise de Crédito</a>
+                  <a href="../protesto-de-titulos.html" class="footerNavLink">Protesto de Títulos</a>
+                  <a href="../solucoes-em-pagamento.html" class="footerNavLink">Soluções de Pagamento</a>
+               </nav>
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0">
+
+               <nav class="footerNav">
+                  <a href="./pix.html" class="footerNavLink">Pix</a>
+                  <a href="./boleto.html" class="footerNavLink">Boleto</a>
+                  <a href="./cobranca-por-cartao.html" class="footerNavLink">Cobrança por cartão</a>
+                  <a href="./link-de-pagamento.html" class="footerNavLink">Link de Pagamento</a>
+                  <a href="../../planos-e-precos.html" class="footerNavLink">Planos e Preços</a>
+                  <a href="../../sobre-nos.html" class="footerNavLink">Sobre Nós</a>
+                  <a href="../../trabalhe-conosco.html" class="footerNavLink">Trabalhe Conosco</a>
+               </nav>
+
+            </div>
+
+            <div class="col-lg-3">
+
+               <nav class="footerNav">
+                  <a href="../../termos-condicoes.html#termos" class="footerNavLink">Política de Privacidade</a>
+                  <a href="../../termos-condicoes.html#termos" class="footerNavLink">Política de Cookies</a>
+                  <a href="../../termos-condicoes.html#termos" class="footerNavLink">Termos e Condições de Uso</a>
+                  <a href="../../termos-condicoes.html#termos" class="footerNavLink">Política de Abertura de Conta de
+                     Pagamento para Entidade Públicas</a>
+                  <a href="../../termos-condicoes.html#termos" class="footerNavLink">Termo de Autorização - SCR</a>
+                  <a href="../../termos-condicoes.html#termos" class="footerNavLink">Termo Aditivo - Negativação</a>
+               </nav>
+
+            </div>
+
+         </div>
+
+         <hr>
+
+         <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="SocialMedia">
+               <!-- Redes sociais -->
+               <a class="SocialButton" href="https://www.facebook.com/hubi9" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+               </a>
+               <a class="SocialButton" href="https://www.instagram.com/hubi9.2022/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+               </a>
+               <a class="SocialButton" href="mailto:atendimento@hubi9.com.br" target="_blank">
+                  <i class="fa-regular fa-envelope"></i>
+               </a>
+               <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+               </a>
+            </div>
+
+            <div class="container">
+               <address>Alameda Ria Negro 1147- Alphaville Industrial, Barueri - SP<br />CEP- 42.701-320</address>
             </div>
          </div>
 
-         <footer>
-            <!-- Rodapé -->
-            <div class="container">
-      
-               <div class="row">
-      
-                  <div class="col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-lg-start">
-                     <img class="footerBrand" src="../../assets/images/logotipo_branco.png" alt="Logotipo Hubi9" />
-                  </div>
-      
-                  <div class="col-lg-3 mb-4 mb-lg-0">
-                     <nav class="footerNav">
-                        <a href="../consulta-veicular.html" class="footerNavLink">Consulta Veicular</a>
-                        <a href="../analise-de-credito.html" class="footerNavLink">Análise de Crédito</a>
-                        <a href="../protesto-de-titulos.html" class="footerNavLink">Protesto de Títulos</a>
-                        <a href="../solucoes-em-pagamento.html" class="footerNavLink">Soluções de Pagamento</a>
-                     </nav>
-                  </div>
-      
-                  <div class="col-lg-3 mb-4 mb-lg-0">
-      
-                     <nav class="footerNav">
-                        <a href="./pix.html" class="footerNavLink">Pix</a>
-                        <a href="./boleto.html" class="footerNavLink">Boleto</a>
-                        <a href="./cobranca-por-cartao.html" class="footerNavLink">Cobrança por cartão</a>
-                        <a href="./link-de-pagamento.html" class="footerNavLink">Link de Pagamento</a>
-                        <a href="../../planos-e-precos.html" class="footerNavLink">Planos e Preços</a>
-                        <a href="../../sobre-nos.html" class="footerNavLink">Sobre Nós</a>
-                        <a href="../../trabalhe-conosco.html" class="footerNavLink">Trabalhe Conosco</a>
-                     </nav>
-      
-                  </div>
-      
-                  <div class="col-lg-3">
-      
-                     <nav class="footerNav">
-                        <a href="../../termos-condicoes.html#termos" class="footerNavLink">Política de Privacidade</a>
-                        <a href="../../termos-condicoes.html#termos" class="footerNavLink">Política de Cookies</a>
-                        <a href="../../termos-condicoes.html#termos" class="footerNavLink">Termos e Condições de Uso</a>
-                        <a href="../../termos-condicoes.html#termos" class="footerNavLink">Política de Abertura de Conta de Pagamento para Entidade Públicas</a>
-                        <a href="../../termos-condicoes.html#termos" class="footerNavLink">Termo de Autorização - SCR</a>
-                        <a href="../../termos-condicoes.html#termos" class="footerNavLink">Termo Aditivo - Negativação</a>
-                     </nav>
-      
-                  </div>
-      
-               </div>
-      
-               <hr>
-      
-               <div class="d-flex flex-column align-items-center justify-content-center">
-                  <div class="SocialMedia">
-                     <!-- Redes sociais -->
-                     <a class="SocialButton" href="https://www.facebook.com/hubi9" target="_blank">
-                        <i class="fa-brands fa-facebook-f"></i>
-                     </a>
-                     <a class="SocialButton" href="https://www.instagram.com/hubi9.2022/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                     </a>
-                     <a class="SocialButton" href="mailto:atendimento@hubi9.com.br" target="_blank">
-                        <i class="fa-regular fa-envelope"></i>
-                     </a>
-                     <a class="SocialButton" href="https://api.whatsapp.com/send?phone=5511964316542" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i>
-                     </a>
-                  </div>
-      
-                  <div class="container">
-                     <address>Alameda Ria Negro 1147- Alphaville Industrial, Barueri - SP<br />CEP- 42.701-320</address>
-                  </div>
-               </div>
-               
-            </div>
-      
-            
-            
-         </footer>
+      </div>
 
-        <script src="../../assets/js/jquery.min.js"></script>
-        <script src="../../assets/js/aos.js"></script>
-        <script src="../../assets/js/slick.min.js"></script>
-        <script src="../../assets/js/header.js"></script>
-        <script src="../../assets/js/step-slider.js"></script>
-        <script src="../../assets/js/questions.js"></script>
 
-        <script>
-         AOS.init();
-       </script>
-        
-        <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
-    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
-    <script type="text/javascript" charset="UTF-8">
+
+   </footer>
+
+   <script src="../../assets/js/jquery.min.js"></script>
+   <script src="../../assets/js/aos.js"></script>
+   <script src="../../assets/js/slick.min.js"></script>
+   <script src="../../assets/js/header.js"></script>
+   <script src="../../assets/js/step-slider.js"></script>
+   <script src="../../assets/js/questions.js"></script>
+
+   <script>
+      AOS.init();
+   </script>
+
+   <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+   <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js"
+      charset="UTF-8"></script>
+   <script type="text/javascript" charset="UTF-8">
       document.addEventListener('DOMContentLoaded', function () {
-      cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"pt","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"hubi9 - Inteligência Empresarial"});
+         cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "pt", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "hubi9 - Inteligência Empresarial" });
       });
-    </script>
+   </script>
 
-<!-- End Cookie Consent -->
-    <!--Start of Tawk.to Script-->
-    <!--Start of Tawk.to Script-->
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript" cookie-consent="functionality">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/62b536417b967b117996419e/1g69tnsqs';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
+   <!-- End Cookie Consent -->
+   <!--Start of Tawk.to Script-->
+   <!--Start of Tawk.to Script-->
+   <!--Start of Tawk.to Script-->
+   <script type="text/javascript" cookie-consent="functionality">
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+      (function () {
+         var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+         s1.async = true;
+         s1.src = 'https://embed.tawk.to/62b536417b967b117996419e/1g69tnsqs';
+         s1.charset = 'UTF-8';
+         s1.setAttribute('crossorigin', '*');
+         s0.parentNode.insertBefore(s1, s0);
       })();
-      </script>
-  <!--End of Tawk.to Script-->
-  <!--End of Tawk.to Script-->
-  <!--End of Tawk.to Script-->
+   </script>
+   <!--End of Tawk.to Script-->
+   <!--End of Tawk.to Script-->
+   <!--End of Tawk.to Script-->
 
-  <!-- Google tag (gtag.js) -->
-  <script async="https://www.googletagmanager.com/gtag/js?=AW-10996385642"></script>
-  <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+   <!-- Google tag (gtag.js) -->
+   <script async="https://www.googletagmanager.com/gtag/js?=AW-10996385642"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
 
-     gtag('config', 'AW-10996385642');
-  </script>
-    <!--
+      gtag('config', 'AW-10996385642');
+   </script>
+   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -546,5 +571,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    </body>
+</body>
+
 </html>

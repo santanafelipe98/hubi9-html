@@ -369,6 +369,20 @@ a.Button {
     width: 100%;
 }
 
+.hidden {
+    display: none !important;
+}
+
+#call_to_action_img_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#call_to_action_img_container img {
+    width: 100%;
+}
+
 .QueryCard {
     margin-bottom: 20px;
 }
@@ -634,7 +648,7 @@ footer .footerBrand {
 }
 
 .SocialButton:hover {
-    background: #f3cd08;
+    background: var(--primary-color);
 }
 
 /* Consulta gratuita */
@@ -853,18 +867,14 @@ footer .footerBrand {
 /* Nossos valiosos clientes */
 
 .OurCustomers {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 150px;
     min-height: 500px;
     position: relative;
-    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/valiosos_clientes.jpg");
+    background-image: linear-gradient(180deg,rgba(44,44,49,0),#212529 95%),linear-gradient(180deg,rgba(48,48,64,.3),rgba(48,48,64,.3)),linear-gradient(0deg,rgba(52,58,64,.4),rgba(0,151,216,.4)), url("../images/valiosos_clientes.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
-    background-attachment: fixed;
-}
-
-.OurCustomers .Divider {
-    background: var(--primary-color);
 }
 
 /* .indicator {
@@ -941,7 +951,6 @@ footer .footerBrand {
 
 #customer_slider {
     border-radius: 10px;
-    background: #fff;
     overflow: hidden;
     padding: 10px;
 }
@@ -2944,7 +2953,6 @@ footer .footerBrand {
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
-    background-attachment: fixed;
 }
 
 .Indicators {
@@ -3600,6 +3608,10 @@ footer .footerBrand {
     border-color: var(--primary-color);
 }
 
+.CallToAction {
+    line-height: 1.8;
+}
+
 .setupBannerIcon {
     width: 100px;
 }
@@ -3690,7 +3702,7 @@ footer .footerBrand {
 }
 
 #videoCallBanner {
-    padding-top: 200px;
+    padding-top: 50px;
 }
 
 #videoCallText {
@@ -3962,6 +3974,10 @@ footer .footerBrand {
 @media screen and (max-width: 991.8px) {
     #ComoAntecipar .GenericCard {
         margin-bottom: 30px;
+    }
+
+    .stepImage img {
+        width: 100%;
     }
 
     #contratar #planRow {
@@ -4291,10 +4307,6 @@ footer .footerBrand {
     .indicatorsContainer {
         flex-direction: column;
         align-items: center;
-    }
-
-    .stepImage img {
-        width: 100%;
     }
 
     .container {
