@@ -154,7 +154,7 @@ body {
     justify-content: center;
     align-items: center;
     background: transparent;
-    color: #fff;
+    color: #666;
     font-size: 1.6rem;
 }
 
@@ -3917,7 +3917,7 @@ footer .footerBrand {
         display: flex;
         flex-direction: column;
         padding-top: 100px;
-        background: #333;
+        background: #fff;
         top: 70px;
         transform: translateY(0);
     }
