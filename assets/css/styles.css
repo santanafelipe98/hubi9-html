@@ -732,12 +732,12 @@ footer .footerBrand {
 }
 
 .Card .cardContent {
+    padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
     min-height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -2082,6 +2082,15 @@ footer .footerBrand {
     max-width: 700px;
 }
 
+.titleLg {
+    font-size: 30px;
+}
+
+.textWhite {
+    color: #fff;
+}
+
+
 #fgts_vantagens .TextIcon {
     min-height: 300px;
 }
@@ -2218,7 +2227,7 @@ footer .footerBrand {
 }
 
 .textSecondary {
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
 }
 
 .GenericCard .Title {
@@ -3881,6 +3890,43 @@ footer .footerBrand {
     padding: 50px 0 !important;
 }
 
+.planTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.planPrice {
+    font-size: 32px;
+    font-weight: 700;
+    color: #bbb;
+    margin-bottom: 50px;
+}
+
+#customPlanSection {
+    background: linear-gradient(rgba(0,0,0, 0.8), rgba(0, 0, 0, 0.8)), url('../../assets/images/plano-personalizado.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.blink {
+    animation: blink .3s ease-in infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Section Scroller */
 
 @media screen and (max-width: 1400px) {
@@ -4340,6 +4386,10 @@ footer .footerBrand {
 
 @media screen and (max-width: 575.8px) {
     #form_parceiro .imgWrapper {
+        width: 100%;
+    }
+
+    .planImg {
         width: 100%;
     }
 
