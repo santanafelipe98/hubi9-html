@@ -472,6 +472,137 @@ a.Button {
     transform: translateY(-10px);
 }
 
+/* Slider */
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.splide {
+    padding: 0;
+}
+
+.solution-slide {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-slide h1,
+.solution-slide p {
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
+}
+
+.slide-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.slide-text {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+#slide_inicial {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/banner/banner00.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#slide_consulta_veicular {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/banner/banner01.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#slide_analise_de_credito {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/banner/banner02.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#slide_recuperacao_de_recebiveis {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/banner/banner03.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#slide_protesto_de_titulos {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/protesto_de_titulos.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#slide_solucoes_de_pagamento {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/banner/banner05.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#slide_certificado_digital {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/banner/banner06.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+/* Slider */
+
+/* Vantagens - Tela inicial */
+
+.topic {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 0px rgba(0, 0, 0, .05);
+    transition: transform .3s ease-in-out;
+    border: 1px solid var(--primary-color);
+}
+
+.topic:hover {
+    transform: translateY(-25px);
+}
+
+.topic:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.topic:nth-child(1), .topic:nth-child(3) {
+    margin-left: 50px;
+}
+
+.topic:nth-child(2) {
+    margin-right: 50px;
+}
+
+.topicTitle {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.topicContent {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Vantagens - Tela inicial */
 
 @keyframes fade-in {
     from {
@@ -660,35 +791,6 @@ footer .footerBrand {
 .SocialButton:hover {
     background: var(--secondary-color);
 }
-
-/* Consulta gratuita */
-
-#FreeQuery {
-    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/consulta_gratuita.webp");
-    background-position: '0 0,50% 50%';
-    background-size: 'auto,cover';
-    background-repeat: 'repeat,no-repeat';
-    background-attachment: 'scroll,fixed';
-}
-
-.FreeQueryForm .row {
-    align-items: center;
-}
-
-.FreeQueryForm .formTitle {
-    padding: 5px;
-    border-bottom: 3px solid var(--secondary-color);
-    color: #fff;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-}
-
-.FreeQueryForm .Button {
-    width: 100%;
-}
-
-
-/* Consulta gratuita */
 
 /* Nossos serviços */
 
@@ -1683,10 +1785,6 @@ footer .footerBrand {
     text-align: center;
 }
 
-.ourQueries .QueryButton:not(:last-child) {
-    margin-right: 20px;
-}
-
 #banner_consultas .ServiceInfo .row {
     justify-content: center;
 }
@@ -1705,40 +1803,33 @@ footer .footerBrand {
     font-size: 20px;
 }
 
+.tabsNav {
+    display: flex;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 .QueryButton {
     cursor: pointer;
-    width: 300px;
-    height: 300px;
     overflow: hidden;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    background: #fff;
-    border: 4px var(--secondary-color) solid;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow .3s ease, transform .3s ease;
+    background: transparent;
+    border: none;
+    padding: 20px;
+    font-size: 24px;
 }
 
 .QueryButton:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transform: scale(1.05);
+    color: #555;
 }
 
-.QueryButton img {
-    width: 100%;
-}
-
-.QueryButton span.text {
-    margin-top: 20px;
-    font-size: 24px;
-    color: #303040;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: Montserrat, sans-serif;
-    color: var(--primary-color);
+.QueryButton.active {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 #vantagens_analise_de_credito {

@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+   <link rel="stylesheet" href="./assets/css/splide-sea-green.min.css">
    <link rel="stylesheet" href="./assets/css/aos.css">
    <link rel="stylesheet" href="./assets/css/styles.css">
    <link rel="stylesheet" href="./assets/css/index.css">
@@ -81,18 +82,93 @@
       </div>
    </header>
    <main>
-      <section id="jumbotron" class="Jumbotron">
-         <!-- Jumbotron (vídeo de entrada) -->
-         <div class="backgroundVideo">
-            <video autoplay loop muted>
-               <source src="./assets/videos/jumbotron.mp4">
-            </video>
+      <section>
+         <div id="main_slider" class="splide" aria-label="Slide - Nossas soluções">
+            <div class="splide__track">
+               <ul class="splide__list">
+
+                  <li class="splide__slide">
+                     <div id="slide_inicial" class="solution-slide">
+                        <h1 class="slide-title">Venha <span class="text-secondary">impulsionar</span> o futuro do seu
+                           negócio!</h1>
+
+                        <p class="slide-text">
+                           A mais completa solução para gerenciamento de cobranças e recebimento de pagamentos.
+                        </p>
+                     </div>
+                  </li>
+
+                  <li class="splide__slide">
+                     <div id="slide_consulta_veicular" class="solution-slide">
+                        <h1 class="slide-title">A <span class="text-secondary">melhor</span> consulta do Brasil!</h1>
+
+                        <p class="slide-text">
+                           A Análise Auto disponibiliza o histórico de qualquer veículo em tempo real e online, evitando
+                           assim a possibilidade de prevenção a fraudes e gestão de risco.
+                        </p>
+                     </div>
+                  </li>
+                  <li class="splide__slide">
+                     <div id="slide_protesto_de_titulos" class="solution-slide">
+                        <h1 class="slide-title">Protesto em todo <span class="text-secondary">Território
+                              Nacional?</span></h1>
+
+                        <p class="slide-text">
+                           A Análise Auto automatiza e reduz a inadimplência da sua empresa, utilizando a nossa
+                           plataforma de protesto de títulos online, em todo território nacional.
+                        </p>
+                     </div>
+                  </li>
+                  <li class="splide__slide">
+                     <div id="slide_analise_de_credito" class="solution-slide">
+                        <h1 class="slide-title">Pensou em <span class="text-secondary">Análise de Crédito?</span></h1>
+
+                        <p class="slide-text">
+                           A Análise Auto, disponibiliza com exclusiva cobertura nacional, a melhor consulta de crédito
+                           do mercado, de forma objetiva, eficiente e rápida.
+                        </p>
+                     </div>
+                  </li>
+                  <li class="splide__slide">
+                     <div id="slide_recuperacao_de_recebiveis" class="solution-slide">
+                        <h1 class="slide-title">A sua empresa possui <span class="text-secondary">clientes
+                              inadimplentes?</span></h1>
+
+                        <p class="slide-text">
+                           A Análise Auto apresenta as melhores estratégias de cobrança, otimizando um processo bem
+                           estruturado para manter o bom relacionamento com o cliente, reduzir a inadimplência e
+                           recuperar dívidas.
+                        </p>
+                     </div>
+                  </li>
+
+                  <li class="splide__slide">
+                     <div id="slide_solucoes_de_pagamento" class="solution-slide">
+                        <h1 class="slide-title"><span class="text-secondary">Solução completa</span> para sua empresa!
+                        </h1>
+
+                        <p class="slide-text">
+                           Cobrar, gerenciar, receber de maneira rápida e escalável, conforme a sua necessidade.
+                        </p>
+                     </div>
+                  </li>
+
+                  <li class="splide__slide">
+                     <div id="slide_certificado_digital" class="solution-slide">
+                        <h1 class="slide-title">Proteção <span class="text-secondary">confiável</span> para o seu mundo
+                           digital!
+                        </h1>
+
+                        <p class="slide-text">
+                           Renove sua segurança digital agora! Garanta a tranquilidade da sua empresa com nossos
+                           serviços especializados em emissão e renovação de Certificados Digitais.
+                        </p>
+                     </div>
+                  </li>
+
+               </ul>
+            </div>
          </div>
-         <h1 class="heading" data-aos="zoom-in">Venha impulsionar o futuro<br> do seu negócio!</h1>
-         <!-- Título do Jumbotron -->
-         <p class="description" data-aos="fade-up" data-aos-delay="300">A mais completa solução para análise de crédito,
-            gerenciamento de cobranças e
-            recebimento de pagamentos.</p> <!-- Descrição do Jumbotron -->
       </section>
 
 
@@ -119,6 +195,23 @@
                   </div>
                </div>
                <div class="col-md-12 col-lg-3">
+                  <div data-aos="fade-up" data-aos-delay="600" class="Card">
+                     <div class="cardThumb"><img src="./assets/images/protesto_de_titulos.png"
+                           alt="Protesto de Títulos"></div>
+                     <div class="cardContent">
+                        <h3 class="cardTitle">Protesto de Títulos</h3>
+                        <p class="cardDescription">Oficialize o estado de inadimplência do devedor junto ao cartório em
+                           tempo real e online.
+                           <br><br><br>
+                        </p>
+                     </div>
+                     <div class="d-flex justify-content-center">
+                        <a class="buttonMoreInfo Button buttonDefault" href="./servicos/protesto-de-titulos.html">Saiba
+                           mais</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 col-lg-3">
                   <div data-aos="fade-up" data-aos-delay="200" class="Card">
                      <div class="cardThumb"><img src="./assets/images/analise_de_credito.png" alt="Análise de Crédito">
                      </div>
@@ -132,21 +225,6 @@
                      <div class="d-flex justify-content-center">
                         <a class="buttonMoreInfo Button buttonDefault" href="./servicos/analise-de-credito.html">Saiba
                            mais</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-12 col-lg-3">
-                  <div data-aos="fade-up" data-aos-delay="400" class="Card">
-                     <div class="cardThumb"><img src="./assets/images/recuperacao_de_recebiveis.png"
-                           alt="Recuperação de Recebíveis"></div>
-                     <div class="cardContent">
-                        <h3 class="cardTitle">Recuperação de Recebíveis</h3>
-                        <p>A Hub automatiza e gerencia todo o processo de cobrança de dívidas. Recupere dívidas de
-                           cliente inadimplentes na sua empresa.</p>
-                     </div>
-                     <div class="d-flex justify-content-center">
-                        <a class="buttonMoreInfo Button buttonDefault"
-                           href="./servicos/recuperacao-de-recebiveis.html">Saiba mais</a>
                      </div>
                   </div>
                </div>
@@ -186,23 +264,23 @@
             </div>
 
             <div class="row justify-content-center">
+
                <div class="col-md-12 col-lg-3">
-                  <div data-aos="fade-up" data-aos-delay="600" class="Card">
-                     <div class="cardThumb"><img src="./assets/images/protesto_de_titulos.png"
-                           alt="Protesto de Títulos"></div>
+                  <div data-aos="fade-up" data-aos-delay="400" class="Card">
+                     <div class="cardThumb"><img src="./assets/images/recuperacao_de_recebiveis.png"
+                           alt="Recuperação de Recebíveis"></div>
                      <div class="cardContent">
-                        <h3 class="cardTitle">Protesto de Títulos</h3>
-                        <p class="cardDescription">Oficialize o estado de inadimplência do devedor junto ao cartório em
-                           tempo real e online.
-                           <br><br><br>
-                        </p>
+                        <h3 class="cardTitle">Recuperação de Recebíveis</h3>
+                        <p>A Hub automatiza e gerencia todo o processo de cobrança de dívidas. Recupere dívidas de
+                           cliente inadimplentes na sua empresa.</p>
                      </div>
                      <div class="d-flex justify-content-center">
-                        <a class="buttonMoreInfo Button buttonDefault" href="./servicos/protesto-de-titulos.html">Saiba
-                           mais</a>
+                        <a class="buttonMoreInfo Button buttonDefault"
+                           href="./servicos/recuperacao-de-recebiveis.html">Saiba mais</a>
                      </div>
                   </div>
                </div>
+
                <div class="col-md-12 col-lg-3">
                   <div data-aos="fade-up" data-aos-delay="800" class="Card">
                      <div class="cardThumb"><img src="./assets/images/gestao_financeira.png"
@@ -247,7 +325,7 @@
          <div class="container d-flex justify-content-center">
             <div class="row">
                <div class="col-lg-6 imgWrapper">
-                  <img data-aos="fade-right" data-aos-delay="200" src="./assets/images/how_it_works_img.png"
+                  <img data-aos="fade-right" data-aos-delay="200" src="./assets/images/homem_laptop.webp"
                      alt="How it Works Image">
                </div>
                <div class="col-lg-6 imgWrapper">
@@ -258,16 +336,42 @@
          </div>
       </section>
 
-      <!-- <section id="responsabilidade_social" class="SocialResponsibility">
-         <div data-aos="zoom-in" class="Content">
-            <div class="call-to-action">
-               <img class="image" src="./assets/images/santa_fe.png" alt="Santa Fé Logotipo">
-               <p class="socialResponsibilityText">A hubi9 apoia esse projeto.</p>
-               <a class="Button buttonSecondary" href="https://doe.santafe.org.br/" target="_blank">Faça a sua
-                  doação</a>
+      <section class="Section">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 d-flex flex-column justify-content-center">
+                  <div data-aos="fade-right" data-aos-delay="200" class="topic">
+                     <h2 class="topicTitle">Solução Inteligente e Automatizada</h2>
+
+                     <p class="topicContent">Combinando expertise em análise de crédito e gerenciamento eficiente de
+                        cobranças/recebimentos com tecnologia avançada, a empresa oferece suporte para estruturar
+                        operações financeiras inteligentes e automatizadas.</p>
+                  </div>
+
+                  <div data-aos="fade-right" data-aos-delay="400" class="topic">
+                     <h2 class="topicTitle">Eficiência Operacional Sustentável</h2>
+
+                     <p class="topicContent">Destacando o compromisso em proporcionar eficiência operacional
+                        sustentável, as soluções da empresa visam ajudar as organizações a crescerem de maneira sólida e
+                        duradoura, promovendo a venda constante e eficaz.</p>
+                  </div>
+
+                  <div data-aos="fade-right" data-aos-delay="600" class="topic">
+                     <h2 class="topicTitle">Ampla Gama de Benefícios para o Crescimento Empresarial</h2>
+
+                     <p class="topicContent">Unindo a análise de crédito especializada e a automação financeira, a
+                        empresa oferece uma abordagem abrangente, garantindo que as empresas possam vender mais, operar
+                        com eficiência e manter o foco no crescimento contínuo.</p>
+                  </div>
+
+               </div>
+               <div class="col-lg-6 imgWrapper">
+                  <img data-aos="fade-left" data-aos-delay="200" src="./assets/images/mulher_triangulo.png"
+                     alt="Vantagens">
+               </div>
             </div>
          </div>
-      </section> -->
+      </section>
 
       <section class="CallToAction Section">
          <div class="container">
@@ -293,66 +397,6 @@
                         planos</a>
                   </div>
 
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <section id="videoCallBanner" class="Section">
-
-         <div class="container">
-            <div class="row">
-               <div id="videoCallText" class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                  <h1 data-aos="fade-left" class="textXl mb-3">Tem alguma dúvida?</h1>
-
-                  <p data-aos="fade-up" data-aos-delay="200">Todo o poder do "olho no olho" para um atendimento
-                     eficiente e personalizado!</p>
-
-                  <button data-aos="fade-up" data-aos-delay="400"
-                     class="nuvidio-widget-button Button buttonPrimary videoCallButton mt-5 mb-4 mb-md-0">
-                     <i class="fa-solid fa-video me-2"></i>
-                     Fale com um Especialista
-                  </button>
-
-
-                  <img id="videoCallGif" src="./assets/images/animacao_circulo.gif" alt="Animação de Círculo">
-               </div>
-               <div id="videoCallVideo" class="col-lg-6">
-                  <div data-aos="fade-right" data-aos-delay="200" id="videoCallWrapper">
-                     <div class="videoCallWrapperHeader">
-                        <div class="videoCallWrapperText">
-                           <div class="videoCallWrapperTitle"><i class="fas fa-video me-2"></i> Videochamada</div>
-                           <div class="videoCallWrapperProtocol">Protocolo: #17484949494</div>
-                        </div>
-                        <div class="videoCallArrowButton">
-                           <i class="fas fa-angle-down"></i>
-                        </div>
-                     </div>
-                     <video autoplay="" loop="" muted="">
-                        <source src="./assets/videos/videochamada.mp4">
-                     </video>
-                     <div class="videoCallFooter">
-                        <div class="videoCallActionButton">
-                           <i class="fa-regular fa-message"></i>
-                        </div>
-
-                        <div class="videoCallActionButton">
-                           <i class="fa-solid fa-microphone"></i>
-                        </div>
-
-                        <div class="videoCallActionButton">
-                           <i class="fa-solid fa-video"></i>
-                        </div>
-
-                        <div class="videoCallActionButton">
-                           <i class="fa-solid fa-phone"></i>
-                        </div>
-
-                        <div class="videoCallActionButton hangup">
-                           <i class="fa-solid fa-phone"></i>
-                        </div>
-                     </div>
-                  </div>
                </div>
             </div>
          </div>
@@ -587,7 +631,7 @@
                </span>
                <div class="title">Consulta Veicular</div>
             </a>
-            <a class="sectionNavLink " href="./servicos/analise-de-credito.html">
+            <a class="sectionNavLink" href="./servicos/analise-de-credito.html">
                <span class="icon">
                   <i class="fa-solid fa-magnifying-glass"></i>
                </span>
@@ -686,18 +730,6 @@
       <i class="fa-brands fa-whatsapp"></i>
    </a>
 
-   <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
-      <div class="videoCallThumbnail">
-         <img src="./assets/images/atendente.png" alt="Atendente">
-      </div>
-      <div class="videoCallBannerText">
-         <h3>Alguma dúvida?</h3>
-
-         <button class="nuvidio-widget-button Button buttonPrimary"><i class="fas fa-video me-2"></i>Fale com um
-            especialista</button>
-      </div>
-   </div>
-
    <footer>
       <!-- Rodapé -->
       <div class="container">
@@ -712,7 +744,7 @@
             <div class="col-lg-3 mb-4 mb-lg-0">
                <nav class="footerNav">
                   <a href="./servicos/consulta-veicular.html" class="footerNavLink">Consulta Veicular</a>
-                  <a href="./servicos/analise-de-credito.html" class="footerNavLink">Análise de Crédito</a>
+                  <a href="./servicos/analise-de-credito.html" class="footerNavLink hidden">Análise de Crédito</a>
                   <a href="./servicos/recuperacao-de-recebiveis.html" class="footerNavLink">Recuperação de
                      Recebíveis</a>
                   <a href="./servicos/protesto-de-titulos.html" class="footerNavLink">Protesto de Títulos</a>
@@ -744,7 +776,7 @@
                   <a href="./termos-condicoes.html#termos" class="footerNavLink">Termos e Condições de Uso</a>
                   <a href="./termos-condicoes.html#termos" class="footerNavLink">Política de Abertura de Conta de
                      Pagamento para Entidade Públicas</a>
-                  <a href="./termos-condicoes.html#termos" class="footerNavLink">Termo de Autorização - SCR</a>
+                  <a href="./termos-condicoes.html#termos" class="footerNavLink hidden">Termo de Autorização - SCR</a>
                   <a href="./termos-condicoes.html#termos" class="footerNavLink">Termo Aditivo - Negativação</a>
                </nav>
 
@@ -783,9 +815,13 @@
    </footer>
 
    <script src="./assets/js/jquery.min.js"></script>
+   <script src="./assets/js/popper.min.js"></script>
+   <script src="./assets/js/bootstrap-4.4.1.js"></script>
    <script src="./assets/js/slick.min.js"></script>
+   <script src="./assets/js/splide.min.js"></script>
    <script src="./assets/js/aos.js"></script>
    <script src="./assets/js/header.js"></script>
+   <script src="./assets/js/index.js"></script>
    <script src="./assets/js/jquery.mask.js"></script>
    <script src="./assets/js/masks.js"></script>
 
@@ -832,28 +868,6 @@
          s0.parentNode.insertBefore(s1, s0);
       })();
    </script>
-   <!--End of Tawk.to Script-->
-   <!--End of Tawk.to Script-->
-   <!--End of Tawk.to Script-->
-   <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-   <!-- Google tag (gtag.js) -->
-   <script>
-      window.NuVidioId = "hubi9.comercial";
-      window.NuVidioConfigs = {
-         fabButton: false,
-      }
-   </script>
-
-   <script type="text/javascript" src="https://widget.nuvidio.com/init.js" async=""></script>
    <script async="https://www.googletagmanager.com/gtag/js?=AW-10996385642"></script>
    <script>
       window.dataLayer = window.dataLayer || [];

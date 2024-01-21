@@ -33,4 +33,14 @@ $(function() {
             },
         ]
     })
+
+    new Splide('#main_slider', {
+        type: 'loop',
+        width: '100%',
+        height: '100vh',
+        pagination: true,
+        perPage: 1,
+        autoplay: true,
+        speed: 3000
+    }).mount();
 })

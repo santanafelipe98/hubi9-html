@@ -83,17 +83,19 @@
          <!-- Seção nossas consultas -->
          <h2 class="sectionTitle light">Nossas consultas</h2>
          <div class="Divider"></div>
-         <div class="container">
-            <button data-aos="zoom-in" class="QueryButton" data-target="#consulta_pf">
-               <!-- Botão consulta PF -->
-               <img src="../assets/images/pf.png">
-               <span class="text">Consulta PF</span> <!-- Texto botão -->
-            </button>
-            <button data-aos="zoom-in" data-aos-delay="200" class="QueryButton" data-target="#consulta_pj">
-               <!-- Botão consulta PJ -->
-               <img src="../assets/images/pj.png">
-               <span class="text">Consulta PJ</span> <!-- Texto botão -->
-            </button>
+         <div class="container flex-column">
+
+            <h2 class="mb-5">Selecione o tipo consulta abaixo:</h2>
+
+            <div class="tabsNav" data-aos="zoom-in">
+               <button class="QueryButton active" data-target="#consulta_pf">
+                  <span class="text">Consulta PF</span> <!-- Texto botão -->
+               </button>
+               <button class="QueryButton" data-target="#consulta_pj">
+                  <span class="text">Consulta PJ</span> <!-- Texto botão -->
+               </button>
+            </div>
+
          </div>
       </section>
 
@@ -122,24 +124,12 @@
                   <div class="col-sm-12 col-lg-3 col-xl-2">
                      <div class="QueryCard">
                         <div class="queryCardContent">
-                           <div class="queryCardIcon"><img src="../assets/images/score.png" alt="hub Light + SCORE PF">
+                           <div class="queryCardIcon"><img src="../assets/images/score.png" alt="hub Score Total PF">
                            </div>
-                           <h3 class="queryCardTitle">hub Light + SCORE PF</h3>
+                           <h3 class="queryCardTitle">hub Score Total PF</h3>
                         </div>
                         <div class="d-flex justify-content-center">
                            <a href="#consulta_hub_light_score_pf" rel="modal:open"
-                              class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-sm-12 col-lg-3 col-xl-2">
-                     <div class="QueryCard">
-                        <div class="queryCardContent">
-                           <div class="queryCardIcon"><img src="../assets/images/plus.png" alt="hub Plus PF"></div>
-                           <h3 class="queryCardTitle">hub Plus PF</h3>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                           <a href="#consulta_hub_plus_pf" rel="modal:open"
                               class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
                         </div>
                      </div>
@@ -197,6 +187,9 @@
                         </div>
                      </div>
                   </div>
+               </div>
+
+               <div class="row">
                   <div class="col-sm-12 col-lg-3 col-xl-2">
                      <div class="QueryCard">
                         <div class="queryCardContent">
@@ -210,15 +203,12 @@
                         </div>
                      </div>
                   </div>
-               </div>
-
-               <div class="row">
                   <div class="col-sm-12 col-lg-3 col-xl-2">
                      <div class="QueryCard">
                         <div class="queryCardContent">
                            <div class="queryCardIcon"><img src="../assets/images/individamento_bancario.png"
                                  alt="hub Endividamento Bancário + Score PF"></div>
-                           <h3 class="queryCardTitle">hub Endividamento Bancário + Score PF</h3>
+                           <h3 class="queryCardTitle">hub Endividamento Bancário Total PF</h3>
                         </div>
                         <div class="d-flex justify-content-center">
                            <a href="#consulta_hub_individamento_bancario_score_pf" rel="modal:open"
@@ -234,19 +224,6 @@
                         </div>
                         <div class="d-flex justify-content-center">
                            <a href="#consulta_hub_star_pf" rel="modal:open"
-                              class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-sm-12 col-lg-3 col-xl-2">
-                     <div class="QueryCard">
-                        <div class="queryCardContent">
-                           <div class="queryCardIcon"><img src="../assets/images/hub_star_score.png"
-                                 alt="hub Star PF + Score"></div>
-                           <h3 class="queryCardTitle">hub Star PF + Score</h3>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                           <a href="#consulta_hub_star_pf_score" rel="modal:open"
                               class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
                         </div>
                      </div>
@@ -279,24 +256,12 @@
                   <div class="col-sm-12 col-lg-3 col-xl-2">
                      <div class="QueryCard">
                         <div class="queryCardContent">
-                           <div class="queryCardIcon"><img src="../assets/images/score.png" alt="hub Light + SCORE PJ">
+                           <div class="queryCardIcon"><img src="../assets/images/score.png" alt="hub Score Total PJ">
                            </div>
-                           <h3 class="queryCardTitle">hub Light + SCORE PJ</h3>
+                           <h3 class="queryCardTitle">hub Score Total PJ</h3>
                         </div>
                         <div class="d-flex justify-content-center">
                            <a href="#consulta_hub_light_score_pj" rel="modal:open"
-                              class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-sm-12 col-lg-3 col-xl-2">
-                     <div class="QueryCard">
-                        <div class="queryCardContent">
-                           <div class="queryCardIcon"><img src="../assets/images/plus.png" alt="hub Plus PJ"></div>
-                           <h3 class="queryCardTitle">hub Plus PJ</h3>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                           <a href="#consulta_hub_plus_pj" rel="modal:open"
                               class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
                         </div>
                      </div>
@@ -346,9 +311,9 @@
                   <div class="col-sm-12 col-lg-3 col-xl-2">
                      <div class="QueryCard">
                         <div class="queryCardContent">
-                           <div class="queryCardIcon"><img src="../assets/images/_super.png" alt="hub Super PJ">
+                           <div class="queryCardIcon"><img src="../assets/images/_super.png" alt="hub Super + Score PJ">
                            </div>
-                           <h3 class="queryCardTitle">hub Super PJ + Score</h3>
+                           <h3 class="queryCardTitle">hub Super + Score PJ</h3>
                         </div>
                         <div class="d-flex justify-content-center">
                            <a href="#consulta_hub_super_pj_score" rel="modal:open"
@@ -356,6 +321,11 @@
                         </div>
                      </div>
                   </div>
+
+               </div>
+
+               <div class="row">
+
                   <div class="col-sm-12 col-lg-3 col-xl-2">
                      <div class="QueryCard">
                         <div class="queryCardContent">
@@ -369,9 +339,6 @@
                         </div>
                      </div>
                   </div>
-               </div>
-
-               <div class="row">
 
                   <div class="col-sm-12 col-lg-3 col-xl-2">
                      <div class="QueryCard">
@@ -394,19 +361,6 @@
                         </div>
                         <div class="d-flex justify-content-center">
                            <a href="#consulta_hub_star_pj" rel="modal:open"
-                              class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-sm-12 col-lg-3 col-xl-2">
-                     <div class="QueryCard">
-                        <div class="queryCardContent">
-                           <div class="queryCardIcon"><img src="../assets/images/hub_star_score.png"
-                                 alt="hub Star PJ + Score"></div>
-                           <h3 class="queryCardTitle">hub Star PJ + Score</h3>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                           <a href="#consulta_hub_star_pj_score" rel="modal:open"
                               class="buttonMoreInfo Button buttonSecondary">Saiba mais</a>
                         </div>
                      </div>
@@ -686,7 +640,7 @@
             <div class="col-lg-3 mb-4 mb-lg-0">
                <nav class="footerNav">
                   <a href="./consulta-veicular.html" class="footerNavLink">Consulta Veicular</a>
-                  <a href="./analise-de-credito.html" class="footerNavLink">Análise de Crédito</a>
+                  <a href="./analise-de-credito.html" class="footerNavLink hidden">Análise de Crédito</a>
                   <a href="./protesto-de-titulos.html" class="footerNavLink">Protesto de Títulos</a>
                   <a href="./solucoes-em-pagamento.html" class="footerNavLink">Soluções de Pagamento</a>
                </nav>
@@ -715,7 +669,7 @@
                   <a href="../termos-condicoes.html#termos" class="footerNavLink">Termos e Condições de Uso</a>
                   <a href="../termos-condicoes.html#termos" class="footerNavLink">Política de Abertura de Conta de
                      Pagamento para Entidade Públicas</a>
-                  <a href="../termos-condicoes.html#termos" class="footerNavLink">Termo de Autorização - SCR</a>
+                  <a href="../termos-condicoes.html#termos" class="footerNavLink hidden">Termo de Autorização - SCR</a>
                   <a href="../termos-condicoes.html#termos" class="footerNavLink">Termo Aditivo - Negativação</a>
                </nav>
 
@@ -753,18 +707,6 @@
 
    </footer>
 
-   <div class="floatingVideoCallBanner"> <!-- Banner flutuante -->
-      <div class="videoCallThumbnail">
-         <img src="../assets/images/atendente.png" alt="Atendente">
-      </div>
-      <div class="videoCallBannerText">
-         <h3>Alguma dúvida?</h3>
-
-         <button class="nuvidio-widget-button Button buttonPrimary"><i class="fas fa-video me-2"></i>Fale com um
-            especialista</button>
-      </div>
-   </div>
-
    <div id="consulta_hub_light_pf" class="modal QueryListModal">
       <!-- Hub Light PF -->
       <div class="modalHeader">
@@ -779,11 +721,16 @@
                <div class="queryItem">Pendências financeiras</div>
                <div class="queryItem">Pendências bancárias</div>
                <div class="queryItem">Pendências comerciais</div>
+               <div class="queryItem">Limite de crédito</div>
+               <div class="queryItem">Renda Presumida</div>
             </div>
             <div class="col-md-6">
                <div class="queryItem">Protestos nacionais</div>
                <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
                <div class="queryItem">Dados cadastrais</div>
+               <div class="queryItem">Histórico de endereço</div>
+               <div class="queryItem">Histórico de telefones</div>
+               <div class="queryItem">Histórico de e-mails</div>
                <div class="queryItem">Participações societárias em empresas</div>
             </div>
          </div>
@@ -793,8 +740,8 @@
    <div id="consulta_hub_light_score_pf" class="modal QueryListModal">
       <!-- Hub light + SCORE PF -->
       <div class="modalHeader">
-         <img class="icon" src="../assets/images/score.png" alt="hub Light + SCORE PF">
-         <h3 class="modalTitle">hub Light + SCORE PF</h3>
+         <img class="icon" src="../assets/images/score.png" alt="hub Score Total PF">
+         <h3 class="modalTitle">hub Score Total PF</h3>
          <p class="modalText">Essa consulta disponibiliza as seguintes informações:</p>
       </div>
       <div class="container">
@@ -805,37 +752,17 @@
                <div class="queryItem">Pendências financeiras</div>
                <div class="queryItem">Pendências bancárias</div>
                <div class="queryItem">Pendências comerciais</div>
+               <div class="queryItem">Limite de crédito</div>
+               <div class="queryItem">Renda presumida</div>
             </div>
             <div class="col-md-6">
                <div class="queryItem">Protestos nacionais</div>
                <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
-               <div class="queryItem">Dados cadastrais</div>
                <div class="queryItem">Participações societárias em empresas</div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-   <div id="consulta_hub_plus_pf" class="modal QueryListModal">
-      <!-- Hub Plus PF -->
-      <div class="modalHeader">
-         <img class="icon" src="../assets/images/plus.png" alt="hub Plus PF">
-         <h3 class="modalTitle">hub Plus PF</h3>
-         <p class="modalText">Essa consulta disponibiliza as seguintes informações:</p>
-      </div>
-      <div class="container">
-         <div class="row">
-            <div class="col-md-6">
-               <div class="queryItem">Score Restritivo</div>
-               <div class="queryItem">Score Positivo</div>
-               <div class="queryItem">Pendências financeiras</div>
-               <div class="queryItem">Pendências bancárias</div>
-            </div>
-            <div class="col-md-6">
-               <div class="queryItem">Protestos nacionais</div>
-               <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
                <div class="queryItem">Dados cadastrais</div>
-               <div class="queryItem">Participações societárias em empresas</div>
+               <div class="queryItem">Histórico de endereço</div>
+               <div class="queryItem">Histórico de telefones</div>
+               <div class="queryItem">Histórico de e-mails</div>
             </div>
          </div>
       </div>
@@ -856,13 +783,19 @@
                <div class="queryItem">Pendências financeiras</div>
                <div class="queryItem">Pendências bancárias</div>
                <div class="queryItem">Pendências comerciais</div>
+               <div class="queryItem">Renda Presumida</div>
+               <div class="queryItem">Limite de crédito</div>
+               <div class="queryItem">Score Positivo</div>
             </div>
             <div class="col-md-6">
+               <div class="queryItem">Processos judiciais</div>
+               <div class="queryItem">Histórico de endereço</div>
+               <div class="queryItem">Histórico de telefones</div>
+               <div class="queryItem">Histórico de e-mails</div>
                <div class="queryItem">Protestos nacionais</div>
                <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
                <div class="queryItem">Dados cadastrais</div>
                <div class="queryItem">Participações societárias em empresas</div>
-               <div class="queryItem">Limite de crédito</div>
             </div>
          </div>
       </div>
@@ -878,25 +811,39 @@
       <div class="container">
          <div class="row">
             <div class="col-md-6">
+               <div class="queryItem">Empréstimos e financiamentos</div>
+               <div class="queryItem">Adiantamentos</div>
+               <div class="queryItem">Operações de arrendamento mercantil</div>
+               <div class="queryItem">Coobrigações e garantias prestadas</div>
+               <div class="queryItem">Compromissos de crédito não canceláveis</div>
+               <div class="queryItem">Operações de crédito que tenham sido objeto de negociação com retenção substancial
+                  de riscos e de benefícios ou de controle.</div>
+               <div class="queryItem">Operações com instrumentos de pagamento pós-pagos</div>
                <div class="queryItem">Score Restritivo</div>
                <div class="queryItem">Score Positivo</div>
                <div class="queryItem">Pendências financeiras</div>
                <div class="queryItem">Pendências bancárias</div>
                <div class="queryItem">Pendências comerciais</div>
-               <div class="queryItem">Protestos nacionais</div>
             </div>
             <div class="col-md-6">
-               <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
-               <div class="queryItem">Dados cadastrais</div>
+               <div class="queryItem">Operações baixadas como prejuízo e créditos contratados com recursos a liberar
+               </div>
+               <div class="queryItem">Demais operações que impliquem risco de crédito</div>
+               <div class="queryItem">Operações ou contratos com características de crédito reconhecidas pelo BC</div>
+               <div class="queryItem">Protestos nacionais</div>
                <div class="queryItem">Participações societárias em empresas</div>
-               <div class="queryItem">Limite de crédito</div>
+               <div class="queryItem">Cartão de crédito rotativo</div>
+               <div class="queryItem">Limite de crédito geral</div>
+               <div class="queryItem">Dados cadastrais</div>
+               <div class="queryItem">Histórico de endereço</div>
+               <div class="queryItem">Histórico de telefones</div>
+               <div class="queryItem">Histórico de e-mails</div>
                <div class="queryItem">Renda presumida</div>
+               <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
             </div>
          </div>
       </div>
    </div>
-
-
 
    <div id="consulta_hub_super_pf" class="modal QueryListModal">
       <div class="modalHeader">
@@ -911,20 +858,25 @@
                <div class="queryItem">Pendências financeiras</div>
                <div class="queryItem">Pendências bancárias</div>
                <div class="queryItem">Protestos nacionais</div>
+               <div class="queryItem">Dados cadastrais</div>
+
             </div>
             <div class="col-md-6">
+               <div class="queryItem">Histórico de endereço</div>
+               <div class="queryItem">Histórico de telefones</div>
+               <div class="queryItem">Histórico de e-mails</div>
                <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
-               <div class="queryItem">Dados cadastrais</div>
                <div class="queryItem">Participações societárias em empresas</div>
             </div>
          </div>
       </div>
 
-      <div id="consulta_hub_super_pf_score" class="modal QueryListModal">
+      <div id="consulta_hub_light_score_pj" class="modal QueryListModal">
+         <!-- hub Score Total PJ -->
          <div class="modalHeader">
-            <img class="icon" src="../assets/images/super.png" alt="hub Super PF + Score">
-            <h3 class="modalTitle">hub Super PF + Score</h3>
-            <p class="modalText">Essa consulta disponibiliza todas as seguintes informações:</p>
+            <img class="icon" src="../assets/images/score.png" alt="hub Score Total PJ">
+            <h3 class="modalTitle">hub Score Total PJ</h3>
+            <p class="modalText">Essa consulta disponibiliza as seguintes informações:</p>
          </div>
          <div class="container">
             <div class="row">
@@ -933,12 +885,18 @@
                   <div class="queryItem">Score Positivo</div>
                   <div class="queryItem">Pendências financeiras</div>
                   <div class="queryItem">Pendências bancárias</div>
+                  <div class="queryItem">Pendências comerciais</div>
+                  <div class="queryItem">Limite de crédito</div>
+                  <div class="queryItem">Faturamento presumido</div>
                </div>
                <div class="col-md-6">
                   <div class="queryItem">Protestos nacionais</div>
                   <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
+                  <div class="queryItem">Quadro societário</div>
                   <div class="queryItem">Dados cadastrais</div>
-                  <div class="queryItem">Participações societárias em empresas</div>
+                  <div class="queryItem">Histórico de endereço</div>
+                  <div class="queryItem">Histórico de telefones</div>
+                  <div class="queryItem">Histórico de e-mails</div>
                </div>
             </div>
          </div>
@@ -957,39 +915,18 @@
                   <div class="queryItem">Pendências financeiras</div>
                   <div class="queryItem">Pendências bancárias</div>
                   <div class="queryItem">Pendências comerciais</div>
-               </div>
-               <div class="col-md-6">
-                  <div class="queryItem">Protestos nacionais</div>
-                  <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
-                  <div class="queryItem">Dados cadastrais</div>
-                  <div class="queryItem">Participações societárias em empresas</div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div id="consulta_hub_star_pf_score" class="modal QueryListModal">
-         <div class="modalHeader">
-            <img class="icon" src="../assets/images/hub_star.png" alt="hub Star PF + Score">
-            <h3 class="modalTitle">hub Star PF + Score</h3>
-            <p class="modalText">Essa consulta disponibiliza todas as seguintes informações:</p>
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <div class="queryItem">Score Restritivo</div>
+                  <div class="queryItem">Renda Presumida</div>
                   <div class="queryItem">Score Positivo</div>
-                  <div class="queryItem">Pendências financeiras</div>
-                  <div class="queryItem">Pendências bancárias</div>
-                  <div class="queryItem">Pendências comerciais</div>
-                  <div class="queryItem">Protestos nacionais</div>
+                  <div class="queryItem">Limite de crédito</div>
                </div>
                <div class="col-md-6">
+                  <div class="queryItem">Protestos nacionais</div>
+                  <div class="queryItem">Histórico de endereço</div>
+                  <div class="queryItem">Histórico de telefones</div>
+                  <div class="queryItem">Histórico de e-mails</div>
                   <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
                   <div class="queryItem">Dados cadastrais</div>
                   <div class="queryItem">Participações societárias em empresas</div>
-                  <div class="queryItem">Relatórios de empréstimos</div>
-                  <div class="queryItem">Relatórios de financiamentos</div>
                </div>
             </div>
          </div>
@@ -1004,17 +941,36 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6">
+                  <div class="queryItem">Empréstimos e financiamentos</div>
+                  <div class="queryItem">Adiantamentos</div>
+                  <div class="queryItem">Operações de arrendamento mercantil</div>
+                  <div class="queryItem">Coobrigações e garantias prestadas</div>
+                  <div class="queryItem">Compromissos de crédito não canceláveis</div>
+                  <div class="queryItem">Operações de crédito que tenham sido objeto de negociação com retenção
+                     substancial
+                     de riscos e de benefícios ou de controle.</div>
+                  <div class="queryItem">Operações com instrumentos de pagamento pós-pagos</div>
                   <div class="queryItem">Score Restritivo</div>
                   <div class="queryItem">Pendências financeiras</div>
                   <div class="queryItem">Pendências bancárias</div>
                   <div class="queryItem">Protestos nacionais</div>
-                  <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
+
                </div>
                <div class="col-md-6">
+                  <div class="queryItem">Operações baixadas como prejuízo e créditos contratados com recursos a liberar
+                  </div>
+                  <div class="queryItem">Demais operações que impliquem risco de crédito</div>
+                  <div class="queryItem">Operações ou contratos com características de crédito reconhecidas pelo BC
+                  </div>
+                  <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
+                  <div class="queryItem">Cartão de crédito rotativo</div>
+                  <div class="queryItem">Renda Presumida</div>
+                  <div class="queryItem">Limite de crédito</div>
                   <div class="queryItem">Dados cadastrais</div>
+                  <div class="queryItem">Histórico de endereço</div>
+                  <div class="queryItem">Histórico de telefones</div>
+                  <div class="queryItem">Histórico de e-mails</div>
                   <div class="queryItem">Participações societárias em empresas</div>
-                  <div class="queryItem">Relatórios de empréstimos</div>
-                  <div class="queryItem">Relatórios de financiamentos</div>
                </div>
             </div>
          </div>
@@ -1022,33 +978,50 @@
 
       <div id="consulta_hub_individamento_bancario_score_pf" class="modal QueryListModal">
          <div class="modalHeader">
-            <img class="icon" src="../assets/images/individamento_bancario.png"
-               alt="hub Endividamento Bancário + Score PF">
-            <h3 class="modalTitle">hub Endividamento Bancário + Score PF</h3>
+            <img class="icon" src="../assets/images/individamento_bancario.png" alt="hub Endividamento Bancário Total">
+            <h3 class="modalTitle">hub Endividamento Bancário Total</h3>
             <p class="modalText">Essa consulta disponibiliza todas as seguintes informações:</p>
          </div>
          <div class="container">
             <div class="row">
                <div class="col-md-6">
+                  <div class="queryItem">Empréstimos e financiamentos</div>
+                  <div class="queryItem">Adiantamentos</div>
+                  <div class="queryItem">Operações de arrendamento mercantil</div>
+                  <div class="queryItem">Coobrigações e garantias prestadas</div>
+                  <div class="queryItem">Compromissos de crédito não canceláveis</div>
+                  <div class="queryItem">Operações de crédito que tenham sido objeto de negociação com retenção
+                     substancial
+                     de riscos e de benefícios ou de controle.</div>
+                  <div class="queryItem">Operações com instrumentos de pagamento pós-pagos</div>
+                  <div class="queryItem">Operações baixadas como prejuízo e créditos contratados com recursos a liberar
+                  </div>
+                  <div class="queryItem">Demais operações que impliquem risco de crédito</div>
                   <div class="queryItem">Score Restritivo</div>
                   <div class="queryItem">Score Positivo</div>
+                  <div class="queryItem">Faturamento presumido</div>
+               </div>
+               <div class="col-md-6">
+                  <div class="queryItem">Operações ou contratos com características de crédito reconhecidas pelo BC
+                  </div>
+                  <div class="queryItem">Limite de crédito</div>
                   <div class="queryItem">Pendências financeiras</div>
                   <div class="queryItem">Pendências bancárias</div>
                   <div class="queryItem">Protestos nacionais</div>
                   <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
-               </div>
-               <div class="col-md-6">
+                  <div class="queryItem">Cartão de crédito rotativo</div>
                   <div class="queryItem">Dados cadastrais</div>
+                  <div class="queryItem">Histórico de endereço</div>
+                  <div class="queryItem">Histórico de telefones</div>
+                  <div class="queryItem">Histórico de e-mails</div>
                   <div class="queryItem">Participações societárias em empresas</div>
-                  <div class="queryItem">Relatórios de empréstimos</div>
-                  <div class="queryItem">Relatórios de financiamentos</div>
                </div>
             </div>
          </div>
       </div>
 
       <div id="consulta_hub_light_pj" class="modal QueryListModal">
-         <!-- Hub Light PJ  -->
+         <!-- Hub Light PJ -->
          <div class="modalHeader">
             <img class="icon" src="../assets/images/light.png" alt="hub Light PJ">
             <h3 class="modalTitle">hub Light PJ</h3>
@@ -1061,63 +1034,18 @@
                   <div class="queryItem">Pendências financeiras</div>
                   <div class="queryItem">Pendências bancárias</div>
                   <div class="queryItem">Pendências comerciais</div>
+                  <div class="queryItem">Limite de crédito</div>
+                  <div class="queryItem">Faturamento presumido</div>
+                  <div class="queryItem">Processos judiciais</div>
                </div>
                <div class="col-md-6">
-                  <div class="queryItem">Protestos nacionais</div>
+                  <div class="queryItem">Protestos judiciais</div>
                   <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
                   <div class="queryItem">Dados cadastrais</div>
-                  <div class="queryItem">Participações societárias em empresas</div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div id="consulta_hub_light_score_pj" class="modal QueryListModal">
-         <!-- Hub Light + SCore PJ  -->
-         <div class="modalHeader">
-            <img class="icon" src="../assets/images/score.png" alt="hub Light + SCORE PJ">
-            <h3 class="modalTitle">hub Light + SCORE PJ</h3>
-            <p class="modalText">Essa consulta disponibiliza as seguintes informações:</p>
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <div class="queryItem">Score Restritivo</div>
-                  <div class="queryItem">Score Positivo</div>
-                  <div class="queryItem">Pendências financeiras</div>
-                  <div class="queryItem">Pendências bancárias</div>
-                  <div class="queryItem">Pendências comerciais</div>
-               </div>
-               <div class="col-md-6">
-                  <div class="queryItem">Protestos nacionais</div>
-                  <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
-                  <div class="queryItem">Dados cadastrais</div>
-                  <div class="queryItem">Participações societárias em empresas</div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div id="consulta_hub_plus_pj" class="modal QueryListModal">
-         <!-- Hub Plus PJ -->
-         <div class="modalHeader">
-            <img class="icon" src="../assets/images/plus.png" alt="hub Plus PJ">
-            <h3 class="modalTitle">hub Plus PJ</h3>
-            <p class="modalText">Essa consulta disponibiliza as seguintes informações:</p>
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <div class="queryItem">Score Restritivo</div>
-                  <div class="queryItem">Score Positivo</div>
-                  <div class="queryItem">Pendências financeiras</div>
-                  <div class="queryItem">Pendências bancárias</div>
-               </div>
-               <div class="col-md-6">
-                  <div class="queryItem">Protestos nacionais</div>
-                  <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
-                  <div class="queryItem">Dados cadastrais</div>
-                  <div class="queryItem">Participações societárias em empresas</div>
+                  <div class="queryItem">Histórico de endereço</div>
+                  <div class="queryItem">Histórico de telefones</div>
+                  <div class="queryItem">Histórico de e-mails</div>
+                  <div class="queryItem">Quadro societário</div>
                </div>
             </div>
          </div>
@@ -1138,13 +1066,66 @@
                   <div class="queryItem">Pendências financeiras</div>
                   <div class="queryItem">Pendências bancárias</div>
                   <div class="queryItem">Pendências comerciais</div>
+                  <div class="queryItem">Faturamento presumido</div>
+                  <div class="queryItem">Limite de crédito</div>
+                  <div class="queryItem">Score Positivo</div>
                </div>
                <div class="col-md-6">
+                  <div class="queryItem">Processos judiciais</div>
+                  <div class="queryItem">Histórico de endereço</div>
+                  <div class="queryItem">Histórico de telefones</div>
+                  <div class="queryItem">Histórico de e-mails</div>
                   <div class="queryItem">Protestos nacionais</div>
                   <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
                   <div class="queryItem">Dados cadastrais</div>
-                  <div class="queryItem">Participações societárias em empresas</div>
-                  <div class="queryItem">Limite de crédito</div>
+                  <div class="queryItem">Quadro societário</div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="consulta_hub_top_completo_pj" class="modal QueryListModal">
+         <!-- Hub Top Completo -->
+         <div class="modalHeader">
+            <img class="icon" src="../assets/images/top_completo.png" alt="hub Top Completo PJ">
+            <h3 class="modalTitle">hub Top Completo PJ</h3>
+            <p class="modalText">Essa consulta disponibiliza as seguintes informações:</p>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="queryItem">Empréstimos e financiamentos</div>
+                  <div class="queryItem">Adiantamentos</div>
+                  <div class="queryItem">Operações de arrendamento mercantil</div>
+                  <div class="queryItem">Coobrigações e garantias prestadas</div>
+                  <div class="queryItem">Compromissos de crédito não canceláveis</div>
+                  <div class="queryItem">Operações de crédito que tenham sido objeto de negociação com retenção
+                     substancial
+                     de riscos e de benefícios ou de controle.</div>
+                  <div class="queryItem">Operações com instrumentos de pagamento pós-pagos</div>
+                  <div class="queryItem">Score Restritivo</div>
+                  <div class="queryItem">Score Positivo</div>
+                  <div class="queryItem">Pendências financeiras</div>
+                  <div class="queryItem">Pendências bancárias</div>
+                  <div class="queryItem">Pendências comerciais</div>
+                  <div class="queryItem">Processos judiciais</div>
+               </div>
+               <div class="col-md-6">
+                  <div class="queryItem">Operações baixadas como prejuízo e créditos contratados com recursos a liberar
+                  </div>
+                  <div class="queryItem">Demais operações que impliquem risco de crédito</div>
+                  <div class="queryItem">Operações ou contratos com características de crédito reconhecidas pelo BC
+                  </div>
+                  <div class="queryItem">Protestos nacionais</div>
+                  <div class="queryItem">Quadro societário</div>
+                  <div class="queryItem">Cartão de crédito rotativo</div>
+                  <div class="queryItem">Limite de crédito geral</div>
+                  <div class="queryItem">Dados cadastrais</div>
+                  <div class="queryItem">Histórico de endereço</div>
+                  <div class="queryItem">Histórico de telefones</div>
+                  <div class="queryItem">Histórico de e-mails</div>
+                  <div class="queryItem">Faturamento presumido</div>
+                  <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
                </div>
             </div>
          </div>
@@ -1223,6 +1204,96 @@
             </div>
          </div>
 
+         <div id="consulta_hub_individamento_bancario_pj" class="modal QueryListModal">
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/individamento_bancario.png" alt="hub Endividamento Bancário PJ">
+               <h3 class="modalTitle">hub Endividamento Bancário PJ</h3>
+               <p class="modalText">Essa consulta disponibiliza todas as seguintes informações:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Empréstimos e financiamentos</div>
+                     <div class="queryItem">Adiantamentos</div>
+                     <div class="queryItem">Operações de arrendamento mercantil</div>
+                     <div class="queryItem">Coobrigações e garantias prestadas</div>
+                     <div class="queryItem">Compromissos de crédito não canceláveis</div>
+                     <div class="queryItem">Operações de crédito que tenham sido objeto de negociação com retenção
+                        substancial
+                        de riscos e de benefícios ou de controle.</div>
+                     <div class="queryItem">Operações com instrumentos de pagamento pós-pagos</div>
+                     <div class="queryItem">Score Restritivo</div>
+                     <div class="queryItem">Pendências financeiras</div>
+                     <div class="queryItem">Pendências bancárias</div>
+                     <div class="queryItem">Protestos nacionais</div>
+
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Operações baixadas como prejuízo e créditos contratados com recursos a
+                        liberar
+                     </div>
+                     <div class="queryItem">Demais operações que impliquem risco de crédito</div>
+                     <div class="queryItem">Operações ou contratos com características de crédito reconhecidas pelo BC
+                     </div>
+                     <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
+                     <div class="queryItem">Cartão de crédito rotativo</div>
+                     <div class="queryItem">Faturamento presumido</div>
+                     <div class="queryItem">Limite de crédito</div>
+                     <div class="queryItem">Dados cadastrais</div>
+                     <div class="queryItem">Histórico de endereço</div>
+                     <div class="queryItem">Histórico de telefones</div>
+                     <div class="queryItem">Quadro societário</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="consulta_hub_individamento_bancario_score_pj" class="modal QueryListModal">
+            <div class="modalHeader">
+               <img class="icon" src="../assets/images/individamento_bancario.png"
+                  alt="hub Endividamento Bancário Total">
+               <h3 class="modalTitle">hub Endividamento Bancário Total PJ</h3>
+               <p class="modalText">Essa consulta disponibiliza todas as seguintes informações:</p>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="queryItem">Empréstimos e financiamentos</div>
+                     <div class="queryItem">Adiantamentos</div>
+                     <div class="queryItem">Operações de arrendamento mercantil</div>
+                     <div class="queryItem">Coobrigações e garantias prestadas</div>
+                     <div class="queryItem">Compromissos de crédito não canceláveis</div>
+                     <div class="queryItem">Operações de crédito que tenham sido objeto de negociação com retenção
+                        substancial
+                        de riscos e de benefícios ou de controle.</div>
+                     <div class="queryItem">Operações com instrumentos de pagamento pós-pagos</div>
+                     <div class="queryItem">Operações baixadas como prejuízo e créditos contratados com recursos a
+                        liberar
+                     </div>
+                     <div class="queryItem">Demais operações que impliquem risco de crédito</div>
+                     <div class="queryItem">Score Restritivo</div>
+                     <div class="queryItem">Score Positivo</div>
+                     <div class="queryItem">Faturamento presumido</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="queryItem">Operações ou contratos com características de crédito reconhecidas pelo BC
+                     </div>
+                     <div class="queryItem">Pendências financeiras</div>
+                     <div class="queryItem">Pendências bancárias</div>
+                     <div class="queryItem">Protestos nacionais</div>
+                     <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
+                     <div class="queryItem">Cartão de crédito rotativo</div>
+                     <div class="queryItem">Limite de crédito</div>
+                     <div class="queryItem">Dados cadastrais</div>
+                     <div class="queryItem">Histórico de endereço</div>
+                     <div class="queryItem">Histórico de telefones</div>
+                     <div class="queryItem">Histórico de e-mails</div>
+                     <div class="queryItem">Quadro societário</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
          <div id="consulta_hub_individamento_bancario_score_pj" class="modal QueryListModal">
             <div class="modalHeader">
                <img class="icon" src="../assets/images/individamento_bancario.png"
@@ -1235,31 +1306,6 @@
                   <div class="col-md-6">
                      <div class="queryItem">Score Restritivo</div>
                      <div class="queryItem">Score Positivo</div>
-                     <div class="queryItem">Pendências financeiras</div>
-                     <div class="queryItem">Pendências bancárias</div>
-                     <div class="queryItem">Protestos nacionais</div>
-                     <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="queryItem">Dados cadastrais</div>
-                     <div class="queryItem">Participações societárias em empresas</div>
-                     <div class="queryItem">Relatórios de empréstimos</div>
-                     <div class="queryItem">Relatórios de financiamentos</div>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div id="consulta_hub_individamento_bancario_pj" class="modal QueryListModal">
-            <div class="modalHeader">
-               <img class="icon" src="../assets/images/individamento_bancario.png" alt="hub Endividamento Bancário PJ">
-               <h3 class="modalTitle">hub Endividamento Bancário PJ</h3>
-               <p class="modalText">Essa consulta disponibiliza todas as seguintes informações:</p>
-            </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="queryItem">Score Restritivo</div>
                      <div class="queryItem">Pendências financeiras</div>
                      <div class="queryItem">Pendências bancárias</div>
                      <div class="queryItem">Protestos nacionais</div>
@@ -1288,43 +1334,24 @@
                      <div class="queryItem">Pendências financeiras</div>
                      <div class="queryItem">Pendências bancárias</div>
                      <div class="queryItem">Pendências comerciais</div>
+                     <div class="queryItem">Faturamento presumido</div>
+                     <div class="queryItem">Score Positivo</div>
+                     <div class="queryItem">Limite de crédito</div>
                   </div>
                   <div class="col-md-6">
+                     <div class="queryItem">Processos judiciais</div>
                      <div class="queryItem">Protestos nacionais</div>
+                     <div class="queryItem">Histórico de endereço</div>
+                     <div class="queryItem">Histórico de telefones</div>
+                     <div class="queryItem">Histórico de e-mails</div>
                      <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
                      <div class="queryItem">Dados cadastrais</div>
-                     <div class="queryItem">Participações societárias em empresas</div>
+                     <div class="queryItem">Quadro societário</div>
                   </div>
                </div>
             </div>
          </div>
 
-         <div id="consulta_hub_star_pj_score" class="modal QueryListModal">
-            <div class="modalHeader">
-               <img class="icon" src="../assets/images/hub_star_score.png" alt="hub Star PJ + Score">
-               <h3 class="modalTitle">hub Star PJ + Score</h3>
-               <p class="modalText">Essa consulta disponibiliza todas as seguintes informações:</p>
-            </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="queryItem">Score Restritivo</div>
-                     <div class="queryItem">Score Positivo</div>
-                     <div class="queryItem">Pendências financeiras</div>
-                     <div class="queryItem">Pendências bancárias</div>
-                     <div class="queryItem">Pendências comerciais</div>
-                     <div class="queryItem">Protestos nacionais</div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="queryItem">Cheques sem fundos/furtado/sustado</div>
-                     <div class="queryItem">Dados cadastrais</div>
-                     <div class="queryItem">Participações societárias em empresas</div>
-                     <div class="queryItem">Relatórios de empréstimos</div>
-                     <div class="queryItem">Relatórios de financiamentos</div>
-                  </div>
-               </div>
-            </div>
-         </div>
          <script src="../assets/js/jquery.min.js"></script>
          <script src="../assets/js/jquery.modal.min.js"></script>
          <script src="../assets/js/aos.js"></script>
@@ -1376,15 +1403,6 @@
          <!--End of Tawk.to Script-->
          <!--End of Tawk.to Script-->
          <!--End of Tawk.to Script-->
-
-         <script>
-            window.NuVidioId = "hubi9.comercial";
-            window.NuVidioConfigs = {
-               fabButton: false,
-            }
-         </script>
-
-         <script type="text/javascript" src="https://widget.nuvidio.com/init.js" async=""></script>
 
          <!--
       This HTML file is a template.
